@@ -13102,9 +13102,10 @@ GameObject:
   m_Component:
   - component: {fileID: 130360383317633402}
   - component: {fileID: 130360383317633404}
+  - component: {fileID: 130360383317633405}
   m_Layer: 0
   m_Name: Nurse
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13234,6 +13235,22 @@ MonoBehaviour:
   mascara: 0
   luva: 0
   corRoupas: {r: 0.525, g: 0.249375, b: 0.249375, a: 1}
+--- !u!114 &130360383317633405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130360383317633403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af2d9d90d1708848ab9010340a7d3d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enfermeiro: {fileID: 130360383317633403}
+  masculino: {fileID: 130360381549097621}
+  feminino: {fileID: 130360381584285309}
+  esteticaNurse: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
 --- !u!212 &130360383351461192
 SpriteRenderer:
   m_ObjectHideFlags: 0
