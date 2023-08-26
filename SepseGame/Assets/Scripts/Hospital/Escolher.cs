@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Escolhas : MonoBehaviour
+public class Escolher : MonoBehaviour
 {
-    public GameObject content;
-
     Animation anim;
     public bool isMIn = false;
     public bool isEFIn = false;
@@ -77,20 +75,20 @@ public class Escolhas : MonoBehaviour
 
     public void prancheta()
     {
-        if (isPlaying(content.GetComponent<Animator>(), "content_slide_in") || isPlaying(content.GetComponent<Animator>(), "content_slide_in"))
+        if (isPlaying(GameObject.Find("Conteudo").GetComponent<Animator>(), "slide_in_content") || isPlaying(GameObject.Find("Content").GetComponent<Animator>(), "slide_out_content"))
         {
             return;
         }
         else if (!isPIn)
         {
-            content.GetComponent<Animator>().Play("content_slide_in");
+            GameObject.Find("Conteudo").GetComponent<Animator>().Play("slide_in_content");
             isPIn = true;
             disable(3);
             return;
         }
         else
         {
-            content.GetComponent<Animator>().Play("content_slide_out");
+            GameObject.Find("Conteudo").GetComponent<Animator>().Play("slide_out_content");
             isPIn = false;
             return;
         }
@@ -112,7 +110,7 @@ public class Escolhas : MonoBehaviour
             GameObject.Find("PanelMonitorizar").GetComponent<Animator>().Play("Out");
             isMIn = false;
         }
-        if(isEFIn && exception != 1)
+        if (isEFIn && exception != 1)
         {
             GameObject.Find("PanelExamesFisicos").GetComponent<Animator>().Play("OutExamesFisicos");
             isEFIn = false;
@@ -124,8 +122,9 @@ public class Escolhas : MonoBehaviour
         }
         if (isPIn && exception != 3)
         {
-            content.GetComponent<Animator>().Play("content_slide_out");
+            GameObject.Find("Conteudo").GetComponent<Animator>().Play("slide_out_content");
             isPIn = false;
         }
     }
 }
+

@@ -9,7 +9,10 @@ using UnityEngine.SceneManagement;
 public class PranchetaManager : MonoBehaviour
 {
     public Caso Caso;
-    public Caso[] ArrayCasos;
+    public List<string> SinaisVitais;
+    public Sprite Imagem;
+    public string descricaoImagem;
+    public List<string> Lab;
     public Text[] texts;
     public Toggle[] Toggles;
     public Animator content;
@@ -29,21 +32,25 @@ public class PranchetaManager : MonoBehaviour
     public GameObject s1, s2, s3, s4;
     int chamadaMedico;
 
+    public List<int> selecionados;
     List<int> aferidos = new List<int>();
     string setText;
 
-    private void Start()
-    {
+    public GameObject HospitalObject;
+    public GameObject CondutasObject;
 
-    }
+    public bool chamouEquipe;
+    public bool abriuProtocolo;
+
+    public int apertouBotao; //0 = primeiro botao e 1 = segundo botao
 
     public void updateFC()
     {
-        if (!texts[0].text.Contains(Caso.FrequenciaCardiaca))
+        if (!texts[0].text.Contains(SinaisVitais[0]))
         {
-            texts[0].text = texts[0].text + " " + Caso.FrequenciaCardiaca;
+            texts[0].text = texts[0].text + " " + SinaisVitais[0];
         }
-        setText = Caso.FrequenciaCardiaca;
+        setText = SinaisVitais[0];
         if (!aferidos.Contains(0))
         {
             aferidos.Add(0);
@@ -53,11 +60,11 @@ public class PranchetaManager : MonoBehaviour
 
     public void updatePAS()
     {
-        if (!texts[1].text.Contains(Caso.PressaoArterial))
+        if (!texts[1].text.Contains(SinaisVitais[1]))
         {
-            texts[1].text = texts[1].text + " " + Caso.PressaoArterial;
+            texts[1].text = texts[1].text + " " + SinaisVitais[1];
         }
-        setText = Caso.PressaoArterial;
+        setText = SinaisVitais[1];
         if (!aferidos.Contains(1))
         {
             aferidos.Add(1);
@@ -67,11 +74,11 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateSO()
     {
-        if (!texts[2].text.Contains(Caso.Saturacao))
+        if (!texts[2].text.Contains(SinaisVitais[2]))
         {
-            texts[2].text = texts[2].text + " " + Caso.Saturacao;
+            texts[2].text = texts[2].text + " " + SinaisVitais[2];
         }
-        setText = Caso.Saturacao;
+        setText = SinaisVitais[2];
         if (!aferidos.Contains(2))
         {
             aferidos.Add(2);
@@ -81,11 +88,11 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateFR()
     {
-        if (!texts[3].text.Contains(Caso.FrequenciaRespiratoria))
+        if (!texts[3].text.Contains(SinaisVitais[3]))
         {
-            texts[3].text = texts[3].text + " " + Caso.FrequenciaRespiratoria;
+            texts[3].text = texts[3].text + " " + SinaisVitais[3];
         }
-        setText = Caso.FrequenciaRespiratoria;
+        setText = SinaisVitais[3];
         if (!aferidos.Contains(3))
         {
             aferidos.Add(3);
@@ -95,11 +102,11 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateTA()
     {
-        if (!texts[4].text.Contains(Caso.Temperatura))
+        if (!texts[4].text.Contains(SinaisVitais[4]))
         {
-            texts[4].text = texts[4].text + " " + Caso.Temperatura;
+            texts[4].text = texts[4].text + " " + SinaisVitais[4];
         }
-        setText = Caso.Temperatura;
+        setText = SinaisVitais[4];
         if (!aferidos.Contains(4))
         {
             aferidos.Add(4);
@@ -109,11 +116,11 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateNeuro()
     {
-        if (!texts[5].text.Contains(Caso.Neurologico))
+        if (!texts[5].text.Contains(SinaisVitais[5]))
         {
-            texts[5].text = texts[5].text + " " + Caso.Neurologico;
+            texts[5].text = texts[5].text + " " + SinaisVitais[5];
         }
-        setText = Caso.Neurologico;
+        setText = SinaisVitais[5];
         if (!aferidos.Contains(5))
         {
             aferidos.Add(5);
@@ -123,11 +130,11 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateResp()
     {
-        if (!texts[6].text.Contains(Caso.Respiratorio))
+        if (!texts[6].text.Contains(SinaisVitais[6]))
         {
-            texts[6].text = texts[6].text + " " + Caso.Respiratorio;
+            texts[6].text = texts[6].text + " " + SinaisVitais[6];
         }
-        setText = Caso.Respiratorio;
+        setText = SinaisVitais[6];
         if (!aferidos.Contains(6))
         {
             aferidos.Add(6);
@@ -137,11 +144,11 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateCardio()
     {
-        if (!texts[7].text.Contains(Caso.Cardiocirculatorio))
+        if (!texts[7].text.Contains(SinaisVitais[7]))
         {
-            texts[7].text = texts[7].text + " " + Caso.Cardiocirculatorio;
+            texts[7].text = texts[7].text + " " + SinaisVitais[7];
         }
-        setText = Caso.Cardiocirculatorio;
+        setText = SinaisVitais[7];
         if (!aferidos.Contains(7))
         {
             aferidos.Add(7);
@@ -151,11 +158,11 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateGastro()
     {
-        if (!texts[8].text.Contains(Caso.Gastrintestinal))
+        if (!texts[8].text.Contains(SinaisVitais[8]))
         {
-            texts[8].text = texts[8].text + " " + Caso.Gastrintestinal;
+            texts[8].text = texts[8].text + " " + SinaisVitais[8];
         }
-        setText = Caso.Gastrintestinal;
+        setText = SinaisVitais[8];
         if (!aferidos.Contains(8))
         {
             aferidos.Add(8);
@@ -165,11 +172,11 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateRenal()
     {
-        if (!texts[9].text.Contains(Caso.Renal))
+        if (!texts[9].text.Contains(SinaisVitais[9]))
         {
-            texts[9].text = texts[9].text + " " + Caso.Renal;
+            texts[9].text = texts[9].text + " " + SinaisVitais[9];
         }
-        setText = Caso.Renal;
+        setText = SinaisVitais[9];
         if (!aferidos.Contains(9))
         {
             aferidos.Add(9);
@@ -179,24 +186,24 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateLab()
     {
-        if (!texts[10].text.Contains(Caso.lab1))
+        if (!texts[10].text.Contains(Lab[0]))
         {
-            texts[10].text = texts[10].text + " " + Caso.lab1;
+            texts[10].text = texts[10].text + " " + Lab[0];
         }
-        if (!texts[11].text.Contains(Caso.lab2))
+        if (!texts[11].text.Contains(Lab[1]))
         {
-            texts[11].text = texts[11].text + " " + Caso.lab2;
+            texts[11].text = texts[11].text + " " + Lab[1];
         }
-        if (!texts[12].text.Contains(Caso.lab3))
+        if (!texts[12].text.Contains(Lab[2]))
         {
-            texts[12].text = texts[12].text + " " + Caso.lab3;
+            texts[12].text = texts[12].text + " " + Lab[2];
         }
-        if (!texts[13].text.Contains(Caso.lab4))
+        if (!texts[13].text.Contains(Lab[3]))
         {
-            texts[13].text = texts[13].text + " " + Caso.lab4;
+            texts[13].text = texts[13].text + " " + Lab[3];
         }
 
-        if(Caso.lab1 != "não tem")
+        if(Lab[0] != "não tem")
         {
             if (!aferidos.Contains(10))
             {
@@ -216,17 +223,17 @@ public class PranchetaManager : MonoBehaviour
             }
         }
         
-        if (Caso.lab1 == "não tem")
+        if (Lab[0] == "não tem")
         {
-            setText = Caso.lab1;
+            setText = Lab[0];
             EnterNotificacao();
         }
         else
         {
-            s1.GetComponent<TextMeshProUGUI>().text = Caso.lab1;
-            s2.GetComponent<TextMeshProUGUI>().text = Caso.lab2;
-            s3.GetComponent<TextMeshProUGUI>().text = Caso.lab3;
-            s4.GetComponent<TextMeshProUGUI>().text = Caso.lab4;
+            s1.GetComponent<TextMeshProUGUI>().text = Lab[0];
+            s2.GetComponent<TextMeshProUGUI>().text = Lab[1];
+            s3.GetComponent<TextMeshProUGUI>().text = Lab[2];
+            s4.GetComponent<TextMeshProUGUI>().text = Lab[3];
             sangue.SetActive(true);
         }
     }
@@ -238,17 +245,17 @@ public class PranchetaManager : MonoBehaviour
         {
             if (Toggles[i].isOn)
             {
-                if (!Caso.selecionados.Contains(i))
+                if (!selecionados.Contains(i))
                 {
-                    Caso.selecionados.Add(i);
+                    selecionados.Add(i);
                 }
             }
             else
             {
-                Caso.selecionados.Remove(i);
+                selecionados.Remove(i);
             }
         }
-        if (Caso.selecionados.Count > 0)
+        if (selecionados.Count > 0)
         {
             bsepse1.GetComponent<Button>().interactable = true;
             bsepse2.GetComponent<Button>().interactable = true;
@@ -285,13 +292,13 @@ public class PranchetaManager : MonoBehaviour
 
     public void showXray()
     {
-        if (Caso.Imagem != null)
+        if (Imagem != null)
         {
-            xray.GetComponent<Image>().sprite = Caso.Imagem;
+            xray.GetComponent<Image>().sprite = Imagem;
             ExameImagem.SetActive(true);
-            pranchImg.GetComponent<Image>().sprite = Caso.Imagem;
-            pranchTxt.GetComponent<TextMeshProUGUI>().text = Caso.descricaoImagem;
-            exameDesc.GetComponent<TextMeshProUGUI>().text = Caso.descricaoImagem;
+            pranchImg.GetComponent<Image>().sprite = Imagem;
+            pranchTxt.GetComponent<TextMeshProUGUI>().text = descricaoImagem;
+            exameDesc.GetComponent<TextMeshProUGUI>().text = descricaoImagem;
         }
         else
         {
@@ -333,32 +340,16 @@ public class PranchetaManager : MonoBehaviour
 
     public void opcaoUm()
     {
-        if(Caso.buttonCorreto == 0)
-        {
-            Caso.pontuacao += 20;
-            Caso.apertouBotaoCorreto = true;
-        }
-        else if(Caso.buttonCorreto>=1)
-        {
-            Caso.pontuacao -= 15;
-            Caso.apertouBotaoCorreto = false;
-        }
-        SceneManager.LoadScene("Pacotao");
+        apertouBotao = 0;
+        CondutasObject.SetActive(true);
+        HospitalObject.SetActive(false);
     }
 
     public void opcaoDois()
     {
-        if (Caso.buttonCorreto >= 1)
-        {
-            Caso.pontuacao += 20;
-            Caso.apertouBotaoCorreto = true;
-        }
-        else if(Caso.buttonCorreto == 0)
-        {
-            Caso.pontuacao -= 15;
-            Caso.apertouBotaoCorreto = false;
-        }
-        SceneManager.LoadScene("Pacotao");
+        apertouBotao = 1;
+        CondutasObject.SetActive(true);
+        HospitalObject.SetActive(false);
     }
 
     //public void VerificarChamadaMedico(int idx)
@@ -394,30 +385,26 @@ public class PranchetaManager : MonoBehaviour
 
     public void chamarEquipe()
     {
-        Caso.pontuacao += 15;
-        Caso.chamouEquipe = true;
+        chamouEquipe = true;
         PopUpVerificamedico.SetActive(false);
         darDiagnostico();
     }
 
     public void naoChamarEquipe()
     {
-        Caso.pontuacao -= 10;
-        Caso.chamouEquipe = false;
+        chamouEquipe = false;
         PopUpVerificamedico.SetActive(false);
         darDiagnostico();
     }
     public void abrirProtocolo()
     {
-        Caso.pontuacao += 15;
-        Caso.abriuProtocolo = true;
+        abriuProtocolo = true;
         PopUpVerificamedico.SetActive(true);
     }
 
     public void naoAbrirProtocolo()
     {
-        Caso.pontuacao -= 10;
-        Caso.abriuProtocolo = false;
+        abriuProtocolo = false;
         PopUpVerificamedico.SetActive(true);
     }
 }

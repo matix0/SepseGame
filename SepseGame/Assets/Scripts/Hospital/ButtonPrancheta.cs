@@ -6,13 +6,13 @@ public class ButtonPrancheta : MonoBehaviour
 {
     public Animator anim;
 
-    private void OnMouseEnter()
-    {
-        anim.Play("slide_in");
-    }
-
     private void OnMouseExit()
     {
         anim.Play("slide_out");
+    }
+
+    private void OnMouseOver()
+    {
+        anim.Play("slide_in");
     }
 }
