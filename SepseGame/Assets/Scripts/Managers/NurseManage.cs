@@ -60,13 +60,9 @@ public class NurseManage : MonoBehaviour
         {
             EsteticaNurse.set = false;
             scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
-            if (!EsteticaNurse.set)
-            {
-                //Debug.Log("entrou primeiro if");
-                Generate();
-            }
 
-            else if (EsteticaNurse.gender == 0)
+
+            if (EsteticaNurse.gender == 0)
             {
                 //Debug.Log("entrou segundo if");
                 SetMale();

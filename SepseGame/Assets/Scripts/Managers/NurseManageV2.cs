@@ -11,11 +11,19 @@ public class NurseManageV2 : MonoBehaviour
     public EsteticaNurse esteticaNurse;
 
     // Start is called before the first frame update
+    void Awake()
+    {
+        int  qtdEnfermeiros = GameObject.FindGameObjectsWithTag("Player").Length;
 
+        if (qtdEnfermeiros > 1)
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject);
+    }
     void Start()
     {
-
-        DontDestroyOnLoad(enfermeiro);
 
     }
 
