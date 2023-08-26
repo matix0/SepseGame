@@ -12,6 +12,7 @@ public class NurseManage : MonoBehaviour
     public Sprite blusa;
     public Sprite[] profissaoArray;
     public Sprite calca;
+    public Sprite[] luvaArray;
 
     public GameObject PersonagemFeminino;
     public Sprite[] peleArrayF;
@@ -19,6 +20,7 @@ public class NurseManage : MonoBehaviour
     public Sprite blusaF;
     public Sprite[] profissaoArrayF;
     public Sprite calcaF;
+    public Sprite[] luvaArrayF;
 
 
     public Sprite[] oclinArray;
@@ -31,7 +33,7 @@ public class NurseManage : MonoBehaviour
 
     public SlideColorManager scm;
 
-    public int gender, corDaPele, hasBigas, hasCabas, hasOclin, cabelin, bigas, sexo, role, estetoscopio, mascara;
+    public int gender, corDaPele, hasBigas, hasCabas, hasOclin, cabelin, bigas, sexo, role, estetoscopio, mascara,luva;
 
     public Color corRoupas;
 

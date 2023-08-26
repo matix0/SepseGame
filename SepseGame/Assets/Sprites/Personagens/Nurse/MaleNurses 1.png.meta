@@ -146,8 +146,161 @@ TextureImporter:
   - first:
       213: -8745384162588317561
     second: MaleNurses_47
+  - first:
+      213: -6862559592187016710
+    second: MaleNurses 1_0
+  - first:
+      213: -6412322289136586276
+    second: MaleNurses 1_1
+  - first:
+      213: 8719423057933131601
+    second: MaleNurses 1_2
+  - first:
+      213: -4349217856946725932
+    second: MaleNurses 1_3
+  - first:
+      213: -3007772202821073893
+    second: MaleNurses 1_4
+  - first:
+      213: 5834374289999540933
+    second: MaleNurses 1_5
+  - first:
+      213: -4535955901285053340
+    second: MaleNurses 1_6
+  - first:
+      213: 6826257002511051263
+    second: MaleNurses 1_7
+  - first:
+      213: -7703766896712451815
+    second: MaleNurses 1_8
+  - first:
+      213: 1508022915572673060
+    second: MaleNurses 1_9
+  - first:
+      213: -5418347783059783427
+    second: MaleNurses 1_10
+  - first:
+      213: -7884582987578367357
+    second: MaleNurses 1_11
+  - first:
+      213: -3393414324051350701
+    second: MaleNurses 1_12
+  - first:
+      213: 3272074818531504038
+    second: MaleNurses 1_13
+  - first:
+      213: 5393958674311358882
+    second: MaleNurses 1_14
+  - first:
+      213: 7915569164028380873
+    second: MaleNurses 1_15
+  - first:
+      213: -1015307030601633801
+    second: MaleNurses 1_16
+  - first:
+      213: -5592957606747350135
+    second: MaleNurses 1_17
+  - first:
+      213: 8098430401574063780
+    second: MaleNurses 1_18
+  - first:
+      213: 6830947252918591610
+    second: MaleNurses 1_19
+  - first:
+      213: 5783381582287512129
+    second: MaleNurses 1_20
+  - first:
+      213: 953485600135464908
+    second: MaleNurses 1_21
+  - first:
+      213: 7360653441280294767
+    second: MaleNurses 1_22
+  - first:
+      213: -1989027967301298233
+    second: MaleNurses 1_23
+  - first:
+      213: -8599579098301239492
+    second: MaleNurses 1_24
+  - first:
+      213: -4645403747699333963
+    second: MaleNurses 1_25
+  - first:
+      213: 8813706850390638845
+    second: MaleNurses 1_26
+  - first:
+      213: 5301987665548324768
+    second: MaleNurses 1_27
+  - first:
+      213: -3929965230597773539
+    second: MaleNurses 1_28
+  - first:
+      213: 1913052551512293853
+    second: MaleNurses 1_29
+  - first:
+      213: -288375632389550203
+    second: MaleNurses 1_30
+  - first:
+      213: 776461161436249281
+    second: MaleNurses 1_31
+  - first:
+      213: 4540767837691112046
+    second: MaleNurses 1_32
+  - first:
+      213: -3670956557638918253
+    second: MaleNurses 1_33
+  - first:
+      213: -8031647632391386787
+    second: MaleNurses 1_34
+  - first:
+      213: -4952902482196923108
+    second: MaleNurses 1_35
+  - first:
+      213: -1247914614914337118
+    second: MaleNurses 1_36
+  - first:
+      213: 3279914173895851904
+    second: MaleNurses 1_37
+  - first:
+      213: -6689982778662608038
+    second: MaleNurses 1_38
+  - first:
+      213: 2510785777173637789
+    second: MaleNurses 1_39
+  - first:
+      213: -4344971245352417212
+    second: MaleNurses 1_40
+  - first:
+      213: -3485134578023091469
+    second: MaleNurses 1_41
+  - first:
+      213: -7185783893216889048
+    second: MaleNurses 1_42
+  - first:
+      213: -292152741251993368
+    second: MaleNurses 1_43
+  - first:
+      213: 8687487232989654740
+    second: MaleNurses 1_44
+  - first:
+      213: 3867451180763738713
+    second: MaleNurses 1_45
+  - first:
+      213: -4576961280804743117
+    second: MaleNurses 1_46
+  - first:
+      213: -5681965066623056499
+    second: MaleNurses 1_47
+  - first:
+      213: -8719033316026784250
+    second: MaleNurses 1_48
+  - first:
+      213: 757318146540085714
+    second: MaleNurses 1_49
+  - first:
+      213: -6769318864044418734
+    second: MaleNurses 1_50
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -206,6 +359,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -259,7 +413,154 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MaleNurses_0
+      name: MaleNurses 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af94eb9096a43c0a0800000000000000
+      internalID: -6862559592187016710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaleNurses 1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1b1ba1adad207a0800000000000000
+      internalID: -6412322289136586276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaleNurses 1_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f547ed21d910970800000000000000
+      internalID: 8719423057933131601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaleNurses 1_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db97e9f66974a3c0800000000000000
+      internalID: -4349217856946725932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaleNurses 1_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b144e8d0e1f3246d0800000000000000
+      internalID: -3007772202821073893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaleNurses 1_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c23812418cd7f050800000000000000
+      internalID: 5834374289999540933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaleNurses 1_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c411be32c0d01c0800000000000000
+      internalID: -4535955901285053340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaleNurses 1_7
       rect:
         serializedVersion: 2
         x: 0
@@ -273,14 +574,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbea44b448f7f7740800000000000000
-      internalID: 5151976704910339771
+      spriteID: ff9a134a39cbbbe50800000000000000
+      internalID: 6826257002511051263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_1
+      name: MaleNurses 1_8
       rect:
         serializedVersion: 2
         x: 32
@@ -294,14 +595,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c674fb446b88e2580800000000000000
-      internalID: -8849985901317634196
+      spriteID: 9197a01e2d8b61590800000000000000
+      internalID: -7703766896712451815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_2
+      name: MaleNurses 1_9
       rect:
         serializedVersion: 2
         x: 64
@@ -315,14 +616,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e91ffd564f6396240800000000000000
-      internalID: 4785416502366957982
+      spriteID: 42aabd31ad29de410800000000000000
+      internalID: 1508022915572673060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_3
+      name: MaleNurses 1_10
       rect:
         serializedVersion: 2
         x: 96
@@ -336,14 +637,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff0f8d950e8f3d800800000000000000
-      internalID: 636125614853124351
+      spriteID: df0423126692ec4b0800000000000000
+      internalID: -5418347783059783427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_4
+      name: MaleNurses 1_11
       rect:
         serializedVersion: 2
         x: 128
@@ -357,14 +658,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a689051c68d5026a0800000000000000
-      internalID: -6476073430808487830
+      spriteID: 382ad4f0c85549290800000000000000
+      internalID: -7884582987578367357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_5
+      name: MaleNurses 1_12
       rect:
         serializedVersion: 2
         x: 160
@@ -378,14 +679,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c31654ddcadd25f70800000000000000
-      internalID: 9174639125423546684
+      spriteID: 35b623fb6ab28e0d0800000000000000
+      internalID: -3393414324051350701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_6
+      name: MaleNurses 1_13
       rect:
         serializedVersion: 2
         x: 192
@@ -399,14 +700,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc0255cceb6f9f820800000000000000
-      internalID: 2952662330050420941
+      spriteID: 6af221516beb86d20800000000000000
+      internalID: 3272074818531504038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_7
+      name: MaleNurses 1_14
       rect:
         serializedVersion: 2
         x: 0
@@ -420,14 +721,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d372c21c7b2b3690800000000000000
-      internalID: -7621450132503759914
+      spriteID: 2a9277bf5d03bda40800000000000000
+      internalID: 5393958674311358882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_8
+      name: MaleNurses 1_15
       rect:
         serializedVersion: 2
         x: 32
@@ -441,14 +742,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c4ef66062b0f72a0800000000000000
-      internalID: -6737654259578313531
+      spriteID: 9c682f85730c9dd60800000000000000
+      internalID: 7915569164028380873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_9
+      name: MaleNurses 1_16
       rect:
         serializedVersion: 2
         x: 64
@@ -462,14 +763,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd74681d49e436130800000000000000
-      internalID: 3558774531630188508
+      spriteID: 7ff680f82a7e8e1f0800000000000000
+      internalID: -1015307030601633801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_10
+      name: MaleNurses 1_17
       rect:
         serializedVersion: 2
         x: 96
@@ -483,14 +784,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9da005f9137b7e4b0800000000000000
-      internalID: -5411155003508258087
+      spriteID: 98b510e70b2d162b0800000000000000
+      internalID: -5592957606747350135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_11
+      name: MaleNurses 1_18
       rect:
         serializedVersion: 2
         x: 128
@@ -504,14 +805,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1baf98bd2b134cfe0800000000000000
-      internalID: -1169755358952293711
+      spriteID: 4aecb0cfa87636070800000000000000
+      internalID: 8098430401574063780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_12
+      name: MaleNurses 1_19
       rect:
         serializedVersion: 2
         x: 160
@@ -525,14 +826,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b214e4f05ee816a0800000000000000
-      internalID: -6478166032499076432
+      spriteID: a70a4a9a5566cce50800000000000000
+      internalID: 6830947252918591610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_13
+      name: MaleNurses 1_20
       rect:
         serializedVersion: 2
         x: 192
@@ -546,14 +847,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c0e39da640110770800000000000000
-      internalID: 8575153061236039873
+      spriteID: 142a8cc48e2b24050800000000000000
+      internalID: 5783381582287512129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_14
+      name: MaleNurses 1_21
       rect:
         serializedVersion: 2
         x: 0
@@ -567,14 +868,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ad7ab9e37a08bc60800000000000000
-      internalID: 7834023044769807780
+      spriteID: cc7468ef9167b3d00800000000000000
+      internalID: 953485600135464908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_15
+      name: MaleNurses 1_22
       rect:
         serializedVersion: 2
         x: 32
@@ -588,14 +889,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62ac9743f894ab4e0800000000000000
-      internalID: -1965177407984252378
+      spriteID: f6fb4427e4b462660800000000000000
+      internalID: 7360653441280294767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_16
+      name: MaleNurses 1_23
       rect:
         serializedVersion: 2
         x: 64
@@ -609,14 +910,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80a77006501425280800000000000000
-      internalID: -9056104409346901496
+      spriteID: 7c750b02a9d8564e0800000000000000
+      internalID: -1989027967301298233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_17
+      name: MaleNurses 1_24
       rect:
         serializedVersion: 2
         x: 96
@@ -630,14 +931,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23a6d3bd35615bbf0800000000000000
-      internalID: -309316449988679118
+      spriteID: c3f61e36f5828a880800000000000000
+      internalID: -8599579098301239492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_18
+      name: MaleNurses 1_25
       rect:
         serializedVersion: 2
         x: 128
@@ -651,14 +952,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0eba3c57177349c0800000000000000
-      internalID: -3944177906431115763
+      spriteID: 5b4ec1467e5388fb0800000000000000
+      internalID: -4645403747699333963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_19
+      name: MaleNurses 1_26
       rect:
         serializedVersion: 2
         x: 160
@@ -672,14 +973,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42e41f99a6c36aa20800000000000000
-      internalID: 3073210224273870372
+      spriteID: df006f3fea3905a70800000000000000
+      internalID: 8813706850390638845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_20
+      name: MaleNurses 1_27
       rect:
         serializedVersion: 2
         x: 192
@@ -693,14 +994,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1282449238b71f110800000000000000
-      internalID: 1292950371295307809
+      spriteID: 0afa280d0b1749940800000000000000
+      internalID: 5301987665548324768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_21
+      name: MaleNurses 1_28
       rect:
         serializedVersion: 2
         x: 0
@@ -714,14 +1015,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e5314544544d5a80800000000000000
-      internalID: -8476543794911562266
+      spriteID: d176592d175f579c0800000000000000
+      internalID: -3929965230597773539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_22
+      name: MaleNurses 1_29
       rect:
         serializedVersion: 2
         x: 32
@@ -735,14 +1036,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d611f5d33e345ef0800000000000000
-      internalID: -120402897678559533
+      spriteID: dd18b89e8278c8a10800000000000000
+      internalID: 1913052551512293853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_23
+      name: MaleNurses 1_30
       rect:
         serializedVersion: 2
         x: 64
@@ -756,14 +1057,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10ee6344b5663ca00800000000000000
-      internalID: 775576103010364929
+      spriteID: 58fca85e3eb7ffbf0800000000000000
+      internalID: -288375632389550203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_24
+      name: MaleNurses 1_31
       rect:
         serializedVersion: 2
         x: 96
@@ -777,14 +1078,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f759cb1ba73f0b70800000000000000
-      internalID: 8867367399360911347
+      spriteID: 1cc7b4dff4b86ca00800000000000000
+      internalID: 776461161436249281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_25
+      name: MaleNurses 1_32
       rect:
         serializedVersion: 2
         x: 128
@@ -798,14 +1099,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fc94f4b897bf6c80800000000000000
-      internalID: -8327235319485915920
+      spriteID: e6ae8155a4c040f30800000000000000
+      internalID: 4540767837691112046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_26
+      name: MaleNurses 1_33
       rect:
         serializedVersion: 2
         x: 160
@@ -819,14 +1120,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a404d7f2183181fd0800000000000000
-      internalID: -2371123758242119606
+      spriteID: 39f9a0cd5742e0dc0800000000000000
+      internalID: -3670956557638918253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_27
+      name: MaleNurses 1_34
       rect:
         serializedVersion: 2
         x: 192
@@ -840,14 +1141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5819c343941f876e0800000000000000
-      internalID: -1839455151069556347
+      spriteID: d594436280bd98090800000000000000
+      internalID: -8031647632391386787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_28
+      name: MaleNurses 1_35
       rect:
         serializedVersion: 2
         x: 0
@@ -861,14 +1162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1248a0e685f71df0800000000000000
-      internalID: -209428898005892580
+      spriteID: c1d708d1f61c34bb0800000000000000
+      internalID: -4952902482196923108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_29
+      name: MaleNurses 1_36
       rect:
         serializedVersion: 2
         x: 32
@@ -882,14 +1183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 126626d862aceccf0800000000000000
-      internalID: -230024264019712479
+      spriteID: 2a6330cf4448eaee0800000000000000
+      internalID: -1247914614914337118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_30
+      name: MaleNurses 1_37
       rect:
         serializedVersion: 2
         x: 64
@@ -903,14 +1204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 494b0f002dc233b40800000000000000
-      internalID: 5418724057127367828
+      spriteID: 08fb4dc3098948d20800000000000000
+      internalID: 3279914173895851904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_31
+      name: MaleNurses 1_38
       rect:
         serializedVersion: 2
         x: 96
@@ -924,14 +1225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 159814649e3c95210800000000000000
-      internalID: 1322303372283447633
+      spriteID: a53a55c9b186823a0800000000000000
+      internalID: -6689982778662608038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_32
+      name: MaleNurses 1_39
       rect:
         serializedVersion: 2
         x: 128
@@ -945,14 +1246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3eb34da8dde3d4c80800000000000000
-      internalID: -8336938213955060765
+      spriteID: d9aa9839c5a18d220800000000000000
+      internalID: 2510785777173637789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_33
+      name: MaleNurses 1_40
       rect:
         serializedVersion: 2
         x: 160
@@ -966,14 +1267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db1d6c99240aa6a40800000000000000
-      internalID: 5362274514246226365
+      spriteID: 4488b794caf83b3c0800000000000000
+      internalID: -4344971245352417212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_34
+      name: MaleNurses 1_41
       rect:
         serializedVersion: 2
         x: 192
@@ -987,14 +1288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d3fddbe13c35db90800000000000000
-      internalID: -7217796642683096112
+      spriteID: 3f2b08af09052afc0800000000000000
+      internalID: -3485134578023091469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_35
+      name: MaleNurses 1_42
       rect:
         serializedVersion: 2
         x: 0
@@ -1008,14 +1309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4adf2ddb0c59d6550800000000000000
-      internalID: 6155740920736316836
+      spriteID: 827751cfe97f64c90800000000000000
+      internalID: -7185783893216889048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_36
+      name: MaleNurses 1_43
       rect:
         serializedVersion: 2
         x: 32
@@ -1029,14 +1330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b1ebf44f3bc71b00800000000000000
-      internalID: 799330931482288562
+      spriteID: 8e0b48531a012fbf0800000000000000
+      internalID: -292152741251993368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_37
+      name: MaleNurses 1_44
       rect:
         serializedVersion: 2
         x: 64
@@ -1050,14 +1351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ac005e4529598470800000000000000
-      internalID: 8397340996971531433
+      spriteID: 4dee6113c97209870800000000000000
+      internalID: 8687487232989654740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_38
+      name: MaleNurses 1_45
       rect:
         serializedVersion: 2
         x: 96
@@ -1071,14 +1372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d7a6818cdc9b59b0800000000000000
-      internalID: -5090302482932389936
+      spriteID: 9527697bb52fba530800000000000000
+      internalID: 3867451180763738713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_39
+      name: MaleNurses 1_46
       rect:
         serializedVersion: 2
         x: 128
@@ -1092,14 +1393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 031c53fee1890b6d0800000000000000
-      internalID: -2976712095062179536
+      spriteID: 3389ae207fd5b70c0800000000000000
+      internalID: -4576961280804743117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_40
+      name: MaleNurses 1_47
       rect:
         serializedVersion: 2
         x: 160
@@ -1113,35 +1414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05a9c655886ee96d0800000000000000
-      internalID: -2981692430049568176
+      spriteID: d8501c150ea9521b0800000000000000
+      internalID: -5681965066623056499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_41
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27852b3d060246fd0800000000000000
-      internalID: -2349717505339926414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MaleNurses_42
+      name: MaleNurses 1_48
       rect:
         serializedVersion: 2
         x: 0
@@ -1155,14 +1435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4de59f4a87051ff60800000000000000
-      internalID: 8066316886691372756
+      spriteID: 6066d6df465cff680800000000000000
+      internalID: -8719033316026784250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_43
+      name: MaleNurses 1_49
       rect:
         serializedVersion: 2
         x: 32
@@ -1176,14 +1456,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecbb4fc7ef4e2aad0800000000000000
-      internalID: -2692337845544895538
+      spriteID: 2d1aa7287d8828a00800000000000000
+      internalID: 757318146540085714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleNurses_44
+      name: MaleNurses 1_50
       rect:
         serializedVersion: 2
         x: 64
@@ -1197,71 +1477,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c5ddaf80c48e4ac0800000000000000
-      internalID: -3869009067285555775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MaleNurses_45
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6365ee0a88baa620800000000000000
-      internalID: 2786242222576984941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MaleNurses_46
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 910796381440a89f0800000000000000
-      internalID: -465554932055314407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MaleNurses_47
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 788a89c607722a680800000000000000
-      internalID: -8745384162588317561
+      spriteID: 2591849cb5c8e02a0800000000000000
+      internalID: -6769318864044418734
       vertices: []
       indices: 
       edges: []

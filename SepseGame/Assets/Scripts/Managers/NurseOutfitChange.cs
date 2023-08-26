@@ -30,6 +30,7 @@ public class NurseOutfitChange : MonoBehaviour
     private int currentOptionEstetoscopio = 0;
     private int currentOptionMascara = 0;
     private int currentOptionRoupa = 0;
+    private int currentOptionLuva = 0;
 
     public void SexoM()
     {
@@ -45,57 +46,6 @@ public class NurseOutfitChange : MonoBehaviour
         nm.gender = 1;
     }
 
-    public void Nurse()
-    {
-        seeBtn = false;
-        GameObject ProfissaoF = GameObject.Find("ProfissaoF");
-        GameObject Profissao = GameObject.Find("Profissao");
-        if(!seeBtn){
-            E1.GetComponent<Image>().sprite = btn2Change;
-            E2.GetComponent<Image>().sprite = btn1Change;
-        }
-       
-
-        if (en.gender == 0)
-        {
-            nm.role = 0;
-            en.role = 0;
-            Profissao.GetComponent<SpriteRenderer>().sprite = nm.profissaoArray[0];
-        }
-        else
-        {
-            nm.role = 0;
-            en.role = 0;
-            ProfissaoF.GetComponent<SpriteRenderer>().sprite = nm.profissaoArrayF[0];
-        }
-    }
-
-    public void Doctor()
-    {
-        seeBtn = true;
-        GameObject ProfissaoF = GameObject.Find("ProfissaoF");
-        GameObject Profissao = GameObject.Find("Profissao");
-
-        if (seeBtn)
-        {
-            E1.GetComponent<Image>().sprite = btn1Change;
-            E2.GetComponent<Image>().sprite = btn2Change;
-        }
-
-        if (en.gender == 0)
-        {
-            Profissao.GetComponent<SpriteRenderer>().sprite = nm.profissaoArray[1];
-            nm.role = 1;
-            en.role = 1;
-        }
-        else
-        {
-            nm.role = 1;
-            en.role = 1;
-            ProfissaoF.GetComponent<SpriteRenderer>().sprite = nm.profissaoArrayF[1];
-        }
-
-    }
     public void NextRoupa()
     {
         GameObject ProfissaoF = GameObject.Find("ProfissaoF");
@@ -479,5 +429,62 @@ public class NurseOutfitChange : MonoBehaviour
             en.mascara = currentOptionMascara;
         }
     }
+    public void NextLuva()
+    {
+        GameObject Luva = GameObject.Find("LuvaTeste");
+        GameObject LuvaF = GameObject.Find("LuvaF");
+        if (en.gender == 0)
+        {
+            currentOptionLuva++;
+            if (currentOptionLuva >= nm.luvaArray.Length)
+            {
+                currentOptionLuva = 0;
+            }
+            Luva.GetComponent<SpriteRenderer>().sprite = nm.luvaArray[currentOptionLuva];
+            nm.luva = currentOptionLuva;
+            en.luva = currentOptionLuva;
+        }
+        else
+        {
+            currentOptionLuva++;
+            if (currentOptionLuva >= nm.luvaArrayF.Length)
+            {
+                currentOptionLuva = 0;
+            }
+            LuvaF.GetComponent<SpriteRenderer>().sprite = nm.luvaArrayF[currentOptionLuva];
+            nm.luva = currentOptionLuva;
+            en.luva = currentOptionLuva;
+        }
+    }
 
+    public void PreviousLuva()
+    {
+
+        GameObject Luva = GameObject.Find("LuvaTeste");
+        GameObject LuvaF = GameObject.Find("LuvaF");
+        if (en.gender == 0)
+        {
+            currentOptionLuva--;
+            if (currentOptionLuva < 0)
+            {
+                currentOptionLuva = nm.luvaArray.Length - 1;
+            }
+            Luva.GetComponent<SpriteRenderer>().sprite = nm.luvaArray[currentOptionLuva];
+            nm.hasCabas = currentOptionLuva;
+            nm.luva = currentOptionLuva;
+            en.luva = currentOptionLuva;
+        }
+        else
+        {
+            currentOptionLuva--;
+            if (currentOptionLuva < 0)
+            {
+                currentOptionLuva = nm.luvaArrayF.Length - 1;
+            }
+            LuvaF.GetComponent<SpriteRenderer>().sprite = nm.luvaArrayF[currentOptionLuva];
+            nm.hasCabas = currentOptionLuva;
+            nm.luva = currentOptionLuva;
+            en.luva = currentOptionLuva;
+        }
+    }
 }

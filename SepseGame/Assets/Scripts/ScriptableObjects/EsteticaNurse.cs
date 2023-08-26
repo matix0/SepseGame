@@ -19,6 +19,7 @@ public class EsteticaNurse : ScriptableObject
     public int role;
     public int estetoscopio;
     public int mascara;
+    public int luva;
 
     public Vector4 corRoupa;
 }
