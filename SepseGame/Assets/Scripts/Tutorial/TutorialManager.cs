@@ -69,6 +69,5 @@ public class TutorialManager : MonoBehaviour
         Box.SetActive(true);
         TopTitle.SetActive(true);
         Exit.SetActive(true);
-        Debug.Log("kjbsdlkjhfg");
     }
 }

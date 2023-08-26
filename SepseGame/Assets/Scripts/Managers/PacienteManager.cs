@@ -33,8 +33,6 @@ public class PacienteManager : MonoBehaviour
 
     private void Start()
     {
-        Caso = ArrayCasos[Estetica.currentCase];
-
         if (!Estetica.set)
         {
             Generate();

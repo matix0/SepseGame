@@ -54,7 +54,7 @@ public class NurseManage : MonoBehaviour
         //Debug.Log(cs);
         //Debug.Log(EsteticaNurse.set);
 
-        if (cs != "Hospital")
+        if (cs == "CustomizeNurse")
         {
             EsteticaNurse.set = false;
             scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
