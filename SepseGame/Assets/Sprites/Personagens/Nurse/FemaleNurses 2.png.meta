@@ -188,8 +188,143 @@ TextureImporter:
   - first:
       213: -5650557742345558421
     second: FemaleNurses_61
+  - first:
+      213: -5001142371979565092
+    second: FemaleNurses 2_0
+  - first:
+      213: 4906116754474876262
+    second: FemaleNurses 2_1
+  - first:
+      213: 1980940923151502721
+    second: FemaleNurses 2_2
+  - first:
+      213: 1896724940700978208
+    second: FemaleNurses 2_3
+  - first:
+      213: -1247971483528937159
+    second: FemaleNurses 2_4
+  - first:
+      213: -2242345663916010651
+    second: FemaleNurses 2_5
+  - first:
+      213: 7428033227747422553
+    second: FemaleNurses 2_6
+  - first:
+      213: -2637595864094543706
+    second: FemaleNurses 2_7
+  - first:
+      213: -5139522224342328926
+    second: FemaleNurses 2_8
+  - first:
+      213: 5299238081589432207
+    second: FemaleNurses 2_9
+  - first:
+      213: -8795771457472255723
+    second: FemaleNurses 2_10
+  - first:
+      213: 2437826614344546919
+    second: FemaleNurses 2_11
+  - first:
+      213: -2587688371091188314
+    second: FemaleNurses 2_12
+  - first:
+      213: -4049882181730270886
+    second: FemaleNurses 2_13
+  - first:
+      213: 3969155404925329951
+    second: FemaleNurses 2_14
+  - first:
+      213: -6218461698253549341
+    second: FemaleNurses 2_15
+  - first:
+      213: -4936059954384641161
+    second: FemaleNurses 2_16
+  - first:
+      213: 780092234564733958
+    second: FemaleNurses 2_17
+  - first:
+      213: -5352646602197723053
+    second: FemaleNurses 2_18
+  - first:
+      213: 1536233453762443287
+    second: FemaleNurses 2_19
+  - first:
+      213: 7334550879102635261
+    second: FemaleNurses 2_20
+  - first:
+      213: 8183657667057476331
+    second: FemaleNurses 2_21
+  - first:
+      213: 4913758116071240574
+    second: FemaleNurses 2_22
+  - first:
+      213: 4416893200584329030
+    second: FemaleNurses 2_23
+  - first:
+      213: -4089765866769397682
+    second: FemaleNurses 2_24
+  - first:
+      213: -282017907654014021
+    second: FemaleNurses 2_25
+  - first:
+      213: -8138694254958589634
+    second: FemaleNurses 2_26
+  - first:
+      213: -6291524133388157942
+    second: FemaleNurses 2_27
+  - first:
+      213: 6902861092387288651
+    second: FemaleNurses 2_28
+  - first:
+      213: 1612351087356143257
+    second: FemaleNurses 2_29
+  - first:
+      213: -5354992018913707594
+    second: FemaleNurses 2_30
+  - first:
+      213: 7393892436868698026
+    second: FemaleNurses 2_31
+  - first:
+      213: 2577683618757946642
+    second: FemaleNurses 2_32
+  - first:
+      213: 7279910296482922197
+    second: FemaleNurses 2_33
+  - first:
+      213: 3227130972189074924
+    second: FemaleNurses 2_34
+  - first:
+      213: -3169441736737936321
+    second: FemaleNurses 2_35
+  - first:
+      213: 1752000449393832422
+    second: FemaleNurses 2_36
+  - first:
+      213: -947177984592383892
+    second: FemaleNurses 2_37
+  - first:
+      213: 4341137811765703596
+    second: FemaleNurses 2_38
+  - first:
+      213: -703411075909707043
+    second: FemaleNurses 2_39
+  - first:
+      213: 3688819804400051302
+    second: FemaleNurses 2_40
+  - first:
+      213: 5993938933451323728
+    second: FemaleNurses 2_41
+  - first:
+      213: 1255738472714753084
+    second: FemaleNurses 2_42
+  - first:
+      213: -964444368481130127
+    second: FemaleNurses 2_43
+  - first:
+      213: 1904442160681022543
+    second: FemaleNurses 2_44
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -248,6 +383,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -301,7 +437,154 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FemaleNurses_0
+      name: FemaleNurses 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7e007828f589ab0800000000000000
+      internalID: -5001142371979565092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNurses 2_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d3119c137061440800000000000000
+      internalID: 4906116754474876262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNurses 2_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18dca7d2647bd7b10800000000000000
+      internalID: 1980940923151502721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNurses 2_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c0b17c845825a10800000000000000
+      internalID: 1896724940700978208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNurses 2_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931c07a3c805eaee0800000000000000
+      internalID: -1247971483528937159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNurses 2_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56316a6cf7691e0e0800000000000000
+      internalID: -2242345663916010651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNurses 2_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951feaf7ddca51760800000000000000
+      internalID: 7428033227747422553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNurses 2_7
       rect:
         serializedVersion: 2
         x: 0
@@ -315,14 +598,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de19e26315c3a80c0800000000000000
-      internalID: -4572776152142278163
+      spriteID: 6a0fa934980656bd0800000000000000
+      internalID: -2637595864094543706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_1
+      name: FemaleNurses 2_8
       rect:
         serializedVersion: 2
         x: 32
@@ -336,14 +619,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a013f5e827160eb0800000000000000
-      internalID: -4754086892218937182
+      spriteID: 2a999de64cfbca8b0800000000000000
+      internalID: -5139522224342328926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_2
+      name: FemaleNurses 2_9
       rect:
         serializedVersion: 2
         x: 64
@@ -357,14 +640,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d34f018c9e99af760800000000000000
-      internalID: 7492470159447225405
+      spriteID: f8f4c5965fcaa8940800000000000000
+      internalID: 5299238081589432207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_3
+      name: FemaleNurses 2_10
       rect:
         serializedVersion: 2
         x: 96
@@ -378,14 +661,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da30d296d6c066060800000000000000
-      internalID: 6946253139321095085
+      spriteID: 519a8df16742fe580800000000000000
+      internalID: -8795771457472255723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_4
+      name: FemaleNurses 2_11
       rect:
         serializedVersion: 2
         x: 128
@@ -399,14 +682,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 939d7880193779a00800000000000000
-      internalID: 763205728613161273
+      spriteID: 76afffbb366e4d120800000000000000
+      internalID: 2437826614344546919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_5
+      name: FemaleNurses 2_12
       rect:
         serializedVersion: 2
         x: 160
@@ -420,14 +703,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ffe38a6e899d8b50800000000000000
-      internalID: 6597097866119081974
+      spriteID: 6a553bbf22fa61cd0800000000000000
+      internalID: -2587688371091188314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_6
+      name: FemaleNurses 2_13
       rect:
         serializedVersion: 2
         x: 192
@@ -441,14 +724,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bf8db4810da32470800000000000000
-      internalID: 8368722754618101687
+      spriteID: a5188c7ec9debc7c0800000000000000
+      internalID: -4049882181730270886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_7
+      name: FemaleNurses 2_14
       rect:
         serializedVersion: 2
         x: 0
@@ -462,14 +745,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12e4c01a7e9c56b80800000000000000
-      internalID: -8402087533113225695
+      spriteID: f1265e0bfc5451730800000000000000
+      internalID: 3969155404925329951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_8
+      name: FemaleNurses 2_15
       rect:
         serializedVersion: 2
         x: 32
@@ -483,14 +766,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12a7e265a0e0a8560800000000000000
-      internalID: 7316675982175140385
+      spriteID: 3e09932480693b9a0800000000000000
+      internalID: -6218461698253549341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_9
+      name: FemaleNurses 2_16
       rect:
         serializedVersion: 2
         x: 64
@@ -504,14 +787,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8ce52090c737dcd0800000000000000
-      internalID: -2533494965180961652
+      spriteID: 7736fd4bf979f7bb0800000000000000
+      internalID: -4936059954384641161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_10
+      name: FemaleNurses 2_17
       rect:
         serializedVersion: 2
         x: 96
@@ -525,14 +808,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78f94ca02f3f8bbb0800000000000000
-      internalID: -4919914372013973625
+      spriteID: 60c854511c173da00800000000000000
+      internalID: 780092234564733958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_11
+      name: FemaleNurses 2_18
       rect:
         serializedVersion: 2
         x: 128
@@ -546,14 +829,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8826d24229ee4a350800000000000000
-      internalID: 6027204512768156296
+      spriteID: 3589dcb564497b5b0800000000000000
+      internalID: -5352646602197723053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_12
+      name: FemaleNurses 2_19
       rect:
         serializedVersion: 2
         x: 160
@@ -567,14 +850,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69ab63f880d1fed60800000000000000
-      internalID: 7921582192167664278
+      spriteID: 718f497df2cc15510800000000000000
+      internalID: 1536233453762443287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_13
+      name: FemaleNurses 2_20
       rect:
         serializedVersion: 2
         x: 192
@@ -588,14 +871,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce1e22287ecb5ef90800000000000000
-      internalID: -6924921149505478164
+      spriteID: dfc01f71a2f89c560800000000000000
+      internalID: 7334550879102635261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_14
+      name: FemaleNurses 2_21
       rect:
         serializedVersion: 2
         x: 0
@@ -609,14 +892,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7b932165edd49940800000000000000
-      internalID: 5302106638568889215
+      spriteID: be2ec501a41329170800000000000000
+      internalID: 8183657667057476331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_15
+      name: FemaleNurses 2_22
       rect:
         serializedVersion: 2
         x: 32
@@ -630,14 +913,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 324be171c5713fe90800000000000000
-      internalID: -6993220112083930077
+      spriteID: e737e9ce8fc213440800000000000000
+      internalID: 4913758116071240574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_16
+      name: FemaleNurses 2_23
       rect:
         serializedVersion: 2
         x: 64
@@ -651,14 +934,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e46a5af4af22dce0800000000000000
-      internalID: -1381989750027950878
+      spriteID: 647caa7d6f4fb4d30800000000000000
+      internalID: 4416893200584329030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_17
+      name: FemaleNurses 2_24
       rect:
         serializedVersion: 2
         x: 96
@@ -672,14 +955,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16261d31a7d94f090800000000000000
-      internalID: -8001597490286468511
+      spriteID: e4841b8dc9b3e37c0800000000000000
+      internalID: -4089765866769397682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_18
+      name: FemaleNurses 2_25
       rect:
         serializedVersion: 2
         x: 128
@@ -693,14 +976,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5fafcab3260db180800000000000000
-      internalID: -9098108921690738850
+      spriteID: bbbcbf90532161cf0800000000000000
+      internalID: -282017907654014021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_19
+      name: FemaleNurses 2_26
       rect:
         serializedVersion: 2
         x: 160
@@ -714,14 +997,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f478f56638773810800000000000000
-      internalID: 1744995555663705337
+      spriteID: e394ead12bc8d0f80800000000000000
+      internalID: -8138694254958589634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_20
+      name: FemaleNurses 2_27
       rect:
         serializedVersion: 2
         x: 192
@@ -735,14 +1018,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a87e07ea3194d84f0800000000000000
-      internalID: -824922807859091574
+      spriteID: a0cf995722400b8a0800000000000000
+      internalID: -6291524133388157942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_21
+      name: FemaleNurses 2_28
       rect:
         serializedVersion: 2
         x: 0
@@ -756,14 +1039,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5fbb7d1d628bcee0800000000000000
-      internalID: -1239753867252744354
+      spriteID: b46fb913793ebcf50800000000000000
+      internalID: 6902861092387288651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_22
+      name: FemaleNurses 2_29
       rect:
         serializedVersion: 2
         x: 32
@@ -777,14 +1060,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 383412cb2436bf280800000000000000
-      internalID: -9008497491349257341
+      spriteID: 996e31775c8306610800000000000000
+      internalID: 1612351087356143257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_23
+      name: FemaleNurses 2_30
       rect:
         serializedVersion: 2
         x: 64
@@ -798,14 +1081,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61b7d6cdb75c9bd60800000000000000
-      internalID: 7906567756595428118
+      spriteID: 6b9b899712f3fa5b0800000000000000
+      internalID: -5354992018913707594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_24
+      name: FemaleNurses 2_31
       rect:
         serializedVersion: 2
         x: 96
@@ -819,14 +1102,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe1bb195191097790800000000000000
-      internalID: -7531987178023570961
+      spriteID: aaf810f2ff16c9660800000000000000
+      internalID: 7393892436868698026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_25
+      name: FemaleNurses 2_32
       rect:
         serializedVersion: 2
         x: 128
@@ -840,14 +1123,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2463e6b122245710800000000000000
-      internalID: 1681006089113658411
+      spriteID: 21d29671895c5c320800000000000000
+      internalID: 2577683618757946642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_26
+      name: FemaleNurses 2_33
       rect:
         serializedVersion: 2
         x: 160
@@ -861,14 +1144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88c2979a7cb70dad0800000000000000
-      internalID: -2679505680813446008
+      spriteID: 5deb29218df670560800000000000000
+      internalID: 7279910296482922197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_27
+      name: FemaleNurses 2_34
       rect:
         serializedVersion: 2
         x: 192
@@ -882,14 +1165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 451a925a3e55ea710800000000000000
-      internalID: 1706395745036902740
+      spriteID: ce5adf8658219cc20800000000000000
+      internalID: 3227130972189074924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_28
+      name: FemaleNurses 2_35
       rect:
         serializedVersion: 2
         x: 0
@@ -903,14 +1186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8695883fcdc189a0800000000000000
-      internalID: -6232474119413852534
+      spriteID: f3c20796881e304d0800000000000000
+      internalID: -3169441736737936321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_29
+      name: FemaleNurses 2_36
       rect:
         serializedVersion: 2
         x: 32
@@ -924,14 +1207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4619bb344ade27e80800000000000000
-      internalID: -8182216283211984540
+      spriteID: 6e1b170502b505810800000000000000
+      internalID: 1752000449393832422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_30
+      name: FemaleNurses 2_37
       rect:
         serializedVersion: 2
         x: 64
@@ -945,14 +1228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 004a41dcb3131eff0800000000000000
-      internalID: -8671591364516864
+      spriteID: c60fc4134a2fad2f0800000000000000
+      internalID: -947177984592383892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_31
+      name: FemaleNurses 2_38
       rect:
         serializedVersion: 2
         x: 96
@@ -966,14 +1249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b32d29841819de6e0800000000000000
-      internalID: -1806627891051310533
+      spriteID: ca3bf47e6d1de3c30800000000000000
+      internalID: 4341137811765703596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_32
+      name: FemaleNurses 2_39
       rect:
         serializedVersion: 2
         x: 128
@@ -987,14 +1270,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f57951f2f8b619080800000000000000
-      internalID: -9182439902517291169
+      spriteID: dda93517a5bfc36f0800000000000000
+      internalID: -703411075909707043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_33
+      name: FemaleNurses 2_40
       rect:
         serializedVersion: 2
         x: 160
@@ -1008,14 +1291,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5751a4da10f8300c0800000000000000
-      internalID: -4610684356132203147
+      spriteID: 664e0b16112513330800000000000000
+      internalID: 3688819804400051302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_34
+      name: FemaleNurses 2_41
       rect:
         serializedVersion: 2
         x: 192
@@ -1029,14 +1312,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9297148b854192a0800000000000000
-      internalID: -6732523502423272803
+      spriteID: 059ffb5e3bfbe2350800000000000000
+      internalID: 5993938933451323728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_35
+      name: FemaleNurses 2_42
       rect:
         serializedVersion: 2
         x: 0
@@ -1050,14 +1333,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74aee977310a32030800000000000000
-      internalID: 3468792143477140039
+      spriteID: c3454fcdc774d6110800000000000000
+      internalID: 1255738472714753084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_36
+      name: FemaleNurses 2_43
       rect:
         serializedVersion: 2
         x: 32
@@ -1071,14 +1354,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efd82d4d9c1948fd0800000000000000
-      internalID: -2340585610280792578
+      spriteID: 1796e0be4fa9d92f0800000000000000
+      internalID: -964444368481130127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleNurses_37
+      name: FemaleNurses 2_44
       rect:
         serializedVersion: 2
         x: 64
@@ -1092,92 +1375,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcddc28cd92466ac0800000000000000
-      internalID: -3862326384987939377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FemaleNurses_38
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e2b3af9c15d9f020800000000000000
-      internalID: 2376164597328753378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FemaleNurses_39
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70401428d14bb6320800000000000000
-      internalID: 2552331652667868167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FemaleNurses_40
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03c63c46da16e0250800000000000000
-      internalID: 5912770758131805232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FemaleNurses_41
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71f4612adf5326ba0800000000000000
-      internalID: -6097251582043861225
+      spriteID: f447ba21e00fd6a10800000000000000
+      internalID: 1904442160681022543
       vertices: []
       indices: 
       edges: []

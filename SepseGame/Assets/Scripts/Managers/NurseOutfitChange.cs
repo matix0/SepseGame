@@ -431,7 +431,7 @@ public class NurseOutfitChange : MonoBehaviour
     }
     public void NextLuva()
     {
-        GameObject Luva = GameObject.Find("LuvaTeste");
+        GameObject Luva = GameObject.Find("Luva");
         GameObject LuvaF = GameObject.Find("LuvaF");
         if (en.gender == 0)
         {
@@ -460,7 +460,7 @@ public class NurseOutfitChange : MonoBehaviour
     public void PreviousLuva()
     {
 
-        GameObject Luva = GameObject.Find("LuvaTeste");
+        GameObject Luva = GameObject.Find("Luva");
         GameObject LuvaF = GameObject.Find("LuvaF");
         if (en.gender == 0)
         {

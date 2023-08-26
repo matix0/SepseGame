@@ -137,6 +137,7 @@ public class NurseManage : MonoBehaviour
         cabelin = Random.Range(0, 19);
         estetoscopio = Random.Range(0, 100);
         mascara = Random.Range(0, 100);
+        luva = Random.Range(0, 100);
 
         EsteticaNurse.estetoscopio = estetoscopio;
         EsteticaNurse.corDaPele = corDaPele;
@@ -147,6 +148,7 @@ public class NurseManage : MonoBehaviour
         EsteticaNurse.mascara = mascara;
         EsteticaNurse.bigas = bigas;
         EsteticaNurse.cabelin = cabelin;
+        EsteticaNurse.luva = luva;
 
         SetMale();
     }
@@ -159,6 +161,7 @@ public class NurseManage : MonoBehaviour
         role = Random.Range(0, 100);
         mascara = Random.Range(0, 100);
         estetoscopio = Random.Range(0, 2);
+        luva = Random.Range(0, 100);
 
         EsteticaNurse.estetoscopio = estetoscopio;
         EsteticaNurse.role = role;
@@ -166,6 +169,7 @@ public class NurseManage : MonoBehaviour
         EsteticaNurse.hasOclin = hasOclin;
         EsteticaNurse.mascara = mascara;
         EsteticaNurse.cabelin = cabelin;
+        EsteticaNurse.luva = luva;
 
         SetFemale();
     }
@@ -186,6 +190,7 @@ public class NurseManage : MonoBehaviour
         GameObject Estetoscopio = GameObject.Find("Estetoscopio");
         GameObject Mascara = GameObject.Find("Mascara");
         GameObject Calca = GameObject.Find("Calca");
+        GameObject Luva = GameObject.Find("Luva");
 
         corDaPele = EsteticaNurse.corDaPele;
         hasBigas = EsteticaNurse.hasBigas;
@@ -196,6 +201,7 @@ public class NurseManage : MonoBehaviour
         role = EsteticaNurse.role;
         estetoscopio = EsteticaNurse.estetoscopio;
         mascara = EsteticaNurse.mascara;
+        luva = EsteticaNurse.luva;
 
         Pele.GetComponent<SpriteRenderer>().sprite = peleArray[corDaPele];
 
@@ -259,6 +265,17 @@ public class NurseManage : MonoBehaviour
             Mascara.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
 
         }
+        if (luva < 50)
+        {
+            luva = 0;
+            Mascara.GetComponent<SpriteRenderer>().sprite = luvaArray[luva];
+        }
+        else
+        {
+            luva = 1;
+            Mascara.GetComponent<SpriteRenderer>().sprite = luvaArray[luva];
+
+        }
         Color corzinha = EsteticaNurse.corRoupa;
         if (cs != "Hospital")
         {
@@ -284,6 +301,7 @@ public class NurseManage : MonoBehaviour
         GameObject EstetoscopioF = GameObject.Find("EstetoscopioF");
         GameObject MascaraF = GameObject.Find("MascaraF");
         GameObject CalcaF = GameObject.Find("CalcaF");
+        GameObject LuvaF = GameObject.Find("LuvaF");
 
         estetoscopio = EsteticaNurse.estetoscopio;
         corDaPele = EsteticaNurse.corDaPele;
@@ -291,6 +309,7 @@ public class NurseManage : MonoBehaviour
         role = EsteticaNurse.role;
         mascara = EsteticaNurse.mascara;
         cabelin = EsteticaNurse.cabelin;
+        luva = EsteticaNurse.luva;
 
         PeleF.GetComponent<SpriteRenderer>().sprite = peleArrayF[corDaPele];
         CabeloF.GetComponent<SpriteRenderer>().sprite = cabeloArrayF[cabelin];
@@ -335,6 +354,17 @@ public class NurseManage : MonoBehaviour
         {
             mascara = 1;
             MascaraF.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
+
+        }
+        if (luva < 50)
+        {
+            luva = 0;
+            LuvaF.GetComponent<SpriteRenderer>().sprite = luvaArrayF[luva];
+        }
+        else
+        {
+            luva = 1;
+            LuvaF.GetComponent<SpriteRenderer>().sprite = luvaArrayF[luva];
 
         }
 
