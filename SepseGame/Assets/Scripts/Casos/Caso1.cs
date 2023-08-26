@@ -8,6 +8,7 @@ public class Caso1 : MonoBehaviour
     public GameObject HospitalObject;
     public GameObject CondutasObject;
     public GameObject ResultadoObject;
+    public GameObject FeedbackObject;
     public PranchetaManager pranchetaManager;
 
     // Start is called before the first frame update
@@ -17,12 +18,6 @@ public class Caso1 : MonoBehaviour
         HospitalObject.SetActive(false);
         CondutasObject.SetActive(false);
         ResultadoObject.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void AvancarDoDialogo()
@@ -35,5 +30,11 @@ public class Caso1 : MonoBehaviour
     {
         DialogoObject.SetActive(true);
         HospitalObject.SetActive(false);
+    }
+
+    public void IrParaFeedback()
+    {
+        ResultadoObject.SetActive(false);
+        FeedbackObject.SetActive(true);
     }
 }
