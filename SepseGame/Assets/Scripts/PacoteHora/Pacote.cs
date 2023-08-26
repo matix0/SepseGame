@@ -6,13 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class Pacote : MonoBehaviour
 {
+    public List<string> condutas;
+    public List<int> selecaoCondutas;
+
+    public GameObject CondutasObject;
+    public GameObject ResultadoObject;
+
     public Estetica pack;
 
-    public Caso Caso;
-
     public Button avancarButton;
-
-    public List<Caso> Casos;
 
     public List<Text> opcoes;
 
@@ -26,8 +28,6 @@ public class Pacote : MonoBehaviour
 
     void Start()
     {
-        Caso = Casos[pack.currentCase];
-
         updateOptions();
     }
 
@@ -39,11 +39,11 @@ public class Pacote : MonoBehaviour
         {
             do
             {
-                rand = Random.Range(0, 6);
+              rand = Random.Range(0, 6);
             } while(numerosSorteados.Contains(rand));
 
             numerosSorteados.Add(rand);
-            opcoes[rand].text = Caso.condutas[i];
+            opcoes[rand].text = condutas[i];
             toggleScripts[rand].condutaIndex = i;
         }
     }
@@ -63,11 +63,11 @@ public class Pacote : MonoBehaviour
         switch (retorno)
         {
             case 1:
-                Caso.condSelected.Add(toggleScripts[idx].condutaIndex);
+                selecaoCondutas.Add(toggleScripts[idx].condutaIndex);
                 control++;
                 break;
             case 2:
-                Caso.condSelected.Remove(toggleScripts[idx].condutaIndex);
+                selecaoCondutas.Remove(toggleScripts[idx].condutaIndex);
                 control--;
                 break;
         }
@@ -85,7 +85,7 @@ public class Pacote : MonoBehaviour
     public void resetSelection()
     {
         control = 0;
-        Caso.condSelected.Clear();
+        selecaoCondutas.Clear();
         int i;
         for(i=0; i < toggleScripts.Count; i++)
         {
@@ -95,6 +95,7 @@ public class Pacote : MonoBehaviour
 
     public void Avancar()
     {
-        SceneManager.LoadScene("FeedbackCondutas");
+        ResultadoObject.SetActive(true);
+        CondutasObject.SetActive(false);
     }
 }
