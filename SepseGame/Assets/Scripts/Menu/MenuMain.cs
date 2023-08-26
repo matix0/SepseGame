@@ -28,7 +28,7 @@ public class MenuMain : MonoBehaviour
     {
         //ir pro jogo
         EsteticaNurse.set = false;
-        SceneManager.LoadScene("CustomizeNurse");
+        SceneManager.LoadScene("SelecionarNiveis");
     }
     public void Quit()
     {
