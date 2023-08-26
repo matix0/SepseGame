@@ -188,18 +188,18 @@ MonoBehaviour:
     (> 12.000/mm\xB3); Leucopenia (< 4.000/mm\xB3).\r\n\n<b>Disfun\xE7\xE3o Org\xE2nica:</b>
     refere-se ao mau funcionamento de algum \xF3rg\xE3o do corpo humano. Para a triagem
     de pacientes com suspeita de sepse utiliza-se os seguintes indicadores de disfun\xE7\xE3o
-    org\xE2nica: hipotens\xE3o: PAS < ou igual a 90mmHg; altera\xE7\xE3o do n\xEDvel
-    de consci\xEAncia; StO2 < ou igual a 90%, necessidade de O2 ou dispneia importante.
-    Exames laboratorais: creatinina > 2 mg/dL; Lactato acima do valor normal ; Plaquetas
-    < 100.000mm\xB3 ou INR>1,5; Bilirrubinas > 2mg/dL.\r\n\n<b>Sepse Prov\xE1vel:</b> 
-    disfun\xE7\xE3o org\xE2nica e foco infeccioso suspeito ou confirmado na presen\xE7a
-    ou n\xE3o de hipotens\xE3o. Considerar tamb\xE9m pacientes cujo protocolo foi
-    iniciado com base apenas nos crit\xE9rios de SRIS, sem disfun\xE7\xE3o org\xE2nica
-    clinicamente aparente mas que possuem fatores de risco para a sepse como pacientes
-    acima de 65 anos, imunossuprimidos e portadores de comorbidades graves.O protocolo
-    de sepse deve ser mantido, com coletas de exames e administra\xE7\xE3o de antibi\xF3ticos
-    na primeira hora. \r\n\n<b>Sepse Possivel:</b> pacientes com crit\xE9rios de
-    SRIS e foco infecioso suspeito ou confirmado,  sem disfun\xE7\xE3o org\xE2nica
+    org\xE2nica: hipotens\xE3o: PAS <= a 90mmHg; altera\xE7\xE3o do n\xEDvel de consci\xEAncia;
+    StO2 <= a 90%, necessidade de O2 ou dispneia importante. Exames laboratorais:
+    creatinina > 2 mg/dL; Lactato acima do valor normal ; Plaquetas < 100.000mm\xB3
+    ou INR>1,5; Bilirrubinas > 2mg/dL.\r\n\n<b>Sepse Prov\xE1vel:</b>  disfun\xE7\xE3o
+    org\xE2nica e foco infeccioso suspeito ou confirmado na presen\xE7a ou n\xE3o
+    de hipotens\xE3o. Considerar tamb\xE9m pacientes cujo protocolo foi iniciado
+    com base apenas nos crit\xE9rios de SRIS, sem disfun\xE7\xE3o org\xE2nica clinicamente
+    aparente mas que possuem fatores de risco para a sepse como pacientes acima de
+    65 anos, imunossuprimidos e portadores de comorbidades graves.O protocolo de
+    sepse deve ser mantido, com coletas de exames e administra\xE7\xE3o de antibi\xF3ticos
+    na primeira hora. \r\n\n<b>Sepse Poss\xEDvel:</b> pacientes com crit\xE9rios
+    de SRIS e foco infecioso suspeito ou confirmado,  sem disfun\xE7\xE3o org\xE2nica
     e sem fatores de risco evidentes. O protocolo de sepse deve ser encerrado e o
     atendimento ao paciente deve ser continuado, com o objetivo de avaliar se existe
     realmente presen\xE7a de infec\xE7\xE3o, a presen\xE7a ou n\xE3o de sepse.\n"
