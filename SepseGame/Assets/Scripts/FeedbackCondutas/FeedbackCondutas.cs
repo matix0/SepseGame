@@ -7,33 +7,29 @@ using TMPro;
 
 public class FeedbackCondutas : MonoBehaviour
 {
+    public Pacote CondutasScript;
+
     public List<GameObject> txtCorretas;
     public List<GameObject> txtMarcadas;
 
-    public List<Caso> Casos;
-    public Caso Caso;
     public Estetica pack;
 
     public Color Acerto, Erro;
 
     void Start()
     {
-        Caso = Casos[pack.currentCase];
-
         for (int i=0; i < txtCorretas.Count; i++)
         {
-            txtCorretas[i].GetComponentInChildren<TextMeshProUGUI>().text = Caso.condutas[i];
-            txtMarcadas[i].GetComponentInChildren<TextMeshProUGUI>().text = Caso.condutas[Caso.condSelected[i]];
+            txtCorretas[i].GetComponentInChildren<TextMeshProUGUI>().text = CondutasScript.condutas[i];
+            txtMarcadas[i].GetComponentInChildren<TextMeshProUGUI>().text = CondutasScript.condutas[CondutasScript.selecaoCondutas[i]];
 
-            if (Caso.condutas[i] == Caso.condutas[Caso.condSelected[i]])
+            if (CondutasScript.condutas[i] == CondutasScript.condutas[CondutasScript.selecaoCondutas[i]])
             {
                 txtMarcadas[i].GetComponent<Image>().color = Acerto;
-                Caso.pontuacao += 10;
             }
             else
             {
                 txtMarcadas[i].GetComponent<Image>().color = Erro;
-                Caso.pontuacao -= 5;
             }
         }
     }
