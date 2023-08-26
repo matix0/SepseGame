@@ -143,8 +143,11 @@ TextureImporter:
   - first:
       213: -7754969257257259094
     second: BasePersonagensMasculinos_46
+  - first:
+      213: -7208840183146652564
+    second: BasePersonagensMasculinos_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -203,6 +206,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1214,6 +1218,27 @@ TextureImporter:
       bones: []
       spriteID: aaf2b115c80d06490800000000000000
       internalID: -7754969257257259094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasePersonagensMasculinos_47
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 43
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c5bf82c0e05fb90800000000000000
+      internalID: -7208840183146652564
       vertices: []
       indices: 
       edges: []

@@ -29,6 +29,7 @@ public class NurseOutfitChange : MonoBehaviour
     private int currentOptionOclin = 0;
     private int currentOptionEstetoscopio = 0;
     private int currentOptionMascara = 0;
+    private int currentOptionRoupa = 0;
 
     public void SexoM()
     {
@@ -95,7 +96,65 @@ public class NurseOutfitChange : MonoBehaviour
         }
 
     }
+    public void NextRoupa()
+    {
+        GameObject ProfissaoF = GameObject.Find("ProfissaoF");
+        GameObject Profissao = GameObject.Find("Profissao");
+        if (en.gender == 0)
+        {
+            currentOptionRoupa++;
+            if (currentOptionRoupa >= nm.profissaoArray.Length)
+            {
+                currentOptionRoupa = 0;
+            }
+            Profissao.GetComponent<SpriteRenderer>().sprite = nm.profissaoArray[currentOptionRoupa];
+            nm.role = currentOptionRoupa;
+            en.role = currentOptionRoupa;
+        }
+        else
+        {
+            currentOptionRoupa++;
+            if (currentOptionRoupa >= nm.profissaoArrayF.Length)
+            {
+                currentOptionRoupa = 0;
+            }
+            ProfissaoF.GetComponent<SpriteRenderer>().sprite = nm.profissaoArrayF[currentOptionRoupa];
+            nm.role = currentOptionRoupa;
+            en.role = currentOptionRoupa;
+        }
+    }
 
+    public void PreviousRoupa()
+    {
+        GameObject ProfissaoF = GameObject.Find("ProfissaoF");
+        GameObject Profissao = GameObject.Find("Profissao");
+        if (en.gender == 0)
+        {
+            Debug.Log(currentOptionRoupa);
+            currentOptionRoupa--;
+            if (currentOptionRoupa < 0)
+            {
+                currentOptionRoupa = nm.peleArray.Length - 1;
+
+            }
+            Profissao.GetComponent<SpriteRenderer>().sprite = nm.profissaoArray[currentOptionRoupa];
+            nm.role = currentOptionRoupa;
+            en.role = currentOptionRoupa;
+        }
+        else
+        {
+            Debug.Log(currentOptionRoupa);
+            currentOptionRoupa--;
+            if (currentOptionRoupa < 0)
+            {
+                currentOptionRoupa = nm.peleArrayF.Length - 1;
+            }
+            ProfissaoF.GetComponent<SpriteRenderer>().sprite = nm.profissaoArrayF[currentOptionRoupa];
+            nm.role = currentOptionRoupa;
+            en.role = currentOptionRoupa;
+        }
+    }
+    /**/
     public void NextSkin()
     {
         GameObject Pele = GameObject.Find("Pele");
