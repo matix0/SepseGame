@@ -1196,7 +1196,8 @@ MonoBehaviour:
   Escolhas: {fileID: 1458453868}
   PauseIcon: {fileID: 871800873}
   buttonsEscolhas: []
-  MusicManager: {fileID: 1244910206}
+  slider: {fileID: 0}
+  Musica: {fileID: 1244910206}
 --- !u!114 &364091310
 MonoBehaviour:
   m_ObjectHideFlags: 0

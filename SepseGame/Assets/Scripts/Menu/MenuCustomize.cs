@@ -21,6 +21,6 @@ public class MenuCustomize : MonoBehaviour
     {
         //PrefabUtility.SaveAsPrefabAsset(enfermeiro, "Assets/Prefabs/Nurse.prefab");
         nurseManage.Save();
-        SceneManager.LoadScene("Transicao");
+        SceneManager.LoadScene("Caso1");
     }
 }

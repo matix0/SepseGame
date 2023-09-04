@@ -45,7 +45,6 @@ public class FeedbackManager : MonoBehaviour
         {
             stars.GetComponent<Animator>().Play("threeStars");
             warnIcon.SetActive(false);
-            successIcon.SetActive(true);
         }
         else if(erros <= corretas.Count/2)
         {

@@ -32,7 +32,7 @@ public class NurseManageV2 : MonoBehaviour
     {
         string cs = SceneManager.GetActiveScene().name;
         //Debug.Log(cs);
-        if (cs == "Hospital" || cs == "CustomizeNurse")
+        if (cs.Contains("Caso") || cs == "CustomizeNurse")
         {
             if (esteticaNurse.gender == 0)
                 masculino.SetActive(true);
@@ -45,7 +45,7 @@ public class NurseManageV2 : MonoBehaviour
             feminino.SetActive(false);
         }
 
-        if (cs == "Hospital")
+        if (cs.Contains("Caso"))
         {
             enfermeiro.transform.position = new Vector3(-4.5f, -0.3f, 0);
             enfermeiro.transform.localScale = new Vector3(5, 5, 0);
