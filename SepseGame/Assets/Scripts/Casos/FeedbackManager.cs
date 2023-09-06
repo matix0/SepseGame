@@ -8,11 +8,14 @@ public class FeedbackManager : MonoBehaviour
     public List<int> corretas;
     public List<string> textos;
 
+    public Caso1 generalManager;
     public GameObject warnIcon, successIcon;
     public GameObject feedbackCell;
     public GameObject ResultGrid;
     public PranchetaManager pranchetaManager;
     public GameObject stars;
+
+    public int estrelas;
 
     int erros;
     int falhas;
@@ -39,21 +42,25 @@ public class FeedbackManager : MonoBehaviour
             adicionarFalhas(falhas);
         }
 
-        erros = erros + falhas;
+        erros += falhas;
 
         if (erros == 0 & falhas == 0)
         {
+            estrelas = 3;
             stars.GetComponent<Animator>().Play("threeStars");
-            warnIcon.SetActive(false);
         }
         else if(erros <= corretas.Count/2)
         {
+            estrelas = 2;
             stars.GetComponent<Animator>().Play("twoStars");
         }
         else
         {
+            estrelas = 1;
             stars.GetComponent<Animator>().Play("oneStar");
         }
+
+        ScreenCapture.CaptureScreenshot("FeedbackCaso" + generalManager.Caso.ToString() + ".png");
     }
 
     void adicionarErro(int index)

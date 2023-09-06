@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PacienteManager : MonoBehaviour
 {
+    public Caso1 generalManager;
+
     public Sprite[] peleArray;
     public Sprite[] cabeloArray;
     public Sprite[] barbaArray;
@@ -22,8 +24,6 @@ public class PacienteManager : MonoBehaviour
     public Monitorizar Monitorizar;
 
     public Estetica Estetica;
-    public Caso Caso;
-    public Caso[] ArrayCasos;
 
     public int corDaPele, hasBigas, hasCabas, hasCorta, hasCalca, hasOclin, cabelin, bigas;
 
@@ -33,18 +33,17 @@ public class PacienteManager : MonoBehaviour
 
     private void Start()
     {
-        if (!Estetica.set)
-        {
-            Generate();
-        }
-        else if(Estetica.gender == 0 && Caso.sexo)
+        Generate();
+
+        /*
+        else if(generalManager.sexo)
         {
             SetMale();
         }
         else
         {
             SetFemale();
-        }
+        }*/
     }
 
     void Update()
@@ -57,19 +56,20 @@ public class PacienteManager : MonoBehaviour
 
     public void Generate()
     {
-        int gender;
-        if (Caso.sexo)
+        /*
+        if (generalManager.sexo)
         {
             gender = 0;
         }
         else
         {
-            gender = 2;
+            gender = 1;
         }
+        */
         
-        Estetica.gender = gender;
-        Estetica.set = true;
-        if (gender < 1)
+        //Estetica.gender = gender;
+        //Estetica.set = true;
+        if (generalManager.sexo)
         {
             GenerateMale();
         }
