@@ -14,20 +14,23 @@ public class FeedbackManager : MonoBehaviour
     public GameObject ResultGrid;
     public PranchetaManager pranchetaManager;
     public GameObject stars;
+    public Animator starsAnimator;
 
     public int estrelas;
 
-    int erros;
-    int falhas;
+    int erros; //informações que o jogador marcou incorretamente
+    int falhas; //informações que o jogador deixou de marcar
 
-    public void gerarFeedback()
+    bool screenshotTaken = false;
+
+    public void gerarFeedback() //contabiliza os erros e falhas para determinar o número de estrelas e tocar a animação correspondente
     {
         for (int i=0; i < pranchetaManager.selecionados.Count; i++)
         {
             if (!corretas.Contains(pranchetaManager.selecionados[i]))
             {
                 erros++;
-                adicionarErro(i);
+                adicionarErro(pranchetaManager.selecionados[i]);
             }
         }
         for (int j=0; j < corretas.Count; j++)
@@ -59,27 +62,25 @@ public class FeedbackManager : MonoBehaviour
             estrelas = 1;
             stars.GetComponent<Animator>().Play("oneStar");
         }
-
-        ScreenCapture.CaptureScreenshot("FeedbackCaso" + generalManager.Caso.ToString() + ".png");
     }
 
-    void adicionarErro(int index)
+    void adicionarErro(int index) //adiciona uma FeedbackCell (Prefab) contendo a explicação de um erro do jogador
     {
         GameObject cell;
         cell = Instantiate(feedbackCell, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
         cell.transform.parent = ResultGrid.transform;
-        string s = pranchetaManager.texts[index].text;
+        string s = textos[index];
         if(index <= 4)
         {
             cell.GetComponent<TextMeshProUGUI>().text = "- " + s + " não caracteriza SIRS.";
         }
         else
         {
-            cell.GetComponent<TextMeshProUGUI>().text = "- " + textos[index] + " não caracterizou Disfunção Orgânica.";
+            cell.GetComponent<TextMeshProUGUI>().text = "- " + s + " não caracterizou Disfunção Orgânica.";
         }
     }
 
-    void adicionarFalhas(int amount)
+    void adicionarFalhas(int amount) //adiciona uma FeedbackCell (Prefab) contendo a explicação de uma falha do jogador
     {
         GameObject cell;
         cell = Instantiate(feedbackCell, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
@@ -91,6 +92,20 @@ public class FeedbackManager : MonoBehaviour
         else
         {
             cell.GetComponent<TextMeshProUGUI>().text = falhas.ToString() + " critérios não foram marcados como SIRS ou Disfunção Orgânica.";
+        }
+    }
+
+    private void Update()
+    {
+        //detecta se a animação foi finalizada antes de tirar a screenshot da tela
+        AnimatorClipInfo[] currentClip = starsAnimator.GetCurrentAnimatorClipInfo(0);
+        if (currentClip[0].clip.name.Contains("slide_up"))
+        {
+            if(starsAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime > starsAnimator.GetCurrentAnimatorStateInfo(0).length)
+            {
+                ScreenCapture.CaptureScreenshot("FeedbackCaso" + generalManager.Caso.ToString() + ".png");
+                screenshotTaken = true;
+            }
         }
     }
 }

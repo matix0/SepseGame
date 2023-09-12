@@ -21,7 +21,7 @@ public class Caso1 : MonoBehaviour
 
     bool is_dialog_done = false;
 
-    void Start()
+    void Start() //deixa apenas o Caso Clinico visivel de inicio
     {
         CasoClinicoObject.SetActive(true);
         DialogoObject.SetActive(false);
@@ -32,7 +32,7 @@ public class Caso1 : MonoBehaviour
         helpMenu.SetActive(false);
     }
     
-    public void FecharCasoClinico()
+    public void FecharCasoClinico() //fecha o Caso Clínico e avança para o Diálogo
     {
         Paciente.transform.localPosition = new Vector3(-0.45f,-1.18f, 1);
         Paciente.transform.localScale = new Vector3(1, 1, 1);
@@ -46,7 +46,7 @@ public class Caso1 : MonoBehaviour
         
     }
 
-    public void AbrirCasoClinico()
+    public void AbrirCasoClinico() //acessa o Caso Clínico a partir do Hospital
     {
         Paciente.transform.localPosition = new Vector3(1.47f, -2.421f, 1);
         Paciente.transform.localScale = new Vector3(2, 2, 2);
@@ -54,7 +54,7 @@ public class Caso1 : MonoBehaviour
         CasoClinicoObject.SetActive(true);
     }
 
-    public void nextDialog()
+    public void nextDialog() //chamada ao apertar o botão de Continuar o Diálogo
     {
         dialogManager.loadTexts(1);
         if (!is_dialog_done)
@@ -68,37 +68,31 @@ public class Caso1 : MonoBehaviour
         }
     }
 
-    public void RetornarParaDialogo()
-    {
-        DialogoObject.SetActive(true);
-        HospitalObject.SetActive(false);
-    }
-
-    public void IrParaFeedback()
+    public void IrParaFeedback() //avança para o feedback ao pressionar o botão de Continuar nas Condutas
     {
         ResultadoObject.SetActive(false);
         FeedbackObject.SetActive(true);
         feedbackManager.gerarFeedback();
     }
 
-    public void retryCase()
+    public void retryCase() //recarrega a cena ao pressionar o botão Tentar Novamente no Feedback
     {
         PlayerPrefs.SetInt("caso" + Caso.ToString(), feedbackManager.estrelas);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void nextCase()
+    public void nextCase() //avança para o Seletor de Níveis ao apertar o botão no Feedback
     {
         PlayerPrefs.SetInt("caso" + Caso.ToString(), feedbackManager.estrelas);
         SceneManager.LoadScene("SelecionarNiveis");
     }
 
-    public void openHelp()
+    public void openHelp() //abre a tela de Ajuda ao pressionar no ícone no canto superior direito
     {
         helpMenu.SetActive(true);
     }
 
-    public void closeHelp()
+    public void closeHelp() //fecha a tela de Ajuda
     {
         helpMenu.SetActive(false);
     }

@@ -15,7 +15,7 @@ public class DialogManager : MonoBehaviour
     private string fullText = "";
     private string fullText2 = "";
 
-    public void loadTexts(int index)
+    public void loadTexts(int index) //prepara os textos nos GameObjects para serem mostrados pela função showTexts()
     {
         currentPosition = 0;
         buttonContinuar.SetActive(false);
@@ -35,7 +35,7 @@ public class DialogManager : MonoBehaviour
         StartCoroutine(showTexts());
     }
 
-    IEnumerator showTexts()
+    IEnumerator showTexts() //revela o texto letra por letra
     {
         while (currentPosition < fullText2.Length)
         {
