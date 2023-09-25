@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class SelecionarNiveisManager : MonoBehaviour
 {
@@ -28,6 +29,18 @@ public class SelecionarNiveisManager : MonoBehaviour
         
     }
 
+    public void selecionarNivel()
+    {
+        string nomePaiBotao = EventSystem.current.currentSelectedGameObject.transform.parent.name;
+        nomePaiBotao = nomePaiBotao.Remove(0,5);
+        nomePaiBotao =  "Caso"+nomePaiBotao;
+        nomePaiBotao = nomePaiBotao.Replace(" ","");
+        Debug.Log(nomePaiBotao);
+
+        SceneManager.LoadScene(nomePaiBotao);
+    }
+
+
     public void irCasosBasicos() {
         camera.transform.position = new Vector3(0,0,-10);
     }
@@ -42,4 +55,6 @@ public class SelecionarNiveisManager : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
+
+
 }
