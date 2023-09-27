@@ -19,8 +19,8 @@ public class SelecionarNiveisManager : MonoBehaviour
         {
             starCount += PlayerPrefs.GetInt("caso" + i.ToString());
         }
-        StarCount1.GetComponent<TextMeshProUGUI>().text = "/39";
-        StarCount2.GetComponent<TextMeshProUGUI>().text = "/39";
+        StarCount1.GetComponent<TextMeshProUGUI>().text = starCount.ToString() + "/39";
+        StarCount2.GetComponent<TextMeshProUGUI>().text = starCount.ToString() + "/39";
     }
 
     // Update is called once per frame

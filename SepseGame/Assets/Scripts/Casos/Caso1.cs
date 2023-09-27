@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Caso1 : MonoBehaviour
 {
     public int Caso;
     public bool sexo = false;
 
+    public GameObject CasoAtualDisplay;
     public GameObject CasoClinicoAvatarBG, Paciente;
     public GameObject CasoClinicoObject;
     public GameObject DialogoObject;
@@ -23,6 +25,7 @@ public class Caso1 : MonoBehaviour
 
     void Start() //deixa apenas o Caso Clinico visivel de inicio
     {
+        CasoAtualDisplay.GetComponent<TextMeshProUGUI>().text = "Caso " + Caso.ToString() + "/13";
         CasoClinicoObject.SetActive(true);
         DialogoObject.SetActive(false);
         HospitalObject.SetActive(false);
@@ -31,10 +34,10 @@ public class Caso1 : MonoBehaviour
         FeedbackObject.SetActive(false);
         helpMenu.SetActive(false);
     }
-    
-    public void FecharCasoClinico() //fecha o Caso Clínico e avança para o Diálogo
+
+    public void FecharCasoClinico() //fecha o Caso Clínico (avança para o Diálogo caso o diálogo ainda não tenha ocorrido)
     {
-        Paciente.transform.localPosition = new Vector3(-0.45f,-1.18f, 1);
+        Paciente.transform.localPosition = new Vector3(-0.45f, -1.18f, 1);
         Paciente.transform.localScale = new Vector3(1, 1, 1);
         CasoClinicoAvatarBG.SetActive(false);
         CasoClinicoObject.SetActive(false);
@@ -43,7 +46,7 @@ public class Caso1 : MonoBehaviour
             DialogoObject.SetActive(true);
             dialogManager.loadTexts(0);
         }
-        
+
     }
 
     public void AbrirCasoClinico() //acessa o Caso Clínico a partir do Hospital
@@ -56,15 +59,22 @@ public class Caso1 : MonoBehaviour
 
     public void nextDialog() //chamada ao apertar o botão de Continuar o Diálogo
     {
-        dialogManager.loadTexts(1);
-        if (!is_dialog_done)
+        if (dialogManager.currentDialog == 0)
         {
-            is_dialog_done = true;
+            dialogManager.loadTexts(1);
         }
         else
         {
-            DialogoObject.SetActive(false);
-            HospitalObject.SetActive(true);
+            dialogManager.loadTexts(2);
+            if (!is_dialog_done)
+            {
+                is_dialog_done = true;
+            }
+            else
+            {
+                DialogoObject.SetActive(false);
+                HospitalObject.SetActive(true);
+            }
         }
     }
 
@@ -75,15 +85,23 @@ public class Caso1 : MonoBehaviour
         feedbackManager.gerarFeedback();
     }
 
+    void saveStars() //salva o numero de estrelas obtidas no caso nas PlayerPrefs
+    {
+        if (feedbackManager.estrelas > PlayerPrefs.GetInt("caso" + Caso.ToString()))
+        {
+            PlayerPrefs.SetInt("caso" + Caso.ToString(), feedbackManager.estrelas);
+        }
+    }
+
     public void retryCase() //recarrega a cena ao pressionar o botão Tentar Novamente no Feedback
     {
-        PlayerPrefs.SetInt("caso" + Caso.ToString(), feedbackManager.estrelas);
+        saveStars();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void nextCase() //avança para o Seletor de Níveis ao apertar o botão no Feedback
     {
-        PlayerPrefs.SetInt("caso" + Caso.ToString(), feedbackManager.estrelas);
+        saveStars();
         SceneManager.LoadScene("SelecionarNiveis");
     }
 

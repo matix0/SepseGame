@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class HideXray : MonoBehaviour
 {
-    public GameObject xrayPanel;
+    public GameObject ExameImagem;
 
     private void OnMouseDown()
     {
-        xrayPanel.SetActive(false);
+        ExameImagem.SetActive(false);
     }
 }

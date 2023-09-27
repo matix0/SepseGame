@@ -15,7 +15,6 @@ public class PranchetaManager : MonoBehaviour
     public List<string> Lab;
     public Text[] texts;
     public Toggle[] Toggles;
-    public Animator content;
     public GameObject NotificacaoButton;
     public GameObject notificationText;
     public Estetica pack;

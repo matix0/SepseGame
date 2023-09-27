@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class MenuPause : MonoBehaviour
 {
-
+    public GameObject CasoClinicoButton, PranchetaButton;
     public GameObject PauseMenuUI;
     public GameObject Escolhas;
     public GameObject PauseIcon;
@@ -25,6 +25,8 @@ public class MenuPause : MonoBehaviour
 
     public void Resume()
     {
+        CasoClinicoButton.GetComponent<Button>().interactable = true;
+        PranchetaButton.GetComponent<Button>().interactable = true;
         PauseIcon.SetActive(true);
         PauseMenuUI.SetActive(false);
         Escolhas.SetActive(true);
@@ -36,6 +38,8 @@ public class MenuPause : MonoBehaviour
 
     public void Pause()
     {
+        CasoClinicoButton.GetComponent<Button>().interactable = false;
+        PranchetaButton.GetComponent<Button>().interactable = false;
         PauseMenuUI.SetActive(true);
         PauseIcon.SetActive(false);
         Escolhas.SetActive(false);
