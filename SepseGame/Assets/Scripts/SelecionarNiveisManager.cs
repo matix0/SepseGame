@@ -7,12 +7,17 @@ using UnityEngine.EventSystems;
 
 public class SelecionarNiveisManager : MonoBehaviour
 {
+    FeedbackCasoModal feedbackCasoModal;
     public Camera camera;
     public GameObject StarCount1, StarCount2;
+    public GameObject ModalFeedback;
 
     int starCount;
-    public string nivel;
-    public string caso;
+    public string nivel,caso;
+    public int qtdEstrelas, numeroNivel;
+
+    public TMP_Text titulo_modal,texto_feedback;
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,47 +40,47 @@ public class SelecionarNiveisManager : MonoBehaviour
     {
 
         nivel = EventSystem.current.currentSelectedGameObject.transform.parent.name;
-       
+        titulo_modal.text = nivel.ToUpper();
         nivel = nivel.Replace(" ", "");
         Debug.Log(nivel);
-        
-        getCaso();
 
-        string tempNivel = nivel.Remove(0, 5);
-        int numeroNivel = int.Parse(tempNivel);
+        string auxNumNivel = nivel.Remove(0, 5);
+        numeroNivel = int.Parse(auxNumNivel);
 
-        //nivel = "caso" + nivel;
-        getCaso();
-
-        int qtdEstrelas;
-
-        qtdEstrelas = PlayerPrefs.GetInt("caso" +numeroNivel.ToString());
-
-        Debug.Log("nivel: " + nivel
-            + "\nqtdEstrelas: " + qtdEstrelas
-            + "\ncaso: " + caso
-            +"\nnumeroNivel: "+numeroNivel);
-        
+        //nivel = "caso" + nivel;     
     }
     public void getCaso() {
-        Debug.Log("L57 " + nivel);
         caso = nivel.Remove(0, 5);
-        caso = "caso"+ nivel;
+        caso = "caso"+ numeroNivel;
         Debug.Log(caso);
     }
+    public void getEstrelasNivel()
+    {
+        qtdEstrelas = PlayerPrefs.GetInt("caso" + numeroNivel.ToString());
+    }
+    public void openModalFeedback() {
 
-    public void getEstrelasNivel() { 
-    
+        getNivel();
+        getCaso();
+        getEstrelasNivel();
+        Debug.Log("nivel: " + nivel
+    + "\nqtdEstrelas: " + qtdEstrelas
+    + "\ncaso: " + caso
+    + "\nnumeroNivel: " + numeroNivel);
+
+        setModalFeedback();
+
+        ModalFeedback.SetActive(true);
+    }
+
+    public void setModalFeedback() {
+        string teste = feedbackCasoModal.getFeedback();
+        texto_feedback.SetText(teste);
     }
     public void selecionarNivel()
     {
         /*
-        string nomePaiBotao = EventSystem.current.currentSelectedGameObject.transform.parent.name;
-        nomePaiBotao = nomePaiBotao.Remove(0,5);
-        nomePaiBotao =  "Caso"+nomePaiBotao;
-        nomePaiBotao = nomePaiBotao.Replace(" ","");
-        Debug.Log(nomePaiBotao);
-        SceneManager.LoadScene(nomePaiBotao);
+        SceneManager.LoadScene(caso);
         */
 
         
