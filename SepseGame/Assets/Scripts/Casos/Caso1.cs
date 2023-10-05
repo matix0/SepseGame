@@ -9,6 +9,7 @@ public class Caso1 : MonoBehaviour
     public int Caso;
     public bool sexo = false;
 
+    public GameObject hospitalFeedback;
     public GameObject CasoAtualDisplay;
     public GameObject CasoClinicoAvatarBG, Paciente;
     public GameObject CasoClinicoObject;
@@ -29,6 +30,7 @@ public class Caso1 : MonoBehaviour
         CasoClinicoObject.SetActive(true);
         DialogoObject.SetActive(false);
         HospitalObject.SetActive(false);
+        hospitalFeedback.SetActive(false);
         CondutasObject.SetActive(false);
         ResultadoObject.SetActive(false);
         FeedbackObject.SetActive(false);
@@ -114,4 +116,16 @@ public class Caso1 : MonoBehaviour
     {
         helpMenu.SetActive(false);
     }
+
+    public void goToHospitalFeedback()
+    {
+        hospitalFeedback.SetActive(false);
+    }
+
+    public void condutasActivate()
+    {
+        hospitalFeedback.SetActive(false);
+        CondutasObject.SetActive(true);
+    }
 }
+

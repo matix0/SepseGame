@@ -8,6 +8,7 @@ public class FeedbackManager : MonoBehaviour
     public List<int> corretas;
     public List<string> textos;
 
+    public FeedbackCondutas feedbackCondutas;
     public Caso1 generalManager;
     public GameObject warnIcon, successIcon;
     public GameObject feedbackCell;
@@ -25,34 +26,40 @@ public class FeedbackManager : MonoBehaviour
 
     public void gerarFeedback() //contabiliza os erros e falhas para determinar o número de estrelas e tocar a animação correspondente
     {
-        for (int i=0; i < pranchetaManager.selecionados.Count; i++)
+        for (int i = 0; i < pranchetaManager.selecionados.Count; i++)
         {
             if (!corretas.Contains(pranchetaManager.selecionados[i]))
             {
                 erros++;
-                adicionarErro(pranchetaManager.selecionados[i]);
+                //adicionarErro(pranchetaManager.selecionados[i]);
             }
         }
-        for (int j=0; j < corretas.Count; j++)
+        for (int j = 0; j < corretas.Count; j++)
         {
             if (!pranchetaManager.selecionados.Contains(corretas[j]))
             {
                 falhas++;
             }
         }
-        if(falhas > 0)
+        /*
+        if (falhas > 0)
         {
-            adicionarFalhas(falhas);
+            //adicionarFalhas(falhas);
         }
+
+        if (feedbackCondutas.errosCondutas > 0)
+        {
+            //adicionarCondutas();
+        }*/
 
         erros += falhas;
 
-        if (erros == 0 & falhas == 0)
+        if (erros == 0 & falhas == 0 & feedbackCondutas.errosCondutas <= 0)
         {
             estrelas = 3;
             stars.GetComponent<Animator>().Play("threeStars");
         }
-        else if(erros <= corretas.Count/2)
+        else if (erros == 0 & falhas == 0)//erros <= corretas.Count/2
         {
             estrelas = 2;
             stars.GetComponent<Animator>().Play("twoStars");
@@ -69,10 +76,10 @@ public class FeedbackManager : MonoBehaviour
         GameObject cell;
         cell = Instantiate(feedbackCell, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
         cell.transform.parent = ResultGrid.transform;
-        string s = textos[index];
-        if(index <= 4)
+        string s = textos[index] + " ";
+        if (index <= 4)
         {
-            cell.GetComponent<TextMeshProUGUI>().text = "- " + s + " não caracteriza SIRS.";
+            cell.GetComponent<TextMeshProUGUI>().text = "- " + s + pranchetaManager.SinaisVitais[index] + " não caracteriza SIRS.";
         }
         else
         {
@@ -95,9 +102,17 @@ public class FeedbackManager : MonoBehaviour
         }
     }
 
+    void adicionarCondutas()
+    {
+        GameObject cell;
+        cell = Instantiate(feedbackCell, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+        cell.transform.parent = ResultGrid.transform;
+        cell.GetComponent<TextMeshProUGUI>().text = "As Condutas não foram ordenadas corretamente.";
+    }
+
     private void Update()
     {
-        //detecta se a animação foi finalizada antes de tirar a screenshot da tela
+        /*//detecta se a animação foi finalizada antes de tirar a screenshot da tela
         AnimatorClipInfo[] currentClip = starsAnimator.GetCurrentAnimatorClipInfo(0);
         if (currentClip[0].clip.name.Contains("slide_up"))
         {
@@ -106,6 +121,6 @@ public class FeedbackManager : MonoBehaviour
                 ScreenCapture.CaptureScreenshot("FeedbackCaso" + generalManager.Caso.ToString() + ".png");
                 screenshotTaken = true;
             }
-        }
+        }*/
     }
 }

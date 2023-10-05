@@ -9,6 +9,7 @@ public class Pacote : MonoBehaviour
     public List<string> condutas;
     public List<int> selecaoCondutas;
 
+    public FeedbackCondutas feedbackCondutas;
     public GameObject CondutasObject;
     public GameObject ResultadoObject;
 
@@ -97,5 +98,6 @@ public class Pacote : MonoBehaviour
     {
         ResultadoObject.SetActive(true);
         CondutasObject.SetActive(false);
+        feedbackCondutas.generateFeedback();
     }
 }

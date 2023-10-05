@@ -35,6 +35,8 @@ public class PranchetaManager : MonoBehaviour
     List<int> aferidos = new List<int>();
     string setText;
 
+    public FeedbackHospital feedbackHospital;
+    public GameObject HospitalFeedbackObj;
     public GameObject HospitalObject;
     public GameObject CondutasObject;
 
@@ -340,14 +342,18 @@ public class PranchetaManager : MonoBehaviour
     public void opcaoUm()
     {
         apertouBotao = 0;
-        CondutasObject.SetActive(true);
+        //CondutasObject.SetActive(true);
+        feedbackHospital.calcularResultado();
+        HospitalFeedbackObj.SetActive(true);
         HospitalObject.SetActive(false);
     }
 
     public void opcaoDois()
     {
         apertouBotao = 1;
-        CondutasObject.SetActive(true);
+        //CondutasObject.SetActive(true);
+        feedbackHospital.calcularResultado();
+        HospitalFeedbackObj.SetActive(true);
         HospitalObject.SetActive(false);
     }
 

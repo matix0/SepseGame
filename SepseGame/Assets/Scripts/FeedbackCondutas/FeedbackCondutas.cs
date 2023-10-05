@@ -16,7 +16,9 @@ public class FeedbackCondutas : MonoBehaviour
 
     public Color Acerto, Erro;
 
-    void Start()
+    public int errosCondutas = 0;
+
+    public void generateFeedback()
     {
         for (int i=0; i < txtCorretas.Count; i++)
         {
@@ -30,6 +32,7 @@ public class FeedbackCondutas : MonoBehaviour
             else
             {
                 txtMarcadas[i].GetComponent<Image>().color = Erro;
+                errosCondutas++;
             }
         }
     }
