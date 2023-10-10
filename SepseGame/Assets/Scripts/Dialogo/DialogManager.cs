@@ -12,7 +12,7 @@ public class DialogManager : MonoBehaviour
 
     public Caso1 generalManager;
 
-    public int currentDialog;
+    public int currentDialog = 0; //default 0
 
     int currentPosition = 0;
     float Delay = 0.03f;

@@ -8,10 +8,16 @@ public class FeedbackHospital : MonoBehaviour
     public List<int> corretas;
     public List<string> textos;
 
+    public GameObject SinaisTexts, SinaisLabel, ExameTexts, ExameLabel;
+    public List<GameObject> ET, EL, ST, SL;
+
     public Caso1 generalManager;
     public PranchetaManager pranchetaManager;
     public GameObject resultText;
     public GameObject star, starText;
+
+    int next_sv_pos = 0;
+    int next_ex_pos = 0;
 
     public void calcularResultado()
     {
@@ -20,22 +26,23 @@ public class FeedbackHospital : MonoBehaviour
         {
             if (!corretas.Contains(pranchetaManager.selecionados[i]))
             {
-                adicionarErro(pranchetaManager.selecionados[i]);
+                adicionarFeedback(pranchetaManager.selecionados[i], "- ERRADO.");
                 flawless = false;
             }
             else
             {
-                adicionarAcerto(pranchetaManager.selecionados[i]);
+                adicionarFeedback(pranchetaManager.selecionados[i], "- CERTO.");
             }
         }
         for (int j = 0; j < corretas.Count; j++)
         {
             if (!pranchetaManager.selecionados.Contains(corretas[j]))
             {
-                adicionarFalha(corretas[j]);
+                adicionarFeedback(corretas[j], "- NÃO MARCOU.");
                 flawless = false;
             }
         }
+
         if (flawless)
         {
             star.SetActive(true);
@@ -48,18 +55,41 @@ public class FeedbackHospital : MonoBehaviour
         }
     }
 
-    void adicionarErro(int index)
+    void adicionarFeedback(int index, string type)
     {
-        resultText.GetComponent<TextMeshProUGUI>().text += "\n- " + textos[index] + " " + pranchetaManager.SinaisVitais[index] + " - ERRADO.";
+        if (index <= 4)
+        {
+            ST[next_sv_pos].GetComponent<TextMeshProUGUI>().text = textos[index] + " " + pranchetaManager.SinaisVitais[index];
+            SL[next_sv_pos].GetComponent<TextMeshProUGUI>().text = type;
+            next_sv_pos++;
+        }
+        else if (index > 4 & index <= 9)
+        {
+            ET[next_ex_pos].GetComponent<TextMeshProUGUI>().text = textos[index] + " " + pranchetaManager.SinaisVitais[index];
+            EL[next_ex_pos].GetComponent<TextMeshProUGUI>().text = type;
+            next_ex_pos++;
+        }
+        else
+        {
+            ST[next_sv_pos].GetComponent<TextMeshProUGUI>().text = textos[index] + " " + pranchetaManager.Lab[index];
+            SL[next_sv_pos].GetComponent<TextMeshProUGUI>().text = type;
+            next_sv_pos++;
+        }
     }
 
-    void adicionarAcerto(int index)
+    public void showSinais()
     {
-        resultText.GetComponent<TextMeshProUGUI>().text += "\n- " + textos[index] + " " + pranchetaManager.SinaisVitais[index] + " - CERTO!";
+        SinaisTexts.SetActive(true);
+        SinaisLabel.SetActive(true);
+        ExameTexts.SetActive(false);
+        ExameLabel.SetActive(false);
     }
 
-    void adicionarFalha(int index)
+    public void showExames()
     {
-        resultText.GetComponent<TextMeshProUGUI>().text += "\n- " + textos[index] + " " + pranchetaManager.SinaisVitais[index] + " - NÃO MARCOU.";
+        SinaisTexts.SetActive(false);
+        SinaisLabel.SetActive(false);
+        ExameTexts.SetActive(true);
+        ExameLabel.SetActive(true);
     }
 }
