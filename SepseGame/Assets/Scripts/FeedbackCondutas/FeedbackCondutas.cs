@@ -14,12 +14,15 @@ public class FeedbackCondutas : MonoBehaviour
 
     public Estetica pack;
 
+    public GameObject star, starText;
+
     public Color Acerto, Erro;
 
     public int errosCondutas = 0;
 
     public void generateFeedback()
     {
+        bool flawless = false;
         for (int i=0; i < txtCorretas.Count; i++)
         {
             txtCorretas[i].GetComponentInChildren<TextMeshProUGUI>().text = CondutasScript.condutas[i];
@@ -33,7 +36,18 @@ public class FeedbackCondutas : MonoBehaviour
             {
                 txtMarcadas[i].GetComponent<Image>().color = Erro;
                 errosCondutas++;
+                flawless = false;
             }
+        }
+        if (flawless)
+        {
+            star.SetActive(true);
+            starText.GetComponent<TextMeshProUGUI>().text = "Parabéns! Acertou tudo, ganhou uma estrela!";
+        }
+        else
+        {
+            star.SetActive(false);
+            starText.GetComponent<TextMeshProUGUI>().text = "Infelizmente você cometeu erros, mas não desanime! Tente novamente para tentar ganhar uma estrela!";
         }
     }
 
