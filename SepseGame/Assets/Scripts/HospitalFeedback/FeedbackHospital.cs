@@ -22,7 +22,7 @@ public class FeedbackHospital : MonoBehaviour
     public void calcularResultado()
     {
         bool flawless = true;
-        for (int i = 0; i < pranchetaManager.selecionados.Count; i++)
+        for (int i = 0; i < pranchetaManager.selecionados.Count; i++) //confere os erros e acertos
         {
             if (!corretas.Contains(pranchetaManager.selecionados[i]))
             {
@@ -43,7 +43,33 @@ public class FeedbackHospital : MonoBehaviour
             }
         }
 
-        if (flawless)
+        bool emptyExames = true;
+        bool emptySinais = true;
+        for (int i = 0; i < ST.Count; i++) //os dois for abaixo conferem se há páginas vazias
+        {
+            if (ST[i].GetComponent<TextMeshProUGUI>().text != "")
+            {
+                emptySinais = false;
+            }
+        }
+        for (int j = 0; j < ET.Count; j++)
+        {
+            if (ET[j].GetComponent<TextMeshProUGUI>().text != "")
+            {
+                emptyExames = false;
+            }
+        }
+
+        if (emptySinais) //adiciona o marcador de página vazia
+        {
+            ST[0].GetComponent<TextMeshProUGUI>().text = "- página vazia.";
+        }
+        else if (emptyExames)
+        {
+            ET[0].GetComponent<TextMeshProUGUI>().text = "- página vazia.";
+        }
+
+        if (flawless) //determina se o jogador ganhou ou não uma estrela na fase
         {
             star.SetActive(true);
             starText.GetComponent<TextMeshProUGUI>().text = "Parabéns! Acertou tudo, ganhou uma estrela!";
@@ -55,7 +81,7 @@ public class FeedbackHospital : MonoBehaviour
         }
     }
 
-    void adicionarFeedback(int index, string type)
+    void adicionarFeedback(int index, string type) //adiciona os textos de feedback aos respectivos espaços reservados
     {
         if (index <= 4)
         {

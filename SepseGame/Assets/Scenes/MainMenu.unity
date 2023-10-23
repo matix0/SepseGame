@@ -1192,6 +1192,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe6d373d5de5f14db7d8537aeb2fd9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CasoClinicoButton: {fileID: 0}
+  PranchetaButton: {fileID: 0}
   PauseMenuUI: {fileID: 2029675541}
   Escolhas: {fileID: 1458453868}
   PauseIcon: {fileID: 871800873}

@@ -22,7 +22,7 @@ public class FeedbackCondutas : MonoBehaviour
 
     public void generateFeedback()
     {
-        bool flawless = false;
+        bool flawless = true;
         for (int i=0; i < txtCorretas.Count; i++)
         {
             txtCorretas[i].GetComponentInChildren<TextMeshProUGUI>().text = CondutasScript.condutas[i];
