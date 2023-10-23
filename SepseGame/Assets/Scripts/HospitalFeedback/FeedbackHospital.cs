@@ -51,7 +51,7 @@ public class FeedbackHospital : MonoBehaviour
         else
         {
             star.SetActive(false);
-            starText.GetComponent<TextMeshProUGUI>().text = "Infelizmente você cometeu erros, mas não desanime! Tente novamente para tentar ganhar uma estrela!";
+            starText.GetComponent<TextMeshProUGUI>().text = "Infelizmente você não obteve uma estrela, mas não desanime! Tente novamente!";
         }
     }
 
