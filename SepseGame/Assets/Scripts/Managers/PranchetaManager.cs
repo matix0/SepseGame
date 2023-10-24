@@ -237,7 +237,7 @@ public class PranchetaManager : MonoBehaviour
             s3.GetComponent<TextMeshProUGUI>().text = Lab[2];
             s4.GetComponent<TextMeshProUGUI>().text = Lab[3];
             sangue.SetActive(true);
-            ExameImagem.SetActive(true);
+            //ExameImagem.SetActive(true);
         }
     }
 
@@ -298,7 +298,7 @@ public class PranchetaManager : MonoBehaviour
         if (Imagem != null)
         {
             xray.GetComponent<Image>().sprite = Imagem;
-            ExameImagem.SetActive(true);
+            //ExameImagem.SetActive(true);
             ImagemObj.SetActive(true);
             pranchImg.GetComponent<Image>().sprite = Imagem;
             pranchTxt.GetComponent<TextMeshProUGUI>().text = descricaoImagem;

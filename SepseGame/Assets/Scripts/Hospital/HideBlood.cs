@@ -8,7 +8,7 @@ public class HideBlood : MonoBehaviour
 
     private void OnMouseDown()
     {
-        ExameImagem.SetActive(false);
+        //ExameImagem.SetActive(false);
         sangue.SetActive(false);
     }
 }

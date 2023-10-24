@@ -17682,7 +17682,7 @@ MonoBehaviour:
   descricaoImagem: "Ultrassonografia abdominal: ves\xEDcula biliar distendida, com
     paredes  levemente espessadas e presen\xE7a de c\xE1lculos no seu interior."
   Lab:
-  - teste
+  - "n\xE3o tem"
   - "n\xE3o tem"
   - "n\xE3o tem"
   - "n\xE3o tem"
@@ -36318,7 +36318,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!224 &1783212836
 RectTransform:
@@ -37815,6 +37815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExameImagem: {fileID: 384426778}
+  xray: {fileID: 21194277}
 --- !u!114 &1873291382
 MonoBehaviour:
   m_ObjectHideFlags: 0
