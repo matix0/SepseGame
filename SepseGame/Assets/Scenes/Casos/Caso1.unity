@@ -303,7 +303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &21194278
 RectTransform:
   m_ObjectHideFlags: 0
@@ -517,7 +517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -310, y: -160.91348}
+  m_AnchoredPosition: {x: 289, y: 50}
   m_SizeDelta: {x: 59.51001, y: 23.945}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &34198209
@@ -7422,7 +7422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &384426779
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17682,7 +17682,7 @@ MonoBehaviour:
   descricaoImagem: "Ultrassonografia abdominal: ves\xEDcula biliar distendida, com
     paredes  levemente espessadas e presen\xE7a de c\xE1lculos no seu interior."
   Lab:
-  - "n\xE3o tem"
+  - teste
   - "n\xE3o tem"
   - "n\xE3o tem"
   - "n\xE3o tem"
@@ -17734,6 +17734,7 @@ MonoBehaviour:
   s2: {fileID: 862871912}
   s3: {fileID: 2049333518}
   s4: {fileID: 694640780}
+  ImagemObj: {fileID: 21194277}
   selecionados: 
   feedbackHospital: {fileID: 1621994267}
   HospitalFeedbackObj: {fileID: 1034176269}
@@ -33069,6 +33070,10 @@ MonoBehaviour:
   - "Exame Cardiocirculat\xF3rio"
   - Exame Gastrintestinal
   - Exame Renal
+  - "Laborat\xF3rio 1"
+  - "Laborat\xF3rio 2"
+  - "Laborat\xF3rio 3"
+  - "Laborat\xF3rio 4"
   SinaisTexts: {fileID: 722211134}
   SinaisLabel: {fileID: 451013569}
   ExameTexts: {fileID: 710380848}
@@ -33184,10 +33189,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1622666182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4c8669ec05b0a74da18a3359ede4234, type: 3}
+  m_Script: {fileID: 11500000, guid: f0684c2554fb7eb48883d1abba688094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExameImagem: {fileID: 0}
+  ExameImagem: {fileID: 384426778}
+  sangue: {fileID: 1665603888}
 --- !u!114 &1622666186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33201,7 +33207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.8862745}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.9411765}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -97,7 +97,7 @@ public class FeedbackHospital : MonoBehaviour
         }
         else
         {
-            ST[next_sv_pos].GetComponent<TextMeshProUGUI>().text = textos[index] + " " + pranchetaManager.Lab[index];
+            ST[next_sv_pos].GetComponent<TextMeshProUGUI>().text = textos[index] + " " + pranchetaManager.Lab[index - 10];
             SL[next_sv_pos].GetComponent<TextMeshProUGUI>().text = type;
             next_sv_pos++;
         }

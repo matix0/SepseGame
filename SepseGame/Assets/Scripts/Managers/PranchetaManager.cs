@@ -29,6 +29,7 @@ public class PranchetaManager : MonoBehaviour
     public GameObject exameDesc;
     public GameObject sangue;
     public GameObject s1, s2, s3, s4;
+    public GameObject ImagemObj;
     int chamadaMedico;
 
     public List<int> selecionados;
@@ -236,6 +237,7 @@ public class PranchetaManager : MonoBehaviour
             s3.GetComponent<TextMeshProUGUI>().text = Lab[2];
             s4.GetComponent<TextMeshProUGUI>().text = Lab[3];
             sangue.SetActive(true);
+            ExameImagem.SetActive(true);
         }
     }
 
@@ -297,6 +299,7 @@ public class PranchetaManager : MonoBehaviour
         {
             xray.GetComponent<Image>().sprite = Imagem;
             ExameImagem.SetActive(true);
+            ImagemObj.SetActive(true);
             pranchImg.GetComponent<Image>().sprite = Imagem;
             pranchTxt.GetComponent<TextMeshProUGUI>().text = descricaoImagem;
             exameDesc.GetComponent<TextMeshProUGUI>().text = descricaoImagem;
