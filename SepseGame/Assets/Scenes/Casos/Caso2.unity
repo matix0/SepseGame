@@ -11829,13 +11829,12 @@ MonoBehaviour:
   condutas:
   - "Verificar e avaliar press\xE3o arterial sist\xEAmica, pulso, temperatura axilar,
     frequ\xEAncia respirat\xF3ria, expansibilidade tor\xE1cica de 2 em 2 horas."
-  - Avaliar a intensidade da dor.
-  - "Puncionar acesso venoso perif\xE9rico."
-  - "Administrar analg\xE9sico e antit\xE9rmico endovenosos conforme prescri\xE7\xE3o
+  - "Puncionar acesso venoso perif\xE9rico calibroso."
+  - "Colher hemat\xF3crito conforme prescri\xE7\xE3o m\xE9dica."
+  - "Administrar analg\xE9sico e antit\xE9rmico endovenoso conforme prescri\xE7\xE3o
     m\xE9dica."
-  - "Monitorar n\xEDvel de consci\xEAncia da paciente a cada 2 horas."
-  - "Postergar administra\xE7\xE3o de antimicrobianos at\xE9 defini\xE7\xE3o do quadro
-    infecioso da paciente pela equipe m\xE9dica."
+  - "Administrar hidrata\xE7\xE3o venosa conforme prescri\xE7\xE3o m\xE9dica."
+  - 'Instituir controle de diurese de 2 em 2 horas. '
   selecaoCondutas: 
   feedbackCondutas: {fileID: 907632286}
   CondutasObject: {fileID: 1070656335}
@@ -17664,28 +17663,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Caso: {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
   SinaisVitais:
-  - 118 bpm
-  - 155/90 mmHg
-  - 97% em ar ambiente
-  - 25 ipm
-  - "38,5\xBAC"
-  - "Consciente, orientada em tempo, espa\xE7o, pessoa. F\xE1cies de dor e ansiedade."
-  - "Expansibilidade tor\xE1cica diminu\xEDda, respira\xE7\xE3o superficial, taquipneia.
-    Murm\xFArios vesiculares presentes, diminu\xEDdos em bases, sem ru\xEDdos advent\xEDcios."
-  - "Ritmo card\xEDaco regular, bulhas card\xEDacas normofon\xE9ticas em 2 tempos,
-    sem sopro."
-  - "Abdome distendido, doloroso a palpa\xE7\xE3o superficial e profunda. Ru\xEDdos
-    hidroa\xE9reos diminu\xEDdos."
-  - "Elimina\xE7\xE3o vesical espont\xE2nea com altera\xE7\xE3o na colora\xE7\xE3o
-    da urina (col\xFAria) e com volume m\xE9dio de 1.500 mL nas \xFAltimas 24 horas."
-  Imagem: {fileID: 21300000, guid: f9e914c1a2b313f4baeb8505e29f6d2c, type: 3}
-  descricaoImagem: "Ultrassonografia abdominal: ves\xEDcula biliar distendida, com
-    paredes  levemente espessadas e presen\xE7a de c\xE1lculos no seu interior."
+  - 110 bpm
+  - 110x65 mmHg
+  - 94% em ar ambiente
+  - 24 ipm
+  - "39,0\xBAC"
+  - "Orientado em tempo, espa\xE7o, pessoa, por\xE9m sonolento. Aus\xEAncia de rigidez
+    de nuca."
+  - "Murm\xFArios vesiculares presentes e sem ru\xEDdos advent\xEDcios."
+  - "Taquic\xE1rdico, bulhas r\xEDtmicas e normofon\xE9tica em 2 tempos, sem sopros."
+  - "Abdome globoso, normotenso, indolor, sem v\xEDsceromegalias. Peristaltismo preservado."
+  - "Elimina\xE7\xE3o vesical espont\xE2nea, por\xE9m ausente nas \xFAltimas 6 horas."
+  Imagem: {fileID: 21300000, guid: 01006a2ef6fa77844ae4d12641c9e458, type: 3}
+  descricaoImagem: "Rx de t\xF3rax sem altera\xE7\xF5es."
   Lab:
-  - "n\xE3o tem"
-  - "n\xE3o tem"
-  - "n\xE3o tem"
-  - "n\xE3o tem"
+  - "Leuc\xF3citos: 11.500/mm\xB3 Valor de Refer\xEAncia: 4.000 a 10.000 /mm\xB3"
+  - "Plaquetas: 100.000 /mm\xB3 Valor de Refer\xEAncia: 150.000 \u2013 450.000/mm\xB3"
+  - "Hemoglobina: 16 g/dL Valor de Refer\xEAncia: 12 a 16 g/dL"
+  - "Hemat\xF3crito: 48% Valor de Refer\xEAncia: 36 a 46%"
   texts:
   - {fileID: 444843785}
   - {fileID: 306143070}
@@ -17735,7 +17730,7 @@ MonoBehaviour:
   s3: {fileID: 2049333518}
   s4: {fileID: 694640780}
   ImagemObj: {fileID: 21194277}
-  buttonCorreto: 1
+  buttonCorreto: 2
   selecionados: 
   feedbackHospital: {fileID: 1621994267}
   HospitalFeedbackObj: {fileID: 1034176269}
@@ -19654,12 +19649,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "De acordo com o protocolo de triagem para pacientes com suspeita de sepse
-    do ILAS (2021), o paciente deste caso cl\xEDnico n\xE3o apresenta par\xE2metros
-    de disfun\xE7\xE3o org\xE2nica, por\xE9m apresenta tr\xEAs crit\xE9rios de SRIS
-    (S\xEDndrome da Resposta Inflamat\xF3ria Sist\xEAmica): FC= 118 bpm (maior que
-    90 bpm indicando taquicardia); FR = 25 ipm (maior que 20 ipm indicando taquipneia)
-    e Temperatura axilar =38,5\xBAC (maior que 37,8\xBAC)."
+  m_text: "Neste caso cl\xEDnico o paciente apresenta apenas 3 crit\xE9rios de SRIS
+    . Como a equipe m\xE9dica suspeita de Dengue, deve ser seguido o protocolo espec\xEDfico
+    para esta doen\xE7a e n\xE3o dar seguimento ao protocolo de sepse."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -24094,15 +24086,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\nL.M.S, 75 anos, sexo feminino, 80 kg, 1,62 metros de altura. \xC9
-    hipertensa e dislipid\xEAmica. Tem uma alimenta\xE7\xE3o pouco saud\xE1vel e
-    rica em gordura. H\xE1 um ano apresenta quadros espor\xE1dicos de dor em c\xF3licas
-    na regi\xE3o do hipoc\xF4ndrio direito e regi\xE3o epig\xE1strica. Toda vez que
-    sentia estas dores comparecia ao servi\xE7o de emerg\xEAncia, no qual era medicada
-    e ap\xF3s algumas horas era liberada para casa. No momento, deu entrada na unidade
-    de emerg\xEAncia do hospital, deambulando, com queixas de dor aguda abdominal
-    de forte intensidade e hipersensibilidade no quadrante superior direito, febre,
-    n\xE1useas e v\xF4mitos."
+  m_text: "\n\nG.C.N., 32 anos, sexo masculino, compareceu ao pronto socorro deambulando,
+    com queixas de sonol\xEAncia, febre alta, inapet\xEAncia, cefaleia, n\xE1useas,
+    dor ao redor dos olhos, dores no corpo principalmente em articula\xE7\xF5es h\xE1
+    4 dias. Relata que no \xFAltimo final de semana que antecedeu o in\xEDcio dos
+    sintomas, ajudou um amigo a cortar cana em um s\xEDtio em um bairro pr\xF3ximo
+    a casa dele."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -34149,8 +34138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f29bb21c1d20b94990e6520486260d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Caso: 1
-  sexo: 0
+  Caso: 2
+  sexo: 1
   hospitalFeedback: {fileID: 1034176269}
   CasoAtualDisplay: {fileID: 1633541343}
   CasoClinicoAvatarBG: {fileID: 1083199286}
@@ -40608,9 +40597,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a7ba6ce34beab479811ee6ce54afca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Paciente1: Estou me sentindo fraca, com vontade de vomitar e muita dor na minha
-    barriga.
-  Paciente2: A dor na minha barriga piorou e eu acho que estou com febre.
+  Paciente1: "Dor de cabe\xE7a, nos olhos, no corpo todo."
+  Paciente2: "Piora da dor no corpo, febre, des\xE2nimo. Tenho vontade de ficar deitado
+    o tempo todo."
   BalaoPaciente: {fileID: 1667522882}
   BalaoNurse: {fileID: 306584606}
   buttonContinuar: {fileID: 188887734}

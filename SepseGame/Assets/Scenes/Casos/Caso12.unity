@@ -5143,7 +5143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffda86018fede14a8c0c063de0731bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corretas: 000000000300000004000000
+  corretas: 0000000004000000050000000d000000
   textos:
   - "Frequ\xEAncia Card\xEDaca"
   - "Press\xE3o Arterial"
@@ -11827,15 +11827,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condutas:
-  - "Verificar e avaliar press\xE3o arterial sist\xEAmica, pulso, temperatura axilar,
-    frequ\xEAncia respirat\xF3ria, expansibilidade tor\xE1cica de 2 em 2 horas."
-  - Avaliar a intensidade da dor.
-  - "Puncionar acesso venoso perif\xE9rico."
-  - "Administrar analg\xE9sico e antit\xE9rmico endovenosos conforme prescri\xE7\xE3o
-    m\xE9dica."
-  - "Monitorar n\xEDvel de consci\xEAncia da paciente a cada 2 horas."
-  - "Postergar administra\xE7\xE3o de antimicrobianos at\xE9 defini\xE7\xE3o do quadro
-    infecioso da paciente pela equipe m\xE9dica."
+  - "Manter o paciente em posi\xE7\xE3o de Semi-Fowler (entre 30 a 45 graus) e monitorar
+    sinais vitais de 15 em 15 minutos. "
+  - "Fornecer oxig\xEAnio suplementar, iniciando com cateter tipo \xF3culos a 3l/min
+    conforme prescri\xE7\xE3o m\xE9dica e avaliar resposta pela mensura\xE7\xE3o
+    da oximetria de pulso."
+  - "Puncionar acesso venoso perif\xE9rico calibroso."
+  - "Administrar medica\xE7\xF5es e coletar exames laboratoriais solicitados pelo
+    m\xE9dico."
+  - "Avaliar n\xEDvel de consci\xEAncia de 15 em 15 minutos."
+  - "Avaliar intensidade da dor tor\xE1cica de 15 em 15 minutos. "
   selecaoCondutas: 
   feedbackCondutas: {fileID: 907632286}
   CondutasObject: {fileID: 1070656335}
@@ -17664,28 +17665,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Caso: {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
   SinaisVitais:
-  - 118 bpm
-  - 155/90 mmHg
-  - 97% em ar ambiente
-  - 25 ipm
-  - "38,5\xBAC"
-  - "Consciente, orientada em tempo, espa\xE7o, pessoa. F\xE1cies de dor e ansiedade."
-  - "Expansibilidade tor\xE1cica diminu\xEDda, respira\xE7\xE3o superficial, taquipneia.
-    Murm\xFArios vesiculares presentes, diminu\xEDdos em bases, sem ru\xEDdos advent\xEDcios."
-  - "Ritmo card\xEDaco regular, bulhas card\xEDacas normofon\xE9ticas em 2 tempos,
-    sem sopro."
-  - "Abdome distendido, doloroso a palpa\xE7\xE3o superficial e profunda. Ru\xEDdos
-    hidroa\xE9reos diminu\xEDdos."
-  - "Elimina\xE7\xE3o vesical espont\xE2nea com altera\xE7\xE3o na colora\xE7\xE3o
-    da urina (col\xFAria) e com volume m\xE9dio de 1.500 mL nas \xFAltimas 24 horas."
-  Imagem: {fileID: 21300000, guid: f9e914c1a2b313f4baeb8505e29f6d2c, type: 3}
-  descricaoImagem: "Ultrassonografia abdominal: ves\xEDcula biliar distendida, com
-    paredes  levemente espessadas e presen\xE7a de c\xE1lculos no seu interior."
+  - 105 bpm
+  - 110x80 mmHg
+  - 91% em ar ambiente
+  - 26 ipm
+  - "36,5\xBAC"
+  - "Consciente, orientado em tempo, espa\xE7o, pessoa."
+  - "Taquipneica, expansibilidade pulmonar diminu\xEDda, murm\xFArios vesiculares
+    reduzidos em bases pulmonares, hemoptise."
+  - "Taquicardia, bulhas r\xEDtmicas e hiperfon\xE9ticas, sem sopros. Presen\xE7a
+    de dor, edema em membro inferior direito 3+/4+, desconforto na panturrilha na
+    dorsiflex\xE3o do p\xE9."
+  - "Abdome globoso, fl\xE1cido, indolor a palpa\xE7\xE3o superficial e profunda.
+    Sem visceromegalias."
+  - "Elimina\xE7\xE3o vesical espont\xE2nea, por\xE9m sem d\xE9bito urin\xE1rio nas
+    \xFAltimas 6 horas."
+  Imagem: {fileID: 0}
+  descricaoImagem: 
   Lab:
-  - "n\xE3o tem"
-  - "n\xE3o tem"
-  - "n\xE3o tem"
-  - "n\xE3o tem"
+  - "Leuc\xF3citos: 7.400/mm\xB3 Valor de Refer\xEAncia: 4.000 a 10.000 /mm\xB3"
+  - "Plaquetas: 200.000/mm\xB3 Valor de refer\xEAncia: 150.000 \u2013 450.000/mm\xB3"
+  - "Ureia: 35 mg/dL Valor de refer\xEAncia: 15 a 40 mg/dL"
+  - "Creatinina: 0,8mg/dL Valor de refer\xEAncia: 0,4 a 1,4 mg/dL"
   texts:
   - {fileID: 444843785}
   - {fileID: 306143070}
@@ -17735,7 +17736,7 @@ MonoBehaviour:
   s3: {fileID: 2049333518}
   s4: {fileID: 694640780}
   ImagemObj: {fileID: 21194277}
-  buttonCorreto: 1
+  buttonCorreto: 4
   selecionados: 
   feedbackHospital: {fileID: 1621994267}
   HospitalFeedbackObj: {fileID: 1034176269}
@@ -19654,12 +19655,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "De acordo com o protocolo de triagem para pacientes com suspeita de sepse
-    do ILAS (2021), o paciente deste caso cl\xEDnico n\xE3o apresenta par\xE2metros
-    de disfun\xE7\xE3o org\xE2nica, por\xE9m apresenta tr\xEAs crit\xE9rios de SRIS
-    (S\xEDndrome da Resposta Inflamat\xF3ria Sist\xEAmica): FC= 118 bpm (maior que
-    90 bpm indicando taquicardia); FR = 25 ipm (maior que 20 ipm indicando taquipneia)
-    e Temperatura axilar =38,5\xBAC (maior que 37,8\xBAC)."
+  m_text: "Neste caso cl\xEDnico o paciente apresenta apenas 2 crit\xE9rios de SRIS
+    (taquicardia e taquipneia). Como a equipe m\xE9dica suspeita de Embolia Pulmonar,
+    o protocolo de Sepse deve ser encerrado e dado seguimento adequado a situa\xE7\xE3o
+    cl\xEDnica do paciente."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -19722,7 +19721,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 5.2852116, z: 0, w: -197.83963}
+  m_margin: {x: 0, y: 5.2852116, z: 0, w: -214.6384}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -24094,15 +24093,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\nL.M.S, 75 anos, sexo feminino, 80 kg, 1,62 metros de altura. \xC9
-    hipertensa e dislipid\xEAmica. Tem uma alimenta\xE7\xE3o pouco saud\xE1vel e
-    rica em gordura. H\xE1 um ano apresenta quadros espor\xE1dicos de dor em c\xF3licas
-    na regi\xE3o do hipoc\xF4ndrio direito e regi\xE3o epig\xE1strica. Toda vez que
-    sentia estas dores comparecia ao servi\xE7o de emerg\xEAncia, no qual era medicada
-    e ap\xF3s algumas horas era liberada para casa. No momento, deu entrada na unidade
-    de emerg\xEAncia do hospital, deambulando, com queixas de dor aguda abdominal
-    de forte intensidade e hipersensibilidade no quadrante superior direito, febre,
-    n\xE1useas e v\xF4mitos."
+  m_text: "\n\nR.S.N, 32 anos, h\xEDgida, sexo feminino, deu entrada no pronto socorro
+    de cadeira de rodas, acompanhada pelo seu marido. Refere falta de ar e de uma
+    dor tor\xE1cica que descreve como \u201Cao lado direito e intensificada com a
+    respira\xE7\xE3o profunda (sic)\u201D. Informa que os sintomas surgiram de repente,
+    ao acordar de manh\xE3 e que expectorou escarro com estrias de sangue. Relata
+    uso cont\xEDnuo de anticoncepcional h\xE1 11 anos e dor em membro inferior direito
+    h\xE1 tr\xEAs dias. Tem hist\xF3ria de procedimento cir\xFArgico no joelho direito
+    h\xE1 08 dias. N\xE3o soube informar se fez uso de anticoagulante. Relata que
+    desde a cirurgia, tem evitado se movimentar devido ao medo de sentir dores e
+    passa a maior parte do tempo sentada em uma poltrona."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -24129,8 +24129,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37
-  m_fontSizeBase: 37
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -24165,7 +24165,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -470.9636, w: -259.09665}
+  m_margin: {x: 0, y: 0, z: -470.9636, w: -357.6846}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -33059,7 +33059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26ad91d87c4b054ab8b659e5d96c69c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corretas: 000000000300000004000000
+  corretas: 000000000300000009000000
   textos:
   - "Frequ\xEAncia Card\xEDaca"
   - "Press\xE3o Arterial"
@@ -34149,7 +34149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f29bb21c1d20b94990e6520486260d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Caso: 1
+  Caso: 12
   sexo: 0
   hospitalFeedback: {fileID: 1034176269}
   CasoAtualDisplay: {fileID: 1633541343}
@@ -40608,9 +40608,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a7ba6ce34beab479811ee6ce54afca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Paciente1: Estou me sentindo fraca, com vontade de vomitar e muita dor na minha
-    barriga.
-  Paciente2: A dor na minha barriga piorou e eu acho que estou com febre.
+  Paciente1: Dor no peito e falta de ar.
+  Paciente2: A dor no meu peito, a falta de ar e o sangue no meu escarro.
   BalaoPaciente: {fileID: 1667522882}
   BalaoNurse: {fileID: 306584606}
   buttonContinuar: {fileID: 188887734}

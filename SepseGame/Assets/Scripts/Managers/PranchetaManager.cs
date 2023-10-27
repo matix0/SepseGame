@@ -30,6 +30,7 @@ public class PranchetaManager : MonoBehaviour
     public GameObject sangue;
     public GameObject s1, s2, s3, s4;
     public GameObject ImagemObj;
+    public int buttonCorreto;
     int chamadaMedico;
 
     public List<int> selecionados;
@@ -314,23 +315,23 @@ public class PranchetaManager : MonoBehaviour
     public void darDiagnostico()
     {
         pranchetaDiag.SetActive(true);
-        if(Caso.buttonCorreto == 0)
+        if(buttonCorreto == 0)
         {
             diagText.GetComponent<Text>().text = "SEPSE PROVÁVEL";
         }
-        else if(Caso.buttonCorreto == 1)
+        else if(buttonCorreto == 1)
         {
             diagText.GetComponent<Text>().text = "SEPSE POSSÍVEL";
         }
-        else if(Caso.buttonCorreto == 2)
+        else if(buttonCorreto == 2)
         {
             diagText.GetComponent<Text>().text = "Suspeita de DENGUE";
         }
-        else if(Caso.buttonCorreto == 3)
+        else if(buttonCorreto == 3)
         {
             diagText.GetComponent<Text>().text = "Síndrome GRIPAL";
         }
-        else if(Caso.buttonCorreto == 4)
+        else if(buttonCorreto == 4)
         {
             diagText.GetComponent<Text>().text = "Suspeita de EMBOLIA PULMONAR";
         }

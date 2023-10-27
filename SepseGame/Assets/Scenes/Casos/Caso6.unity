@@ -5143,7 +5143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffda86018fede14a8c0c063de0731bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corretas: 000000000300000004000000
+  corretas: 000000000100000004000000050000000a0000000b000000
   textos:
   - "Frequ\xEAncia Card\xEDaca"
   - "Press\xE3o Arterial"
@@ -11827,15 +11827,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condutas:
-  - "Verificar e avaliar press\xE3o arterial sist\xEAmica, pulso, temperatura axilar,
-    frequ\xEAncia respirat\xF3ria, expansibilidade tor\xE1cica de 2 em 2 horas."
-  - Avaliar a intensidade da dor.
-  - "Puncionar acesso venoso perif\xE9rico."
-  - "Administrar analg\xE9sico e antit\xE9rmico endovenosos conforme prescri\xE7\xE3o
-    m\xE9dica."
-  - "Monitorar n\xEDvel de consci\xEAncia da paciente a cada 2 horas."
-  - "Postergar administra\xE7\xE3o de antimicrobianos at\xE9 defini\xE7\xE3o do quadro
-    infecioso da paciente pela equipe m\xE9dica."
+  - "Iniciar protocolo de sepse ap\xF3s libera\xE7\xE3o da equipe m\xE9dica e monitorar
+    sinais vitais."
+  - "Puncionar acesso venoso perif\xE9rico calibroso."
+  - "Colher exames laboratoriais do Kit sepse (hemograma completo, creatinina, ureia,
+    s\xF3dio, pot\xE1ssio, gasometria, lactato, glicemia, coagulograma, bilirrubinas,
+    02 pares de hemocultura de s\xEDtios diferentes e coprocultura)."
+  - "Administrar antimicrobiano na 1\xAA hora conforme prescri\xE7\xE3o m\xE9dica."
+  - "Administrar antit\xE9rmico endovenoso e iniciar administra\xE7\xE3o de cristal\xF3ide
+    conforme prescri\xE7\xE3o m\xE9dica."
+  - "Encaminhar o paciente para a Unidade de Terapia Intensiva, ap\xF3s autoriza\xE7\xE3o
+    m\xE9dica. "
   selecaoCondutas: 
   feedbackCondutas: {fileID: 907632286}
   CondutasObject: {fileID: 1070656335}
@@ -17664,28 +17666,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Caso: {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
   SinaisVitais:
-  - 118 bpm
-  - 155/90 mmHg
-  - 97% em ar ambiente
-  - 25 ipm
-  - "38,5\xBAC"
-  - "Consciente, orientada em tempo, espa\xE7o, pessoa. F\xE1cies de dor e ansiedade."
-  - "Expansibilidade tor\xE1cica diminu\xEDda, respira\xE7\xE3o superficial, taquipneia.
-    Murm\xFArios vesiculares presentes, diminu\xEDdos em bases, sem ru\xEDdos advent\xEDcios."
-  - "Ritmo card\xEDaco regular, bulhas card\xEDacas normofon\xE9ticas em 2 tempos,
-    sem sopro."
-  - "Abdome distendido, doloroso a palpa\xE7\xE3o superficial e profunda. Ru\xEDdos
-    hidroa\xE9reos diminu\xEDdos."
-  - "Elimina\xE7\xE3o vesical espont\xE2nea com altera\xE7\xE3o na colora\xE7\xE3o
-    da urina (col\xFAria) e com volume m\xE9dio de 1.500 mL nas \xFAltimas 24 horas."
-  Imagem: {fileID: 21300000, guid: f9e914c1a2b313f4baeb8505e29f6d2c, type: 3}
-  descricaoImagem: "Ultrassonografia abdominal: ves\xEDcula biliar distendida, com
-    paredes  levemente espessadas e presen\xE7a de c\xE1lculos no seu interior."
+  - 115 bpm
+  - 90/65 mmHg
+  - 95% em ar ambiente
+  - 20 ipm
+  - "38,0\xBAC"
+  - "Prostrada, abertura ocular \xE0 voz, obedece a comandos motores."
+  - "A ausculta pulmonar murm\xFArios vesiculares presentes sem ru\xEDdos advent\xEDcios."
+  - "Turgor da pele diminu\xEDdo. ritmo card\xEDaco regular, bulhas card\xEDacas
+    normofon\xE9ticas em 2 tempos, sem sopro."
+  - "Abdome plano, levemente distendido, doloroso a palpa\xE7\xE3o superficial e
+    profunda. Ru\xEDdos hidroa\xE9reos aumentados. "
+  - "Elimina\xE7\xE3o vesical presente, espont\xE2nea, com altera\xE7\xE3o na colora\xE7\xE3o
+    da urina (concentrada) e com volume m\xE9dio de 750 mL nas \xFAltimas 24 horas."
+  Imagem: {fileID: 0}
+  descricaoImagem: 
   Lab:
-  - "n\xE3o tem"
-  - "n\xE3o tem"
-  - "n\xE3o tem"
-  - "n\xE3o tem"
+  - "Leuc\xF3citos: 18.900 /mm\xB3 Valor de refer\xEAncia: 4.000 \u2013 11.000mm\xB3"
+  - "Creatinina: 2,6 mg/dL Valor de refer\xEAncia: 0,4 a 1,4 mg/dL"
+  - "Ureia: 100 mg/dL Valor de refer\xEAncia: 5 a 40 mg/dL"
+  - "Plaquetas: 350.000 /mm\xB3 Valor de Refer\xEAncia: 150.000 \u2013 450.000/mm\xB3"
   texts:
   - {fileID: 444843785}
   - {fileID: 306143070}
@@ -17735,7 +17735,7 @@ MonoBehaviour:
   s3: {fileID: 2049333518}
   s4: {fileID: 694640780}
   ImagemObj: {fileID: 21194277}
-  buttonCorreto: 1
+  buttonCorreto: 0
   selecionados: 
   feedbackHospital: {fileID: 1621994267}
   HospitalFeedbackObj: {fileID: 1034176269}
@@ -19655,11 +19655,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "De acordo com o protocolo de triagem para pacientes com suspeita de sepse
-    do ILAS (2021), o paciente deste caso cl\xEDnico n\xE3o apresenta par\xE2metros
-    de disfun\xE7\xE3o org\xE2nica, por\xE9m apresenta tr\xEAs crit\xE9rios de SRIS
-    (S\xEDndrome da Resposta Inflamat\xF3ria Sist\xEAmica): FC= 118 bpm (maior que
-    90 bpm indicando taquicardia); FR = 25 ipm (maior que 20 ipm indicando taquipneia)
-    e Temperatura axilar =38,5\xBAC (maior que 37,8\xBAC)."
+    do ILAS (2018) e SSC (2021), o paciente deste caso cl\xEDnico apresenta 3 indicadores
+    de disfun\xE7\xE3o org\xE2nica: PA = 90x65 mmHg ( PAS igual a 90mmHg), altera\xE7\xE3o
+    do n\xEDvel de consci\xEAncia (prostra\xE7\xE3o, abertura ocular \xE0 voz) leucocitose
+    (leuc\xF3citos > 12.000mm3), creatinina aumentada (> 2mg/dL). Em rela\xE7\xE3o
+    a SRIS, apresenta 3 crit\xE9rios: FC= 120 bpm (maior que 90 bpm indicando taquicardia);
+    FR= 25 ipm (maior que 20 ipm indicando taquipneia) e Temperatura axilar = 39\xBAC
+    (maior que 37,8\xBAC)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -19722,7 +19724,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 5.2852116, z: 0, w: -197.83963}
+  m_margin: {x: 0, y: 5.2852116, z: 0, w: -214.6384}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -24094,15 +24096,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\nL.M.S, 75 anos, sexo feminino, 80 kg, 1,62 metros de altura. \xC9
-    hipertensa e dislipid\xEAmica. Tem uma alimenta\xE7\xE3o pouco saud\xE1vel e
-    rica em gordura. H\xE1 um ano apresenta quadros espor\xE1dicos de dor em c\xF3licas
-    na regi\xE3o do hipoc\xF4ndrio direito e regi\xE3o epig\xE1strica. Toda vez que
-    sentia estas dores comparecia ao servi\xE7o de emerg\xEAncia, no qual era medicada
-    e ap\xF3s algumas horas era liberada para casa. No momento, deu entrada na unidade
-    de emerg\xEAncia do hospital, deambulando, com queixas de dor aguda abdominal
-    de forte intensidade e hipersensibilidade no quadrante superior direito, febre,
-    n\xE1useas e v\xF4mitos."
+  m_text: "\n\nL.S.R , 26 anos, sexo feminino,peso 60 kg, previamente h\xEDgida.
+    Deu entrada no pronto atendimento do servi\xE7o hospitalar deambulando, devido
+    quadro de diarreia sanguinolenta associada a febre de 38,5\xBAC, com inicio h\xE1
+    24 horas. Refere fadiga, dor  abdominal, n\xE1useas e 10 epis\xF3dios diarreicos.
+    Sem hist\xF3rias de comorbidades."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -33059,7 +33057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26ad91d87c4b054ab8b659e5d96c69c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corretas: 000000000300000004000000
+  corretas: 000000000100000004000000050000000a0000000b000000
   textos:
   - "Frequ\xEAncia Card\xEDaca"
   - "Press\xE3o Arterial"
@@ -34149,7 +34147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f29bb21c1d20b94990e6520486260d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Caso: 1
+  Caso: 6
   sexo: 0
   hospitalFeedback: {fileID: 1034176269}
   CasoAtualDisplay: {fileID: 1633541343}
@@ -40608,9 +40606,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a7ba6ce34beab479811ee6ce54afca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Paciente1: Estou me sentindo fraca, com vontade de vomitar e muita dor na minha
-    barriga.
-  Paciente2: A dor na minha barriga piorou e eu acho que estou com febre.
+  Paciente1: "Sensa\xE7\xE3o de muito cansa\xE7o, fraqueza, dor na minha barriga
+    e vontade de vomitar."
+  Paciente2: A diarreia com sangue e a febre.
   BalaoPaciente: {fileID: 1667522882}
   BalaoNurse: {fileID: 306584606}
   buttonContinuar: {fileID: 188887734}

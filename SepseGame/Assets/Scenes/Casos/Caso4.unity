@@ -11827,15 +11827,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condutas:
-  - "Verificar e avaliar press\xE3o arterial sist\xEAmica, pulso, temperatura axilar,
-    frequ\xEAncia respirat\xF3ria, expansibilidade tor\xE1cica de 2 em 2 horas."
-  - Avaliar a intensidade da dor.
-  - "Puncionar acesso venoso perif\xE9rico."
+  - Manter cabeceira do leito elevada a 45 graus.
+  - Verificar e avaliar sinais vitais de 2/2 horas.
+  - "Puncionar acesso venoso perif\xE9rico calibroso."
+  - "Colher exames laboratoriais solicitados pelo m\xE9dico fora do protocolo de
+    sepse."
   - "Administrar analg\xE9sico e antit\xE9rmico endovenosos conforme prescri\xE7\xE3o
     m\xE9dica."
-  - "Monitorar n\xEDvel de consci\xEAncia da paciente a cada 2 horas."
-  - "Postergar administra\xE7\xE3o de antimicrobianos at\xE9 defini\xE7\xE3o do quadro
-    infecioso da paciente pela equipe m\xE9dica."
+  - "Instalar hidrata\xE7\xE3o venosa conforme prescri\xE7\xE3o m\xE9dica."
   selecaoCondutas: 
   feedbackCondutas: {fileID: 907632286}
   CondutasObject: {fileID: 1070656335}
@@ -17664,23 +17663,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Caso: {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
   SinaisVitais:
-  - 118 bpm
-  - 155/90 mmHg
-  - 97% em ar ambiente
-  - 25 ipm
-  - "38,5\xBAC"
-  - "Consciente, orientada em tempo, espa\xE7o, pessoa. F\xE1cies de dor e ansiedade."
-  - "Expansibilidade tor\xE1cica diminu\xEDda, respira\xE7\xE3o superficial, taquipneia.
-    Murm\xFArios vesiculares presentes, diminu\xEDdos em bases, sem ru\xEDdos advent\xEDcios."
-  - "Ritmo card\xEDaco regular, bulhas card\xEDacas normofon\xE9ticas em 2 tempos,
-    sem sopro."
-  - "Abdome distendido, doloroso a palpa\xE7\xE3o superficial e profunda. Ru\xEDdos
-    hidroa\xE9reos diminu\xEDdos."
-  - "Elimina\xE7\xE3o vesical espont\xE2nea com altera\xE7\xE3o na colora\xE7\xE3o
-    da urina (col\xFAria) e com volume m\xE9dio de 1.500 mL nas \xFAltimas 24 horas."
-  Imagem: {fileID: 21300000, guid: f9e914c1a2b313f4baeb8505e29f6d2c, type: 3}
-  descricaoImagem: "Ultrassonografia abdominal: ves\xEDcula biliar distendida, com
-    paredes  levemente espessadas e presen\xE7a de c\xE1lculos no seu interior."
+  - 109 bpm
+  - 110x69 mmHg
+  - 94% em ar ambiente
+  - 22 ipm
+  - "39,0\xBAC"
+  - "Consciente, orientada em tempo, espa\xE7o, pessoa."
+  - "Ausculta pulmonar com murm\xFArios vesiculares presentes, sem ru\xEDdos advent\xEDcios.
+    Hiperemia leve na orofaringe."
+  - "Ritmo card\xEDaco regular, taquicardia, bulhas card\xEDacas normofon\xE9ticas
+    em 2 tempos, sem sopro."
+  - "Abdome plano, indolor a palpa\xE7\xE3o superficial e profunda. Ru\xEDdos hidroa\xE9reo
+    presentes."
+  - "Elimina\xE7\xE3o vesical presente, espont\xE2nea de aspecto amarelo claro."
+  Imagem: {fileID: 0}
+  descricaoImagem: 
   Lab:
   - "n\xE3o tem"
   - "n\xE3o tem"
@@ -19655,11 +19652,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "De acordo com o protocolo de triagem para pacientes com suspeita de sepse
-    do ILAS (2021), o paciente deste caso cl\xEDnico n\xE3o apresenta par\xE2metros
+    do ILAS (2018,2021), o paciente deste caso cl\xEDnico n\xE3o apresenta par\xE2metros
     de disfun\xE7\xE3o org\xE2nica, por\xE9m apresenta tr\xEAs crit\xE9rios de SRIS
-    (S\xEDndrome da Resposta Inflamat\xF3ria Sist\xEAmica): FC= 118 bpm (maior que
-    90 bpm indicando taquicardia); FR = 25 ipm (maior que 20 ipm indicando taquipneia)
-    e Temperatura axilar =38,5\xBAC (maior que 37,8\xBAC)."
+    (S\xEDndrome da Resposta Inflamat\xF3ria Sist\xEAmica): FC= 109 bpm (maior que
+    90 bpm indicando taquicardia); FR= 22 ipm (maior que 20 ipm indicando taquipneia)
+    e Temperatura axilar = 39\xBAC (maior que 37,8\xBAC indicando hipertermia)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -19693,7 +19690,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -19722,7 +19719,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 5.2852116, z: 0, w: -197.83963}
+  m_margin: {x: 0, y: 5.2852116, z: 0, w: -214.6384}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -24094,15 +24091,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\nL.M.S, 75 anos, sexo feminino, 80 kg, 1,62 metros de altura. \xC9
-    hipertensa e dislipid\xEAmica. Tem uma alimenta\xE7\xE3o pouco saud\xE1vel e
-    rica em gordura. H\xE1 um ano apresenta quadros espor\xE1dicos de dor em c\xF3licas
-    na regi\xE3o do hipoc\xF4ndrio direito e regi\xE3o epig\xE1strica. Toda vez que
-    sentia estas dores comparecia ao servi\xE7o de emerg\xEAncia, no qual era medicada
-    e ap\xF3s algumas horas era liberada para casa. No momento, deu entrada na unidade
-    de emerg\xEAncia do hospital, deambulando, com queixas de dor aguda abdominal
-    de forte intensidade e hipersensibilidade no quadrante superior direito, febre,
-    n\xE1useas e v\xF4mitos."
+  m_text: "\n\nM.C.A, 23 anos, casada, sexo feminino, procurou o pronto atendimento
+    do hospital, deambulando, com hist\xF3ria de dor de garganta h\xE1 08 dias e
+    febre concomitante sem aferi\xE7\xE3o da temperatura. Neste per\xEDodo fez uso
+    de dipirona gotas. Refere que h\xE1 dois dias iniciou com dificuldades para deglutir,
+    que se agravou no dia de hoje. N\xE3o apresenta doen\xE7as de base e n\xE3o est\xE1
+    em uso de medica\xE7\xF5es de rotina."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -34149,7 +34143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f29bb21c1d20b94990e6520486260d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Caso: 1
+  Caso: 4
   sexo: 0
   hospitalFeedback: {fileID: 1034176269}
   CasoAtualDisplay: {fileID: 1633541343}
@@ -40608,9 +40602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a7ba6ce34beab479811ee6ce54afca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Paciente1: Estou me sentindo fraca, com vontade de vomitar e muita dor na minha
-    barriga.
-  Paciente2: A dor na minha barriga piorou e eu acho que estou com febre.
+  Paciente1: Estou sentindo muita dor de garganta e dificuldade para engolir.
+  Paciente2: "A piora da minha dor de garganta e a sensa\xE7\xE3o de estar com febre."
   BalaoPaciente: {fileID: 1667522882}
   BalaoNurse: {fileID: 306584606}
   buttonContinuar: {fileID: 188887734}
