@@ -3705,10 +3705,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 9
       objectReference: {fileID: 0}
@@ -11831,6 +11827,7 @@ MonoBehaviour:
     do paciente."
   - "Monitorar os sinais vitais e instalar oxig\xEAnio suplementar, conforme prescri\xE7\xE3o
     m\xE9dica, por m\xE1scara de venturi a 50%."
+  - "Iniciar protocolo de sepse ap\xF3s libera\xE7\xE3o da equipe m\xE9dica."
   - "Puncionar acesso venoso perif\xE9rico calibroso."
   - "Colher exames laboratoriais do Kit sepse (hemograma completo, creatinina, ureia,
     s\xF3dio, pot\xE1ssio, gasometria, lactato, glicemia, coagulograma, bilirrubinas,
@@ -11838,8 +11835,6 @@ MonoBehaviour:
     de membro inferior direito)."
   - "Administrar antimicrobiano na 1\xAA hora e antit\xE9rmico endovenoso, conforme
     prescri\xE7\xE3o m\xE9dica."
-  - "Avaliar a les\xE3o de membro inferior direito e estabelecer tipo de cobertura
-    e per\xEDodo de troca do curativo."
   selecaoCondutas: 
   feedbackCondutas: {fileID: 907632286}
   CondutasObject: {fileID: 1070656335}
@@ -19657,11 +19652,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "De acordo com o protocolo de triagem para pacientes com suspeita de sepse
-    do ILAS (2018) e SSC (2021), o paciente deste caso cl\xEDnico apresenta 2 indicadores
-    de disfun\xE7\xE3o org\xE2nica: altera\xE7\xE3o do n\xEDvel de consci\xEAncia
-    (sonolenta, fala arrastada) e leucocitose (leuc\xF3citos > 12.000 mm3). Em rela\xE7\xE3o
-    a SRIS, apresenta 2 crit\xE9rios: FC= 110 bpm (maior que 90 bpm indicando taquicardia);
-    e Temperatura axilar = 38,9\xBAC (maior que 37,8\xBAC)."
+    do ILAS (2018) e SSC (2021), o paciente deste caso cl\xEDnico apresenta 3 indicadores
+    de disfun\xE7\xE3o org\xE2nica: PA = 90x60 mmHg ( PAS igual a 90mmHg), altera\xE7\xE3o
+    do n\xEDvel de consci\xEAncia (irritabilidade e agita\xE7\xE3o) e Sat O2 90 %.(SatO2
+    igual a 90%, necessidade de oxig\xEAnio). Em rela\xE7\xE3o a SRIS, apresenta
+    3 crit\xE9rios: FC = 120 bpm (maior que 90 bpm indicando taquicardia); FR= 25
+    ipm (maior que 20 ipm indicando taquipneia) e Temperatura axilar = 39\xBAC (maior
+    que 37,8\xBAC, indicando estado febril)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -21599,10 +21596,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 9
       objectReference: {fileID: 0}
@@ -22466,10 +22459,6 @@ PrefabInstance:
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -34163,6 +34152,7 @@ MonoBehaviour:
   helpMenu: {fileID: 1783212832}
   dialogManager: {fileID: 2020923993}
   feedbackManager: {fileID: 249361564}
+  niveisConcluidos: {fileID: 11400000, guid: 71e9484ae60a5814faafb896e2597ea7, type: 2}
 --- !u!1 &1665603888
 GameObject:
   m_ObjectHideFlags: 0
@@ -37369,10 +37359,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 9
       objectReference: {fileID: 0}
@@ -40126,10 +40112,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 9
       objectReference: {fileID: 0}
@@ -40837,10 +40819,6 @@ PrefabInstance:
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize

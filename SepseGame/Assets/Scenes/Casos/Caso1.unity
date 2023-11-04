@@ -17665,7 +17665,7 @@ MonoBehaviour:
   Caso: {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
   SinaisVitais:
   - 118 bpm
-  - 155/90 mmHg
+  - 155x90 mmHg
   - 97% em ar ambiente
   - 25 ipm
   - "38,5\xBAC"
@@ -34164,6 +34164,7 @@ MonoBehaviour:
   helpMenu: {fileID: 1783212832}
   dialogManager: {fileID: 2020923993}
   feedbackManager: {fileID: 249361564}
+  niveisConcluidos: {fileID: 11400000, guid: 71e9484ae60a5814faafb896e2597ea7, type: 2}
 --- !u!1 &1665603888
 GameObject:
   m_ObjectHideFlags: 0

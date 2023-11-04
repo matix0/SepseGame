@@ -16,7 +16,7 @@ public class FeedbackManager : MonoBehaviour
     public PranchetaManager pranchetaManager;
     public GameObject stars;
     public Animator starsAnimator;
-
+    
     public int estrelas;
 
     int erros; //informações que o jogador marcou incorretamente

@@ -22,6 +22,8 @@ public class Caso1 : MonoBehaviour
     public DialogManager dialogManager;
     public FeedbackManager feedbackManager;
 
+    public NiveisConcluidos niveisConcluidos;
+
     bool is_dialog_done = false;
 
     void Start() //deixa apenas o Caso Clinico visivel de inicio
@@ -93,6 +95,7 @@ public class Caso1 : MonoBehaviour
         {
             PlayerPrefs.SetInt("caso" + Caso.ToString(), feedbackManager.estrelas);
         }
+        niveisConcluidos.casos[Caso - 1] = true;
     }
 
     public void retryCase() //recarrega a cena ao pressionar o botão Tentar Novamente no Feedback

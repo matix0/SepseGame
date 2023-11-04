@@ -19659,7 +19659,7 @@ MonoBehaviour:
     de disfun\xE7\xE3o org\xE2nica, por\xE9m apresenta tr\xEAs crit\xE9rios de SRIS
     (S\xEDndrome da Resposta Inflamat\xF3ria Sist\xEAmica): FC= 110 bpm (maior que
     90 bpm indicando taquicardia); FR= 26 ipm (maior que 20 ipm indicando taquipneia)
-    e Temperatura axilar =38\xBAC (maior que 37,8\xBAC)."
+    e Temperatura axilar = 38\xBAC (maior que 37,8\xBAC)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -34163,6 +34163,7 @@ MonoBehaviour:
   helpMenu: {fileID: 1783212832}
   dialogManager: {fileID: 2020923993}
   feedbackManager: {fileID: 249361564}
+  niveisConcluidos: {fileID: 11400000, guid: 71e9484ae60a5814faafb896e2597ea7, type: 2}
 --- !u!1 &1665603888
 GameObject:
   m_ObjectHideFlags: 0

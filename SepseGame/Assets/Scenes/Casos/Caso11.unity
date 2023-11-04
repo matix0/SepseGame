@@ -3705,10 +3705,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 9
       objectReference: {fileID: 0}
@@ -5143,7 +5139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffda86018fede14a8c0c063de0731bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corretas: 0000000004000000050000000d000000
+  corretas: 0000000003000000
   textos:
   - "Frequ\xEAncia Card\xEDaca"
   - "Press\xE3o Arterial"
@@ -17671,7 +17667,7 @@ MonoBehaviour:
   - 160x100 mmHg
   - 92% em ar ambiente
   - 24 ipm
-  - "36,7\xBAC"
+  - "36,8\xBAC"
   - "Consciente, orientado em tempo, espa\xE7o, pessoa."
   - "A ausculta pulmonar sibilos difusos e roncos em hemit\xF3rax direito e esquerdo,
     expira\xE7\xE3o prolongada."
@@ -21599,10 +21595,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 9
       objectReference: {fileID: 0}
@@ -22466,10 +22458,6 @@ PrefabInstance:
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -34165,6 +34153,7 @@ MonoBehaviour:
   helpMenu: {fileID: 1783212832}
   dialogManager: {fileID: 2020923993}
   feedbackManager: {fileID: 249361564}
+  niveisConcluidos: {fileID: 11400000, guid: 71e9484ae60a5814faafb896e2597ea7, type: 2}
 --- !u!1 &1665603888
 GameObject:
   m_ObjectHideFlags: 0
@@ -37371,10 +37360,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 9
       objectReference: {fileID: 0}
@@ -40128,10 +40113,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 9
       objectReference: {fileID: 0}
@@ -40839,10 +40820,6 @@ PrefabInstance:
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize

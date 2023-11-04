@@ -3705,10 +3705,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 9
       objectReference: {fileID: 0}
@@ -5143,7 +5139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffda86018fede14a8c0c063de0731bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corretas: 000000000100000004000000050000000a0000000b000000
+  corretas: 00000000010000000300000004000000050000000a0000000b000000
   textos:
   - "Frequ\xEAncia Card\xEDaca"
   - "Press\xE3o Arterial"
@@ -17666,11 +17662,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Caso: {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
   SinaisVitais:
-  - 115 bpm
-  - 90/65 mmHg
+  - 120 bpm
+  - 90x65 mmHg
   - 95% em ar ambiente
-  - 20 ipm
-  - "38,0\xBAC"
+  - 25 ipm
+  - "39,0\xBAC"
   - "Prostrada, abertura ocular \xE0 voz, obedece a comandos motores."
   - "A ausculta pulmonar murm\xFArios vesiculares presentes sem ru\xEDdos advent\xEDcios."
   - "Turgor da pele diminu\xEDdo. ritmo card\xEDaco regular, bulhas card\xEDacas
@@ -21599,10 +21595,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 9
       objectReference: {fileID: 0}
@@ -22466,10 +22458,6 @@ PrefabInstance:
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -33057,7 +33045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26ad91d87c4b054ab8b659e5d96c69c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corretas: 000000000100000004000000050000000a0000000b000000
+  corretas: 00000000010000000300000004000000050000000a0000000b000000
   textos:
   - "Frequ\xEAncia Card\xEDaca"
   - "Press\xE3o Arterial"
@@ -34162,6 +34150,7 @@ MonoBehaviour:
   helpMenu: {fileID: 1783212832}
   dialogManager: {fileID: 2020923993}
   feedbackManager: {fileID: 249361564}
+  niveisConcluidos: {fileID: 11400000, guid: 71e9484ae60a5814faafb896e2597ea7, type: 2}
 --- !u!1 &1665603888
 GameObject:
   m_ObjectHideFlags: 0
@@ -37368,10 +37357,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 9
       objectReference: {fileID: 0}
@@ -40125,10 +40110,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 9
       objectReference: {fileID: 0}
@@ -40836,10 +40817,6 @@ PrefabInstance:
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8291742421905671083, guid: 00c90356f3e21dd438b228a26d35db80, type: 3}
       propertyPath: m_FontData.m_FontSize
