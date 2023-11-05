@@ -9,25 +9,94 @@ public class SelecionarNiveisManager : MonoBehaviour
 {
     FeedbackCasoModal feedbackCasoModal;
     public Camera camera;
-    public GameObject StarCount1, StarCount2;
-    public GameObject ModalFeedback;
-
-    int starCount;
+   // public GameObject StarCount;
+    int auxCountBasico, auxCountAvancado;
     public string nivel,caso;
     public int qtdEstrelas, numeroNivel;
-
-    public TMP_Text titulo_modal,texto_feedback;
-
+    public NiveisConcluidos niveisConcluidos;
 
     // Start is called before the first frame update
     void Start()
     {
-        for (int i=0; i < 13; i++)
+        GameObject starCountBasico, starCountAvancado;
+        starCountBasico = GameObject.Find("StarCountBasico");
+        starCountAvancado = GameObject.Find("StarCountAvancado");
+        for (int i= 0; i < 13; i++)
         {
-            starCount += PlayerPrefs.GetInt("caso" + i.ToString());
+
+            if (i<7)
+            {
+                auxCountBasico += PlayerPrefs.GetInt("caso" + i.ToString());
+                //Debug.Log("Caso: " + i);
+            }
+            else
+            {
+                auxCountAvancado += PlayerPrefs.GetInt("caso" + i.ToString());
+                //Debug.Log("Caso: " + i);
+            }
+            
         }
-        StarCount1.GetComponent<TextMeshProUGUI>().text = starCount.ToString() + "/39";
-        StarCount2.GetComponent<TextMeshProUGUI>().text = starCount.ToString() + "/39";
+        starCountBasico.GetComponent<TextMeshProUGUI>().text = auxCountBasico.ToString() + "/18";
+        starCountAvancado.GetComponent<TextMeshProUGUI>().text = auxCountAvancado.ToString() + "/21";
+
+        liberaCasos();
+        atualizaEstrelasCasos();
+    }
+    public void liberaCasos()
+    {
+        for (int i = 0; i < 13; i++)
+        {
+            if (niveisConcluidos.casos[i])
+            {
+                GameObject pai,proxNivel;
+                Transform auxLiberado,auxConcluido,auxBloqueado;
+                pai = GameObject.Find("Nivel " + (i + 1));
+
+                auxLiberado = pai.transform.Find("NivelLiberado");
+                auxLiberado.gameObject.SetActive(false);
+
+                auxConcluido = pai.transform.Find("NivelConcluido");
+                auxConcluido.gameObject.SetActive(true);
+
+                proxNivel = GameObject.Find("Nivel " + (i + 2));
+                auxBloqueado = proxNivel.transform.Find("NivelBloqueado");
+                auxBloqueado.gameObject.SetActive(false);
+                auxLiberado = proxNivel.transform.Find("NivelLiberado");
+                auxLiberado.gameObject.SetActive(true);
+
+            }
+        }
+    }
+
+    public void atualizaEstrelasCasos()
+    {
+        for (int i = 1; i < 13; i++)
+        {
+            GameObject caso;
+            Transform auxConcluido,auxEstrela;
+            int qtdEstrelas = PlayerPrefs.GetInt("caso" + i.ToString());
+            //Debug.Log(qtdEstrelas);
+            caso = GameObject.Find("Nivel " + i);
+            //Debug.Log(caso.name);
+            auxConcluido = caso.transform.Find("NivelConcluido");
+            //Debug.Log(auxConcluido.name);
+            auxEstrela = auxConcluido.Find("Estrelas");
+            //Debug.Log(auxEstrela);
+
+            switch (qtdEstrelas)
+            {
+                case 1:
+                    auxEstrela.transform.Find("Estrela_2").gameObject.SetActive(false);
+                    auxEstrela.transform.Find("Estrela_3").gameObject.SetActive(false);
+                    break;
+                case 2:
+                    auxEstrela.transform.Find("Estrela_3").gameObject.SetActive(false);
+                    break;
+                default:
+                    break;
+            }
+        }
+
     }
 
     // Update is called once per frame
@@ -39,9 +108,8 @@ public class SelecionarNiveisManager : MonoBehaviour
     {
 
         nivel = EventSystem.current.currentSelectedGameObject.transform.parent.name;
-        titulo_modal.text = nivel.ToUpper();
         nivel = nivel.Replace(" ", "");
-        Debug.Log(nivel);
+        //Debug.Log(nivel);
 
         string auxNumNivel = nivel.Remove(0, 5);
         numeroNivel = int.Parse(auxNumNivel);
@@ -51,38 +119,22 @@ public class SelecionarNiveisManager : MonoBehaviour
     public void getCaso() {
         caso = nivel.Remove(0, 5);
         caso = "caso"+ numeroNivel;
-        Debug.Log(caso);
+        //Debug.Log(caso);
     }
     public void getEstrelasNivel()
     {
         qtdEstrelas = PlayerPrefs.GetInt("caso" + numeroNivel.ToString());
     }
-    public void openModalFeedback() {
-
-        getNivel();
-        getCaso();
-        getEstrelasNivel();
-        Debug.Log("nivel: " + nivel
-    + "\nqtdEstrelas: " + qtdEstrelas
-    + "\ncaso: " + caso
-    + "\nnumeroNivel: " + numeroNivel);
-
-        setModalFeedback();
-
-        ModalFeedback.SetActive(true);
-    }
 
     public void setModalFeedback() {
         string teste = feedbackCasoModal.getFeedback();
-        texto_feedback.SetText(teste);
     }
     public void selecionarNivel()
     {
-        /*
+        getNivel();
+        getCaso();
+        //Debug.Log(caso);
         SceneManager.LoadScene(caso);
-        */
-
-        
     }
 
     public void irCasosBasicos() {
