@@ -22,13 +22,19 @@ public class MenuMain : MonoBehaviour
             Musica = GameObject.Find("MusicManager").GetComponent<AudioSource>();
             Musica.volume = slider.GetComponent<Slider>().value;
         }
+        
+        for (int i = 0; i < 14; i++)
+        {
+            PlayerPrefs.SetInt("caso" + i.ToString(), 0);
+        }
+        
     }
 
     public void Play()
     {
         //ir pro jogo
         EsteticaNurse.set = false;
-        SceneManager.LoadScene("Caso1");
+        SceneManager.LoadScene("CustomizeNurse");
     }
     public void Quit()
     {

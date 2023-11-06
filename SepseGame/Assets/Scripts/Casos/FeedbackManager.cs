@@ -64,6 +64,11 @@ public class FeedbackManager : MonoBehaviour
             estrelas = 2;
             stars.GetComponent<Animator>().Play("twoStars");
         }
+        else if (feedbackCondutas.errosCondutas <= 0)
+        {
+            estrelas = 2;
+            stars.GetComponent<Animator>().Play("twoStars");
+        }
         else
         {
             estrelas = 1;
