@@ -14,6 +14,9 @@ public class SelecionarNiveisManager : MonoBehaviour
     public string nivel,caso;
     public int qtdEstrelas, numeroNivel;
     public NiveisConcluidos niveisConcluidos;
+    public Parabens parabens;
+    public GameObject popupParabens;
+
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +42,20 @@ public class SelecionarNiveisManager : MonoBehaviour
         }
         starCountBasico.GetComponent<TextMeshProUGUI>().text = auxCountBasico.ToString() + "/18";
         starCountAvancado.GetComponent<TextMeshProUGUI>().text = auxCountAvancado.ToString() + "/21";
+
+        if ((auxCountAvancado + auxCountBasico) == 39)
+        {
+            abrirParabens(3);
+        }
+        if (auxCountBasico == 18)
+        {
+            abrirParabens(1);
+        }
+        if (auxCountAvancado == 21)
+        {
+            abrirParabens(2);
+        }
+
 
         //Debug.Log(auxCountBasico);
         //Debug.Log(auxCountAvancado);
@@ -79,9 +96,9 @@ public class SelecionarNiveisManager : MonoBehaviour
             GameObject caso;
             Transform auxConcluido,auxEstrela;
             int qtdEstrelas = PlayerPrefs.GetInt("caso" + i.ToString());
-            Debug.Log(qtdEstrelas);
+            //Debug.Log(qtdEstrelas);
             caso = GameObject.Find("Nivel " + i);
-            Debug.Log(caso.name);
+            //Debug.Log(caso.name);
             auxConcluido = caso.transform.Find("NivelConcluido");
             //Debug.Log(auxConcluido.name);
             auxEstrela = auxConcluido.Find("Estrelas");
@@ -130,9 +147,6 @@ public class SelecionarNiveisManager : MonoBehaviour
         qtdEstrelas = PlayerPrefs.GetInt("caso" + numeroNivel.ToString());
     }
 
-    public void setModalFeedback() {
-        string teste = feedbackCasoModal.getFeedback();
-    }
     public void selecionarNivel()
     {
         getNivel();
@@ -156,5 +170,42 @@ public class SelecionarNiveisManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void abrirParabens(int op)
+    {
 
+        TextMeshProUGUI auxPopup = popupParabens.transform.Find("Text_Info").gameObject.GetComponent<TextMeshProUGUI>();
+
+
+        if ((op==1)&&(parabens.basicoConcluido == false))
+        {
+            irCasosBasicos();
+            auxPopup.text = "Incrível! Você agora está preparado (a) para enfrentar casos clinicos mais complexos. Vamos lá!";
+            parabens.basicoConcluido = true;
+            popupParabens.SetActive(true);
+            
+        }
+        if ((op == 2) && (parabens.avancadoConcluido == false))
+        {
+            irCasosBasicos();
+            auxPopup.text = "Uau! Você resolveu todos os casos clinicos com sucesso, mas o troféu ainda não é seu. Jogue novamente para ganhar mais estrelas e conquistar esse troféu merecido!";
+            parabens.avancadoConcluido = true;
+            popupParabens.SetActive(true);
+            
+        }
+        if ((op == 3)&&(parabens.jogoConcluido == false))
+        {
+            irCasosBasicos();
+            auxPopup.text = "Fantástico! Você alcançou a vitória e conquistou o seu merecido troféu. Parabéns, pela sua conquista!";
+            parabens.jogoConcluido = true;
+            popupParabens.SetActive(true);
+            
+        }
+        
+    }
+
+    public void fechaParabens()
+    {
+        GameObject popupFeedback = GameObject.Find("Popup Parabens");
+        popupFeedback.SetActive(false);
+    }
 }
