@@ -21,13 +21,14 @@ public class SelecionarNiveisManager : MonoBehaviour
         GameObject starCountBasico, starCountAvancado;
         starCountBasico = GameObject.Find("StarCountBasico");
         starCountAvancado = GameObject.Find("StarCountAvancado");
-        for (int i= 0; i < 13; i++)
+        for (int i = 0; i <= 13; i++)
         {
 
             if (i<7)
             {
                 auxCountBasico += PlayerPrefs.GetInt("caso" + i.ToString());
                 //Debug.Log("Caso: " + i);
+                
             }
             else
             {
@@ -39,8 +40,11 @@ public class SelecionarNiveisManager : MonoBehaviour
         starCountBasico.GetComponent<TextMeshProUGUI>().text = auxCountBasico.ToString() + "/18";
         starCountAvancado.GetComponent<TextMeshProUGUI>().text = auxCountAvancado.ToString() + "/21";
 
-        liberaCasos();
+        //Debug.Log(auxCountBasico);
+        //Debug.Log(auxCountAvancado);
+
         atualizaEstrelasCasos();
+        liberaCasos();
     }
     public void liberaCasos()
     {
@@ -70,14 +74,14 @@ public class SelecionarNiveisManager : MonoBehaviour
 
     public void atualizaEstrelasCasos()
     {
-        for (int i = 1; i < 13; i++)
+        for (int i = 1; i <= 13; i++)
         {
             GameObject caso;
             Transform auxConcluido,auxEstrela;
             int qtdEstrelas = PlayerPrefs.GetInt("caso" + i.ToString());
-            //Debug.Log(qtdEstrelas);
+            Debug.Log(qtdEstrelas);
             caso = GameObject.Find("Nivel " + i);
-            //Debug.Log(caso.name);
+            Debug.Log(caso.name);
             auxConcluido = caso.transform.Find("NivelConcluido");
             //Debug.Log(auxConcluido.name);
             auxEstrela = auxConcluido.Find("Estrelas");

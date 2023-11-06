@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91105180469677b47a39eb6ebcffd373, type: 3}
   m_Name: NiveisConcluidos
   m_EditorClassIdentifier: 
-  casos: 01000000000000000000000000
+  casos: 00000000000000000000000000

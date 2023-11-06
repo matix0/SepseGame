@@ -50,4 +50,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Casos/Caso1.unity
     guid: e90cd7c93cbd1ff4194ef6dba477872c
+  - enabled: 1
+    path: Assets/Scenes/Casos/Caso2.unity
+    guid: 5eb8a7c5841f728429872fe5c7ab99d3
+  - enabled: 1
+    path: Assets/Scenes/Casos/Caso3.unity
+    guid: a00feac7a4d2ccc4fabc7cdf1a4df027
+  - enabled: 1
+    path: Assets/Scenes/Casos/Caso4.unity
+    guid: 1c6da2a2828fdd64fb3d0f25e65829d3
+  - enabled: 1
+    path: Assets/Scenes/Casos/Caso5.unity
+    guid: a1533241f2d46ad4aaedae7411d436c7
+  - enabled: 1
+    path: Assets/Scenes/Casos/Caso6.unity
+    guid: 9b959cb86143bcb4f8b39e18941820d2
+  - enabled: 1
+    path: Assets/Scenes/Casos/Caso7.unity
+    guid: ffeafcc81055ff1469c3d45d124a1d31
+  - enabled: 1
+    path: Assets/Scenes/Casos/Caso8.unity
+    guid: 4e4a9dbb5f87b2247aa91c945672ec9f
+  - enabled: 1
+    path: Assets/Scenes/Casos/Caso9.unity
+    guid: 829fade0385f4af4f84051db024f95e4
+  - enabled: 1
+    path: Assets/Scenes/Casos/Caso10.unity
+    guid: a8be71a92a612804c9306e7847f7bc2a
+  - enabled: 1
+    path: Assets/Scenes/Casos/Caso11.unity
+    guid: ce34c4d695ec2344ca3f0a8fd9ecce2a
+  - enabled: 1
+    path: Assets/Scenes/Casos/Caso12.unity
+    guid: f903a00890f944f40b4784f8ab4fd528
+  - enabled: 1
+    path: Assets/Scenes/Casos/Caso13.unity
+    guid: 5f404f03de7649f428f9ea73b059f68e
   m_configObjects: {}
