@@ -52,18 +52,13 @@ public class MenuPause : MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("SelecionarNiveis");
     }
     public void QuitGame()
     {
         Debug.Log("Quit");
         Application.Quit();
     }
-    //public void Update()
-    //{
-    //    //float sliderValue = slider.value;
-    //    //MusicManager.volume = sliderValue;
-    //}
     public void Volume()
     {
         slider = GameObject.Find("Slider_On");
