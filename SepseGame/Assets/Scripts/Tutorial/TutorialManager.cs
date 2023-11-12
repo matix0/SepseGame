@@ -7,67 +7,66 @@ using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoBehaviour
 {
-    public Sprite[] tutorialSprites = new Sprite[5];
+    public Sprite[] tutorialSprites = new Sprite[10];
     public Image atualSprite;
-    public Button btnNext, btnBack, btnMainMenu;
     public TextMeshProUGUI tutorialText, pageCountText;
+    public GameObject btn_proximo;
     int currentPage = 1;
-    public Slider slider;
-    public Estetica pack;
-    public GameObject BBG, Box, TopTitle, Exit;
-
+    TextMeshProUGUI btn_texto;
     [System.Obsolete]
     private void Start()
     {
         atualSprite.sprite = tutorialSprites[0];
-        slider.value = currentPage;
-        pageCountText.text = $"{tutorialText.pageToDisplay} / 5";
+        pageCountText.text = $"{tutorialText.pageToDisplay} / 11";
         //Debug.Log($"Paginas: {tutorialText.textInfo.pageCount}, atual: {currentPage}" );
+        btn_texto = btn_proximo.transform.Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>();
+        Debug.Log(btn_texto.text);
     }
 
     public void NextPage()
     {
         int totalpages = tutorialText.textInfo.pageCount;
-
+        
         if (currentPage < totalpages)
         {
             currentPage++;
             tutorialText.pageToDisplay++;
             pageCountText.text = $"{tutorialText.pageToDisplay} / {tutorialText.textInfo.pageCount}";
             atualSprite.sprite = tutorialSprites[currentPage - 1];
-            slider.value = currentPage;
         }
+        if (currentPage == 11 && btn_texto.text == "Concluir")
+        {
+            ExitTutorial();
+        }
+        if (currentPage == 11)
+        {
+            btn_texto.text = "Concluir";
+        }
+
         //Debug.Log($"Paginas: {tutorialText.textInfo.pageCount}, atual: {currentPage}");
     }
     public void PreviousPage()
     {
         int totalpages = tutorialText.textInfo.pageCount;
-
         if (currentPage > 1)
         {
             currentPage--;
             tutorialText.pageToDisplay--;
             pageCountText.text = $"{tutorialText.pageToDisplay} / {tutorialText.textInfo.pageCount}";
             atualSprite.sprite = tutorialSprites[currentPage - 1];
-            slider.value = currentPage;
         }
+
+        if (currentPage == 10)
+        {
+            btn_texto.text = "Continuar";
+        }
+
         //Debug.Log($"Paginas: {tutorialText.textInfo.pageCount}, atual: {currentPage}");
     }
 
     public void ExitTutorial()
     {
-        BBG.SetActive(false);
-        Box.SetActive(false);
-        TopTitle.SetActive(false);
-        Exit.SetActive(false);
+        GameObject.Find("Tutorial").SetActive(false);
     }
-
-    public void EnterTutorial()
-    {
-        GameObject.Find("Tutorial").SetActive(true);
-        BBG.SetActive(true);
-        Box.SetActive(true);
-        TopTitle.SetActive(true);
-        Exit.SetActive(true);
-    }
+    
 }

@@ -10,6 +10,7 @@ public class MenuPause : MonoBehaviour
     public GameObject PauseMenuUI;
     public GameObject Escolhas;
     public GameObject PauseIcon;
+    public GameObject Tutorial;
     public Button[] buttonsEscolhas;
     //public AudioSource MusicManager;
     public GameObject slider;
@@ -65,5 +66,10 @@ public class MenuPause : MonoBehaviour
         Debug.Log("slider "+ slider.GetComponent<Slider>().value);
         Musica.volume = slider.GetComponent<Slider>().value;
         Debug.Log("volume " + Musica.volume);
+    }
+
+    public void AbrirTutorial()
+    {
+        Tutorial.SetActive(true);
     }
 }
