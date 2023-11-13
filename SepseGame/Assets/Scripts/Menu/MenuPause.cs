@@ -19,6 +19,7 @@ public class MenuPause : MonoBehaviour
 
     void Start()
     {
+        Musica = GameObject.Find("MusicManager").GetComponent<AudioSource>();
         Time.timeScale = 1f;
         //float sliderValue = slider.value;
         Musica.volume = 0.5f;

@@ -79,7 +79,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &351575369
@@ -161,7 +161,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &362435682
@@ -243,7 +243,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1671703584
@@ -325,7 +325,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1751266310
@@ -407,7 +407,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1753600756
@@ -489,7 +489,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &130360381371660083
@@ -653,7 +653,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &130360381497439718
@@ -1152,7 +1152,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &130360381697238284
@@ -1808,7 +1808,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &130360382340533866
@@ -1972,7 +1972,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &130360382784984479
@@ -2390,6 +2390,7 @@ MonoBehaviour:
   - {fileID: 3558774531630188508, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   - {fileID: -6478166032499076432, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   calca: {fileID: 2952662330050420941, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  luvaArray: []
   PersonagemFeminino: {fileID: 130360381584285309}
   peleArrayF:
   - {fileID: 7492470159447225405, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
@@ -2426,6 +2427,7 @@ MonoBehaviour:
   - {fileID: -2533494965180961652, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
   - {fileID: 6027204512768156296, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
   calcaF: {fileID: 8368722754618101687, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
+  luvaArrayF: []
   oclinArray:
   - {fileID: 5912770758131805232, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
   - {fileID: -6097251582043861225, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
@@ -2450,6 +2452,7 @@ MonoBehaviour:
   role: 1
   estetoscopio: 0
   mascara: 0
+  luva: 0
   corRoupas: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &130360383351461198
 GameObject:

@@ -21032,7 +21032,18 @@ MonoBehaviour:
     indicadores de disfun\xE7\xE3o org\xE2nica: hipotens\xE3o: PAS <= a 90mmHg; altera\xE7\xE3o
     do n\xEDvel de consci\xEAncia; StO2 <= a 90%, necessidade de O2 ou dispneia importante.
     Exames laboratorais: creatinina > 2 mg/dL; Lactato acima do valor normal ; Plaquetas
-    < 100.000mm\xB3 ou INR>1,5; Bilirrubinas > 2mg/dL.\r\n"
+    < 100.000mm\xB3 ou INR>1,5; Bilirrubinas > 2mg/dL.\r\n\n<b>Sepse Prov\xE1vel:</b> 
+    disfun\xE7\xE3o org\xE2nica e foco infeccioso suspeito ou confirmado na presen\xE7a
+    ou n\xE3o de hipotens\xE3o. Considerar tamb\xE9m pacientes cujo protocolo foi
+    iniciado com base apenas nos crit\xE9rios de SRIS, sem disfun\xE7\xE3o org\xE2nica
+    clinicamente aparente mas que possuem fatores de risco para a sepse como pacientes
+    acima de 65 anos, imunossuprimidos e portadores de comorbidades graves.O protocolo
+    de sepse deve ser mantido, com coletas de exames e administra\xE7\xE3o de antibi\xF3ticos
+    na primeira hora. \r\n\n<b>Sepse Poss\xEDvel:</b> pacientes com crit\xE9rios
+    de SRIS e foco infecioso suspeito ou confirmado,  sem disfun\xE7\xE3o org\xE2nica
+    e sem fatores de risco evidentes. O protocolo de sepse deve ser encerrado e o
+    atendimento ao paciente deve ser continuado, com o objetivo de avaliar se existe
+    realmente presen\xE7a de infec\xE7\xE3o, a presen\xE7a ou n\xE3o de sepse.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21059,8 +21070,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -33083,10 +33094,10 @@ MonoBehaviour:
   - "Exame Cardiocirculat\xF3rio"
   - Exame Gastrintestinal
   - Exame Renal
-  - "Laborat\xF3rio 1"
-  - "Laborat\xF3rio 2"
-  - "Laborat\xF3rio 3"
-  - "Laborat\xF3rio 4"
+  - "Laborat\xF3rio"
+  - "Laborat\xF3rio"
+  - "Laborat\xF3rio"
+  - "Laborat\xF3rio"
   SinaisTexts: {fileID: 722211134}
   SinaisLabel: {fileID: 451013569}
   ExameTexts: {fileID: 710380848}
@@ -33715,8 +33726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -720, y: 42}
-  m_SizeDelta: {x: 280.16, y: 106}
+  m_AnchoredPosition: {x: -728.86, y: 42}
+  m_SizeDelta: {x: 297.88, y: 106}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1640989518
 CanvasRenderer:
@@ -40455,6 +40466,7 @@ MonoBehaviour:
   Paciente1: "Dor de cabe\xE7a, nos olhos, no corpo todo."
   Paciente2: "Piora da dor no corpo, febre, des\xE2nimo. Tenho vontade de ficar deitado
     o tempo todo."
+  balaoPacObj: {fileID: 531906380}
   BalaoPaciente: {fileID: 1667522882}
   BalaoNurse: {fileID: 306584606}
   buttonContinuar: {fileID: 188887734}

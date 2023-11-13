@@ -130,5 +130,13 @@ public class Caso1 : MonoBehaviour
         hospitalFeedback.SetActive(false);
         CondutasObject.SetActive(true);
     }
+
+    public void returnToDialog()
+    {
+        DialogoObject.SetActive(true);
+        HospitalObject.SetActive(false);
+        //is_dialog_done = false;
+        dialogManager.loadTexts(0);
+    }
 }
 

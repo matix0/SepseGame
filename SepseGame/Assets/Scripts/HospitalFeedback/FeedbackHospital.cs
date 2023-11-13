@@ -16,8 +16,14 @@ public class FeedbackHospital : MonoBehaviour
     public GameObject resultText;
     public GameObject star, starText;
 
+    public GameObject animatorHolder;
+
     int next_sv_pos = 0;
     int next_ex_pos = 0;
+
+    bool second_page = true;
+
+    int current_page = 0;
 
     public void calcularResultado()
     {
@@ -66,8 +72,15 @@ public class FeedbackHospital : MonoBehaviour
         }
         else if (emptyExames)
         {
-            ET[0].GetComponent<TextMeshProUGUI>().text = "- página vazia.";
+            second_page = false;
+            //ET[0].GetComponent<TextMeshProUGUI>().text = "- página vazia.";
         }
+
+        if (second_page == true)
+        {
+            animatorHolder.GetComponent<Animator>().Play("pulse");
+        }
+        
 
         if (flawless) //determina se o jogador ganhou ou não uma estrela na fase
         {
@@ -105,17 +118,41 @@ public class FeedbackHospital : MonoBehaviour
 
     public void showSinais()
     {
-        SinaisTexts.SetActive(true);
-        SinaisLabel.SetActive(true);
-        ExameTexts.SetActive(false);
-        ExameLabel.SetActive(false);
+        if (current_page == 1)
+        {
+            SinaisTexts.SetActive(true);
+            SinaisLabel.SetActive(true);
+            ExameTexts.SetActive(false);
+            ExameLabel.SetActive(false);
+            current_page = 0;
+        }
+        else if (second_page == true)
+        {
+            SinaisTexts.SetActive(false);
+            SinaisLabel.SetActive(false);
+            ExameTexts.SetActive(true);
+            ExameLabel.SetActive(true);
+            current_page = 1;
+        }
     }
 
     public void showExames()
     {
-        SinaisTexts.SetActive(false);
-        SinaisLabel.SetActive(false);
-        ExameTexts.SetActive(true);
-        ExameLabel.SetActive(true);
+        if(second_page == true && current_page == 0) 
+        {
+            SinaisTexts.SetActive(false);
+            SinaisLabel.SetActive(false);
+            ExameTexts.SetActive(true);
+            ExameLabel.SetActive(true);
+            current_page = 1;
+        }
+        else if (second_page == true)
+        {
+            SinaisTexts.SetActive(true);
+            SinaisLabel.SetActive(true);
+            ExameTexts.SetActive(false);
+            ExameLabel.SetActive(false);
+            current_page = 0;
+        }
     }
 }

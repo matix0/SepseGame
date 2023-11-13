@@ -3465,10 +3465,10 @@ RectTransform:
   m_Father: {fileID: 451013570}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -178.24}
-  m_SizeDelta: {x: 150, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &181638045
 MonoBehaviour:
@@ -8074,10 +8074,10 @@ RectTransform:
   m_Father: {fileID: 451013570}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -248.24}
-  m_SizeDelta: {x: 150, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &412108318
 MonoBehaviour:
@@ -10229,10 +10229,10 @@ RectTransform:
   m_Father: {fileID: 722211135}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 194, y: -178.24245}
-  m_SizeDelta: {x: 800, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &538519096
 MonoBehaviour:
@@ -13827,10 +13827,10 @@ RectTransform:
   m_Father: {fileID: 451013570}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -38.240005}
-  m_SizeDelta: {x: 150, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &726053747
 MonoBehaviour:
@@ -14333,10 +14333,10 @@ RectTransform:
   m_Father: {fileID: 722211135}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 194, y: -3.242447}
-  m_SizeDelta: {x: 800, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745985652
 MonoBehaviour:
@@ -14740,10 +14740,10 @@ RectTransform:
   m_Father: {fileID: 722211135}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 194, y: -73.24245}
-  m_SizeDelta: {x: 800, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &771885044
 MonoBehaviour:
@@ -16175,10 +16175,10 @@ RectTransform:
   m_Father: {fileID: 722211135}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 194, y: -283.24243}
-  m_SizeDelta: {x: 800, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &808482538
 MonoBehaviour:
@@ -17718,9 +17718,9 @@ MonoBehaviour:
   Imagem: {fileID: 0}
   descricaoImagem: 
   Lab:
-  - "Leuc\xF3citos: 18.900 /mm\xB3 Valor de refer\xEAncia: 4.000 \u2013 11.000mm\xB3"
-  - "Creatinina: 2,6 mg/dL Valor de refer\xEAncia: 0,4 a 1,4 mg/dL"
-  - "Ureia: 100 mg/dL Valor de refer\xEAncia: 5 a 40 mg/dL"
+  - "Leuc\xF3citos: 18.900 /mm\xB3 Valor de Refer\xEAncia: 4.000 \u2013 11.000mm\xB3"
+  - "Creatinina: 2,6 mg/dL Valor de Refer\xEAncia: 0,4 a 1,4 mg/dL"
+  - "Ureia: 100 mg/dL Valor de Refer\xEAncia: 5 a 40 mg/dL"
   - "Plaquetas: 350.000 /mm\xB3 Valor de Refer\xEAncia: 150.000 \u2013 450.000/mm\xB3"
   texts:
   - {fileID: 444843785}
@@ -19259,10 +19259,10 @@ RectTransform:
   m_Father: {fileID: 451013570}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -108.240005}
-  m_SizeDelta: {x: 150, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &959993350
 MonoBehaviour:
@@ -19691,7 +19691,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "De acordo com o protocolo de triagem para pacientes com suspeita de sepse
-    do ILAS (2018) e SSC (2021), o paciente deste caso cl\xEDnico apresenta 3 indicadores
+    do ILAS (2021) e SSC (2021), o paciente deste caso cl\xEDnico apresenta 3 indicadores
     de disfun\xE7\xE3o org\xE2nica: PA = 90x65 mmHg ( PAS igual a 90mmHg), altera\xE7\xE3o
     do n\xEDvel de consci\xEAncia (prostra\xE7\xE3o, abertura ocular \xE0 voz) leucocitose
     (leuc\xF3citos > 12.000mm3), creatinina aumentada (> 2mg/dL). Em rela\xE7\xE3o
@@ -20213,7 +20213,18 @@ MonoBehaviour:
     indicadores de disfun\xE7\xE3o org\xE2nica: hipotens\xE3o: PAS <= a 90mmHg; altera\xE7\xE3o
     do n\xEDvel de consci\xEAncia; StO2 <= a 90%, necessidade de O2 ou dispneia importante.
     Exames laboratorais: creatinina > 2 mg/dL; Lactato acima do valor normal ; Plaquetas
-    < 100.000mm\xB3 ou INR>1,5; Bilirrubinas > 2mg/dL.\r\n"
+    < 100.000mm\xB3 ou INR>1,5; Bilirrubinas > 2mg/dL.\r\n\n<b>Sepse Prov\xE1vel:</b> 
+    disfun\xE7\xE3o org\xE2nica e foco infeccioso suspeito ou confirmado na presen\xE7a
+    ou n\xE3o de hipotens\xE3o. Considerar tamb\xE9m pacientes cujo protocolo foi
+    iniciado com base apenas nos crit\xE9rios de SRIS, sem disfun\xE7\xE3o org\xE2nica
+    clinicamente aparente mas que possuem fatores de risco para a sepse como pacientes
+    acima de 65 anos, imunossuprimidos e portadores de comorbidades graves.O protocolo
+    de sepse deve ser mantido, com coletas de exames e administra\xE7\xE3o de antibi\xF3ticos
+    na primeira hora. \r\n\n<b>Sepse Poss\xEDvel:</b> pacientes com crit\xE9rios
+    de SRIS e foco infecioso suspeito ou confirmado,  sem disfun\xE7\xE3o org\xE2nica
+    e sem fatores de risco evidentes. O protocolo de sepse deve ser encerrado e o
+    atendimento ao paciente deve ser continuado, com o objetivo de avaliar se existe
+    realmente presen\xE7a de infec\xE7\xE3o, a presen\xE7a ou n\xE3o de sepse.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20240,8 +20251,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -21360,13 +21371,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1034176270}
+  - component: {fileID: 1034176271}
   m_Layer: 0
   m_Name: HospitalFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1034176270
 Transform:
   m_ObjectHideFlags: 0
@@ -21383,6 +21395,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1034176271
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034176269}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd62359b653fd4941979dc10f1d59e80, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1034463753
 GameObject:
   m_ObjectHideFlags: 0
@@ -23753,10 +23786,10 @@ RectTransform:
   m_Father: {fileID: 451013570}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -73.240005}
-  m_SizeDelta: {x: 150, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1091166576
 MonoBehaviour:
@@ -27303,10 +27336,10 @@ RectTransform:
   m_Father: {fileID: 451013570}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -283.24}
-  m_SizeDelta: {x: 150, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1276797501
 MonoBehaviour:
@@ -32289,10 +32322,10 @@ RectTransform:
   m_Father: {fileID: 451013570}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -213.24}
-  m_SizeDelta: {x: 150, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1578755918
 MonoBehaviour:
@@ -32944,10 +32977,10 @@ MonoBehaviour:
   - "Exame Cardiocirculat\xF3rio"
   - Exame Gastrintestinal
   - Exame Renal
-  - "Laborat\xF3rio 1"
-  - "Laborat\xF3rio 2"
-  - "Laborat\xF3rio 3"
-  - "Laborat\xF3rio 4"
+  - "Laborat\xF3rio"
+  - "Laborat\xF3rio"
+  - "Laborat\xF3rio"
+  - "Laborat\xF3rio"
   SinaisTexts: {fileID: 722211134}
   SinaisLabel: {fileID: 451013569}
   ExameTexts: {fileID: 710380848}
@@ -32989,6 +33022,7 @@ MonoBehaviour:
   resultText: {fileID: 176086915}
   star: {fileID: 1916458306}
   starText: {fileID: 113455489}
+  animatorHolder: {fileID: 1034176269}
 --- !u!1 &1622666182
 GameObject:
   m_ObjectHideFlags: 0
@@ -33576,8 +33610,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -720, y: 42}
-  m_SizeDelta: {x: 280.16, y: 106}
+  m_AnchoredPosition: {x: -728.86, y: 42}
+  m_SizeDelta: {x: 297.88, y: 106}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1640989518
 CanvasRenderer:
@@ -35854,10 +35888,10 @@ RectTransform:
   m_Father: {fileID: 722211135}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 194, y: -38.242447}
-  m_SizeDelta: {x: 800, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1776992827
 MonoBehaviour:
@@ -37967,10 +38001,10 @@ RectTransform:
   m_Father: {fileID: 722211135}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 194, y: -143.24245}
-  m_SizeDelta: {x: 800, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1894294123
 MonoBehaviour:
@@ -38256,10 +38290,10 @@ RectTransform:
   m_Father: {fileID: 722211135}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 194, y: -108.24245}
-  m_SizeDelta: {x: 800, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1906066348
 MonoBehaviour:
@@ -40520,6 +40554,7 @@ MonoBehaviour:
   Paciente1: "Sensa\xE7\xE3o de muito cansa\xE7o, fraqueza, dor na minha barriga
     e vontade de vomitar."
   Paciente2: A diarreia com sangue e a febre.
+  balaoPacObj: {fileID: 531906380}
   BalaoPaciente: {fileID: 1667522882}
   BalaoNurse: {fileID: 306584606}
   buttonContinuar: {fileID: 188887734}
@@ -41189,10 +41224,10 @@ RectTransform:
   m_Father: {fileID: 722211135}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 194, y: -248.24245}
-  m_SizeDelta: {x: 800, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2053463668
 MonoBehaviour:
@@ -41707,10 +41742,10 @@ RectTransform:
   m_Father: {fileID: 451013570}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -143.24}
-  m_SizeDelta: {x: 150, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081863059
 MonoBehaviour:
@@ -42560,10 +42595,10 @@ RectTransform:
   m_Father: {fileID: 722211135}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 194, y: -213.24245}
-  m_SizeDelta: {x: 800, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2119439747
 MonoBehaviour:
@@ -42694,10 +42729,10 @@ RectTransform:
   m_Father: {fileID: 451013570}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -3.2400055}
-  m_SizeDelta: {x: 150, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2119528513
 MonoBehaviour:

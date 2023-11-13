@@ -7,6 +7,7 @@ public class DialogManager : MonoBehaviour
 {
     public string Paciente1, Paciente2;
 
+    public GameObject balaoPacObj;
     public GameObject BalaoPaciente, BalaoNurse;
     public GameObject buttonContinuar;
 
@@ -29,6 +30,7 @@ public class DialogManager : MonoBehaviour
 
         if (index == 0)
         {
+            balaoPacObj.SetActive(true);
             fullText = Paciente1;
             if (generalManager.sexo)
             {
@@ -62,6 +64,7 @@ public class DialogManager : MonoBehaviour
             {
                 fullText2 = "Certo. Vou avaliar a senhora agora e ver como posso ajudá-la.";
             }
+            balaoPacObj.SetActive(false);
         }
         StartCoroutine(showTexts());
     }

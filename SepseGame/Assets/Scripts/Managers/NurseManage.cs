@@ -43,6 +43,7 @@ public class NurseManage : MonoBehaviour
 
     private void Start()
     {
+        //scm = GameObject.Find("Handle").GetComponent<SlideColorManager>();
         //DontDestroyOnLoad(this.gameObject);
         ////Debug.Log(EsteticaNurse.set);
 
@@ -58,8 +59,9 @@ public class NurseManage : MonoBehaviour
 
         if (cs == "CustomizeNurse")
         {
+            findSlider();
             EsteticaNurse.set = false;
-            scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
+            //scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
 
 
             if (EsteticaNurse.gender == 0)
@@ -91,9 +93,12 @@ public class NurseManage : MonoBehaviour
         }
 
         //if (!CompareTag("hospital")) scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
+    }
 
-
-
+    public void findSlider()
+    {
+        scm = GameObject.Find("Handle").GetComponent<SlideColorManager>();
+        scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
     }
 
     void SetSliderColor()
