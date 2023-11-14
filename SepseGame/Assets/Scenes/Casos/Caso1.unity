@@ -21471,6 +21471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1034176270}
+  - component: {fileID: 1034176271}
   m_Layer: 0
   m_Name: HospitalFeedback
   m_TagString: Untagged
@@ -21494,6 +21495,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1034176271
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034176269}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd62359b653fd4941979dc10f1d59e80, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1034463753
 GameObject:
   m_ObjectHideFlags: 0
@@ -33278,7 +33300,7 @@ MonoBehaviour:
   resultText: {fileID: 176086915}
   star: {fileID: 1916458306}
   starText: {fileID: 113455489}
-  next_button: {fileID: 805997194}
+  animatorHolder: {fileID: 1034176269}
 --- !u!1 &1622666182
 GameObject:
   m_ObjectHideFlags: 0

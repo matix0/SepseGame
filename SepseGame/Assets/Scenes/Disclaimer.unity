@@ -420,7 +420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.5, y: -99.51}
+  m_AnchoredPosition: {x: 0.5, y: -99.51001}
   m_SizeDelta: {x: -299.62, y: -521.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515781630
@@ -447,9 +447,10 @@ MonoBehaviour:
     sobre o reconhecimento precoce dos sinais e sintomas de sepse pelo estudante
     ou profissional de enfermagem. N\xE3o s\xE3o utilizados casos de pacientes reais.
     Todas as informa\xE7\xF5es aqui apresentadas foram criadas com o prop\xF3sito
-    educativo. O conte\xFAdo educacional do jogo est\xE1 fundamentado pelo \u201C 
-    protocolo gerenciado de sepse- ficha de triagem\u201D do Instituto Latino Americano
-    de Sepse (2018) e nos guidelines do Surviving Sepsis Campaign (2021)."
+    educativo. O conte\xFAdo educacional do jogo est\xE1 fundamentado pelo \"protocolo
+    gerenciado de sepse-ficha de triagem baseada em dois crit\xE9rios  de SRIS (Sindrome
+    da Resposta Inflamat\xF3ria Sist\xEAmica)\" do Instituto Latino Americano de
+    Sepse (2021) e nos Guidelines do Surviving Sepsis Campaign (2021)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -557,11 +558,11 @@ RectTransform:
   m_LocalScale: {x: 2.554557, y: 2.554557, z: 2.554557}
   m_Children: []
   m_Father: {fileID: 1515781629}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0, y: 144}
+  m_AnchoredPosition: {x: 0, y: 144}
   m_SizeDelta: {x: 78.15, y: 72.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945172439
