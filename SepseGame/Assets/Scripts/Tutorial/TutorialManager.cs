@@ -17,7 +17,7 @@ public class TutorialManager : MonoBehaviour
     private void Start()
     {
         atualSprite.sprite = tutorialSprites[0];
-        pageCountText.text = $"{tutorialText.pageToDisplay} / 11";
+        pageCountText.text = $"{tutorialText.pageToDisplay} / 12";
         //Debug.Log($"Paginas: {tutorialText.textInfo.pageCount}, atual: {currentPage}" );
         btn_texto = btn_proximo.transform.Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>();
         Debug.Log(btn_texto.text);
@@ -34,11 +34,11 @@ public class TutorialManager : MonoBehaviour
             pageCountText.text = $"{tutorialText.pageToDisplay} / {tutorialText.textInfo.pageCount}";
             atualSprite.sprite = tutorialSprites[currentPage - 1];
         }
-        if (currentPage == 11 && btn_texto.text == "Concluir")
+        if (currentPage == 12 && btn_texto.text == "Concluir")
         {
             ExitTutorial();
         }
-        if (currentPage == 11)
+        if (currentPage == 12)
         {
             btn_texto.text = "Concluir";
         }

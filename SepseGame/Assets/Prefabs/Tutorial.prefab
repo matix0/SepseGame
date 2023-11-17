@@ -1137,14 +1137,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialSprites:
+  - {fileID: 21300000, guid: ac73f58939e4d0b4fa5f7abd6cc1b90c, type: 3}
   - {fileID: 21300000, guid: 32c7ae3406be4cb4f9c8739e188f1696, type: 3}
-  - {fileID: 21300000, guid: 77873543def1aac4cbf1ee28f51b8950, type: 3}
-  - {fileID: 21300000, guid: d14a413c2e8bd454fb6352b2b1f199c3, type: 3}
-  - {fileID: 21300000, guid: 6d9f72baa01da8141ba66c8779809f5e, type: 3}
+  - {fileID: 21300000, guid: 5e7c63fb743897e49815b8891c953f51, type: 3}
+  - {fileID: 21300000, guid: 8ad2c9193d20f424a80ba55189e673f6, type: 3}
+  - {fileID: 21300000, guid: bb50abe52c88c9b489b99aee6970db3c, type: 3}
   - {fileID: 21300000, guid: cdf465379987e2c47b427142ca45606c, type: 3}
   - {fileID: 21300000, guid: c845e8aa623c99945a6b5d315596b464, type: 3}
   - {fileID: 21300000, guid: 1a11049a92e40ee459422a52c118245b, type: 3}
-  - {fileID: 21300000, guid: b4dd466b589936f44a0cc1394e2f460c, type: 3}
+  - {fileID: 21300000, guid: bf08895e1d56dd04d8648e862ea1e180, type: 3}
   - {fileID: 21300000, guid: f908d6175d4d0ae4aa15fce8fdac17db, type: 3}
   - {fileID: 21300000, guid: b6a6fc677a3b735458f2a929020af62f, type: 3}
   - {fileID: 21300000, guid: c3ec524cb75140f46952c1e0ccdcfafc, type: 3}
@@ -1845,25 +1846,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nessa se\xE7\xE3o se encontram os tr\xEAs menus com os dados necess\xE1rios
-    para o diagn\xF3stico\n<page>Selecione a pergunta que deseja fazer ao paciente
-    clicando no \xEDcone correspondente. As perguntas podem ser refeitas quantas
-    vezes forem necess\xE1rias.\n<page>Selecione a pergunta que deseja fazer ao paciente
-    clicando no \xEDcone correspondente. As perguntas podem ser refeitas quantas
-    vezes forem necess\xE1rias.\n<page>Selecione a pergunta que deseja fazer ao paciente
-    clicando no \xEDcone correspondente. As perguntas podem ser refeitas quantas
-    vezes forem necess\xE1rias.\n<page> Exemplo de Exame de Imagem \\n (Alguns casos
-    podem n\xE3o conter)\n<page> Exemplo de Exame de Sangue \\n (Alguns casos podem
-    n\xE3o conter)\n<page>Ap\xF3s fazer cada uma das perguntas ao menos uma vez,
-    ser\xE1 poss\xEDvel avan\xE7ar para o pr\xF3ximo est\xE1gio.\n<page>Clique na
-    prancheta para ver os dados da an\xE1lise e do exame f\xEDsico que voc\xEA realizou.
+  m_text: "Clicando no bal\xE3o de fala, voc\xEA pode repetir o di\xE1logo com o
+    paciente.\n<page>Nessa se\xE7\xE3o se encontram os tr\xEAs menus com os dados
+    necess\xE1rios para avalia\xE7\xE3o do\_(a)\_paciente.\n<page>Ao clicar no \xEDcone
+    *MONITORIZAR* voc\xEA ter\xE1 acesso aos sinais vitais do(a) paciente. Mas para
+    ter acesso aos valores de cada um deles, clique no quadrado branco a esquerda
+    do nome de cada sinal vital.\n<page>Ao clicar no \xEDcone *EXAMES F\xCDSICOS*
+    voc\xEA ter\xE1 acesso aos exames fisicos do(a) paciente. Mas para ter acesso
+    aos valores de cada um deles, clique no quadrado branco a esquerda do nome de
+    cada exame.\n<page>Ao clicar no \xEDcone *EXAMES* voc\xEA ter\xE1 acesso aos
+    exames do(a) paciente. Mas para ter acesso aos valores de cada um deles, clique
+    no quadrado branco a esquerda do nome de cada exame.\n<page> Exemplo de Exame
+    de Imagem \\n (Alguns casos podem n\xE3o conter)\n<page> Exemplo de Exame de
+    Sangue \\n (Alguns casos podem n\xE3o conter)\n<page>Ap\xF3s clicar em uma das
+    op\xE7\xF5es de cada menu ao menos uma vez, ser\xE1 poss\xEDvel avan\xE7ar para
+    o pr\xF3ximo est\xE1gio.\n<page> Ao clicar na prancheta, ser\xE1 poss\xEDvel
+    selecionar os dados da an\xE1lise e do exame f\xEDsico que voc\xEA realizou.
     Selecione os crit\xE9rios de SRIS e/ou Disfun\xE7\xF5es Org\xE2nicas e prossiga
-    como achar cab\xEDvel.\n<page>Clique na prancheta para ver os dados da an\xE1lise
-    e do exame f\xEDsico que voc\xEA realizou. Selecione os crit\xE9rios de SRIS
-    e/ou Disfun\xE7\xF5es Org\xE2nicas e prossiga como achar cab\xEDvel.\n<page>Clique
-    na prancheta para ver os dados da an\xE1lise e do exame f\xEDsico que voc\xEA
-    realizou. Selecione os crit\xE9rios de SRIS e/ou Disfun\xE7\xF5es Org\xE2nicas
-    e prossiga como achar cab\xEDvel.\n<page>No \xFAltimo est\xE1gio, marque na ordem
+    como achar cab\xEDvel.\n<page>Ap\xF3s escolher abrir ou n\xE3o o protocolo de
+    Sepse, Selecione se deseja ou n\xE3o chamar a *Equipe M\xE9dica* .\n<page>Ap\xF3s
+    escolher chamar  ou n\xE3o o a Equipe M\xE9dica , Selecione se deseja ou n\xE3o
+    *Dar Seguimento ao Protocolo* .\n<page>No \xFAltimo est\xE1gio, marque na ordem
     que achar correta, as condutas do enfermeiro na situa\xE7\xE3o atual. Voc\xEA
     pode recome\xE7ar a marca\xE7\xE3o a qualquer momento clicando no bot\xE3o na
     parte inferior. \\n Bom Jogo e Boa Sorte!"
