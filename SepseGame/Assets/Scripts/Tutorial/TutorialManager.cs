@@ -56,7 +56,7 @@ public class TutorialManager : MonoBehaviour
             atualSprite.sprite = tutorialSprites[currentPage - 1];
         }
 
-        if (currentPage == 10)
+        if (currentPage == 11)
         {
             btn_texto.text = "Continuar";
         }
