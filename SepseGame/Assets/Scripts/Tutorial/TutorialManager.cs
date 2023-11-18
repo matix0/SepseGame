@@ -10,7 +10,7 @@ public class TutorialManager : MonoBehaviour
     public Sprite[] tutorialSprites = new Sprite[10];
     public Image atualSprite;
     public TextMeshProUGUI tutorialText, pageCountText;
-    public GameObject btn_proximo;
+    public GameObject btn_proximo,tutorial;
     int currentPage = 1;
     TextMeshProUGUI btn_texto;
     [System.Obsolete]
@@ -41,6 +41,7 @@ public class TutorialManager : MonoBehaviour
         if (currentPage == 12)
         {
             btn_texto.text = "Concluir";
+            
         }
 
         //Debug.Log($"Paginas: {tutorialText.textInfo.pageCount}, atual: {currentPage}");
@@ -68,5 +69,8 @@ public class TutorialManager : MonoBehaviour
     {
         GameObject.Find("Tutorial").SetActive(false);
     }
-    
+
+    public void AbrirTutorial() {
+        tutorial.SetActive(true);
+    }
 }

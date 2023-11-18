@@ -1153,6 +1153,7 @@ MonoBehaviour:
   tutorialText: {fileID: 7449120747964287365}
   pageCountText: {fileID: 7449120747843390655}
   btn_proximo: {fileID: 7449120746975414939}
+  tutorial: {fileID: 0}
 --- !u!223 &7449120747606504468
 Canvas:
   m_ObjectHideFlags: 0
@@ -1849,27 +1850,25 @@ MonoBehaviour:
   m_text: "Clicando no bal\xE3o de fala, voc\xEA pode repetir o di\xE1logo com o
     paciente.\n<page>Nessa se\xE7\xE3o se encontram os tr\xEAs menus com os dados
     necess\xE1rios para avalia\xE7\xE3o do\_(a)\_paciente.\n<page>Ao clicar no \xEDcone
-    *MONITORIZAR* voc\xEA ter\xE1 acesso aos sinais vitais do(a) paciente. Mas para
-    ter acesso aos valores de cada um deles, clique no quadrado branco a esquerda
-    do nome de cada sinal vital.\n<page>Ao clicar no \xEDcone *EXAMES F\xCDSICOS*
-    voc\xEA ter\xE1 acesso aos exames fisicos do(a) paciente. Mas para ter acesso
-    aos valores de cada um deles, clique no quadrado branco a esquerda do nome de
-    cada exame.\n<page>Ao clicar no \xEDcone *EXAMES* voc\xEA ter\xE1 acesso aos
-    exames do(a) paciente. Mas para ter acesso aos valores de cada um deles, clique
-    no quadrado branco a esquerda do nome de cada exame.\n<page> Exemplo de Exame
-    de Imagem \\n (Alguns casos podem n\xE3o conter)\n<page> Exemplo de Exame de
-    Sangue \\n (Alguns casos podem n\xE3o conter)\n<page>Ap\xF3s clicar em uma das
-    op\xE7\xF5es de cada menu ao menos uma vez, ser\xE1 poss\xEDvel avan\xE7ar para
-    o pr\xF3ximo est\xE1gio.\n<page> Ao clicar na prancheta, ser\xE1 poss\xEDvel
-    selecionar os dados da an\xE1lise e do exame f\xEDsico que voc\xEA realizou.
-    Selecione os crit\xE9rios de SRIS e/ou Disfun\xE7\xF5es Org\xE2nicas e prossiga
-    como achar cab\xEDvel.\n<page>Ap\xF3s escolher abrir ou n\xE3o o protocolo de
-    Sepse, Selecione se deseja ou n\xE3o chamar a *Equipe M\xE9dica* .\n<page>Ap\xF3s
-    escolher chamar  ou n\xE3o o a Equipe M\xE9dica , Selecione se deseja ou n\xE3o
-    *Dar Seguimento ao Protocolo* .\n<page>No \xFAltimo est\xE1gio, marque na ordem
-    que achar correta, as condutas do enfermeiro na situa\xE7\xE3o atual. Voc\xEA
-    pode recome\xE7ar a marca\xE7\xE3o a qualquer momento clicando no bot\xE3o na
-    parte inferior. \\n Bom Jogo e Boa Sorte!"
+    \"MONITORIZAR\" voc\xEA ter\xE1 acesso aos sinais vitais do paciente.\n<page>Ao
+    clicar no \xEDcone \"EXAMES F\xCDSICOS\", voc\xEA ter\xE1 acesso aos dados da
+    semiologia  do paciente organizado por sistemas.\n<page>Ao clicar no \xEDcone
+    \"EXAMES\" voc\xEA ter\xE1 acesso aos resultados dos exames realizados pelo paciente.\n<page>
+    Exemplo de Exame de Imagem \\n (Alguns casos podem n\xE3o conter)\n<page> Exemplo
+    de Exame de Sangue \\n (Alguns casos podem n\xE3o conter)\n<page>Ap\xF3s clicar
+    em uma das op\xE7\xF5es de cada menu ao menos uma vez, ser\xE1 poss\xEDvel avan\xE7ar
+    para o pr\xF3ximo est\xE1gio.\n<page> Ao clicar na prancheta,voc\xEA ter\xE1
+    acesso aos resultados dos exames (sangue, imagem), fisico e os valores dos sinais
+    vitais que voc\xEA selecionou. Utilize essas informa\xE7\xF5es para identificar
+    os crit\xE9rios de SRIS e/ou disfun\xE7\xE3o org\xE2nica.\\n Prossiga da maneira
+    que considerar mais apropriada com base nessas avalia\xE7\xF5es.\n<page>Ap\xF3s
+    escolher abrir ou n\xE3o o protocolo de Sepse, Selecione se deseja ou n\xE3o
+    chamar a *Equipe M\xE9dica* .\n<page>Ap\xF3s escolher chamar  ou n\xE3o o a Equipe
+    M\xE9dica , Selecione se deseja ou n\xE3o *Dar Seguimento ao Protocolo* .\n<page>
+    No est\xE1gio final, organize em ordem de prioridade as a\xE7\xF5es do enfermeiro,
+    considerando a situa\xE7\xE3o atual do paciente. A qualquer momento, voc\xEA
+    pode reiniciar a marca\xE7\xE3o clicando no bot\xE3o na parte inferior. \\n Aproveite
+    o jogo e boa sorte!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -1896,7 +1895,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.8
+  m_fontSize: 32.95
   m_fontSizeBase: 32.89
   m_fontWeight: 400
   m_enableAutoSizing: 1
