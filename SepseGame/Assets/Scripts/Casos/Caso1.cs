@@ -9,6 +9,7 @@ public class Caso1 : MonoBehaviour
     public int Caso;
     public bool sexo = false;
 
+    public EmailUtility email;
     public GameObject hospitalFeedback;
     public GameObject CasoAtualDisplay;
     public GameObject CasoClinicoAvatarBG, Paciente;
@@ -87,6 +88,7 @@ public class Caso1 : MonoBehaviour
         ResultadoObject.SetActive(false);
         FeedbackObject.SetActive(true);
         feedbackManager.gerarFeedback();
+        email.SaveEmail();
     }
 
     void saveStars() //salva o numero de estrelas obtidas no caso nas PlayerPrefs

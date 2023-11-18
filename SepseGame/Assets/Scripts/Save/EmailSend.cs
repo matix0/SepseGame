@@ -31,7 +31,7 @@ public class EmailSend : MonoBehaviour
     void Start()
     {
         legendaEmail = "Para entendender o relatório, cada linha significa algo, dessa forma, segue as instruções abaixo, lembrando que as linhas são separadas por (;;;;;;;;):\n" +
-            "1. Primeira linha sempre será a PONTUAÇÂO\n" +
+            "1. Primeira linha sempre será a PONTUAÇÂO (número de estrelas)\n" +
             "2. Segunda linha sempre será os ACERTOS\n" +
             "3. Terceira linha sempre será os ERROS\n" +
             "4. Quarta linha sempre será os NÂO MARCADOS\n" +
@@ -42,32 +42,33 @@ public class EmailSend : MonoBehaviour
 
         titleName = "Relatorio de desempenho - " + Login.nome;
         
-        if (pack.currentCase == 13)
+        /*if (pack.currentCase == 13)
         {
             SendEmail();
         }
+        */
     }
 
     // Update is called once per frame
-    void SendEmail()
+    public void SendEmail()
     {
         // Linhas referentes a "conexao" com o smtp de envio
-        SmtpClient client = new SmtpClient("smtp.mailgun.org", 587);
+        SmtpClient client = new SmtpClient("smtp-mail.outlook.com", 587);
 
         //credenciamento para permitir o envio
         client.Credentials = new System.Net.NetworkCredential(
-            "",
-            "");
+            "sepsegamerelatorio@outlook.com",
+            "sepserelatorio1");
         client.EnableSsl = true;
 
         // Definir quem envia o email e o nome do email que sera enviado
         MailAddress from = new MailAddress(
-            "sepserelatorio2@gmail.com",
+            "sepsegamerelatorio@outlook.com",
             titleName,
             System.Text.Encoding.UTF8);
 
         // Definir quem vai receber o email
-        MailAddress to = new MailAddress("sepserelatorio2@gmail.com");
+        MailAddress to = new MailAddress("sepsegamerelatorio@outlook.com");
         MailMessage message = new MailMessage(from, to);
         message.Body = $"\nNome: {Login.nome}" +
             $"\nCPF: {Login.cpf}\n\n" +

@@ -51,7 +51,7 @@ public class FeedbackHospital : MonoBehaviour
 
         bool emptyExames = true;
         bool emptySinais = true;
-        for (int i = 0; i < ST.Count; i++) //os dois for abaixo conferem se há páginas vazias
+        for (int i = 0; i < ST.Count; i++) //os dois 'for' abaixo conferem se há páginas vazias
         {
             if (ST[i].GetComponent<TextMeshProUGUI>().text != "")
             {
