@@ -184,7 +184,7 @@ public class SelecionarNiveisManager : MonoBehaviour
             popupParabens.SetActive(true);
             
         }
-        if ((auxSoma == 3) && (parabens.jogoConcluido == false))
+        if ((auxSoma == 39) && (parabens.jogoConcluido == false))
         {
             popupParabens.transform.position = new Vector3(1325, 0, 1);
             irCasosAvancados();
