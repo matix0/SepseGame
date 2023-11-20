@@ -14,6 +14,7 @@ public class EmailUtility : MonoBehaviour
     public FeedbackHospital fbHospital;
     public PranchetaManager prnchManager;
     public Pacote condutasManager;
+    public EmailSend emailSender;
 
     public string auxTime;
 
@@ -53,8 +54,10 @@ public class EmailUtility : MonoBehaviour
     {
         numCasoCurrent = generalManager.Caso - 1;
         SelecaoCaso(numCasoCurrent);
-        Debug.Log(results0);
-        Debug.Log(results1);
+        if(emailSender != null)
+        {
+            emailSender.SendEmail();
+        }
     }
 
     /*string ConvertTime()
@@ -82,7 +85,11 @@ public class EmailUtility : MonoBehaviour
                 SaveNaoMarcados(caso0);
                 //Correcao do caso para mostrar no email
                 results0 = correctMatrix(caso0);
-                EmailSend.resultado0R = results0;
+                if(EmailSend.nVezes[0] <= 0)
+                {
+                    EmailSend.resultado0R = results0;
+                }
+                EmailSend.nVezes[0] += 1;
                 break;
             case 1:
                 //pontuacao
@@ -102,7 +109,11 @@ public class EmailUtility : MonoBehaviour
                 //SaveAvisos(caso1);
                 //Correcao do caso para mostrar no email
                 results1 = correctMatrix(caso1);
-                EmailSend.resultado1R = results1;
+                if (EmailSend.nVezes[1] <= 0)
+                {
+                    EmailSend.resultado1R = results1;
+                }
+                EmailSend.nVezes[1] += 1;
                 break;
             case 2:
                 //pontuacao
@@ -122,7 +133,11 @@ public class EmailUtility : MonoBehaviour
                 //SaveAvisos(caso2);
                 //Correcao do caso para mostrar no email
                 results2 = correctMatrix(caso2);
-                EmailSend.resultado2R = results2;
+                if (EmailSend.nVezes[2] <= 0)
+                {
+                    EmailSend.resultado2R = results2;
+                }
+                EmailSend.nVezes[2] += 1;
                 break;
             case 3:
                 //pontuacao
@@ -142,7 +157,11 @@ public class EmailUtility : MonoBehaviour
                 //SaveAvisos(caso3);
                 //Correcao do caso para mostrar no email
                 results3 = correctMatrix(caso3);
-                EmailSend.resultado3R = results3;
+                if (EmailSend.nVezes[3] <= 0)
+                {
+                    EmailSend.resultado3R = results3;
+                }
+                EmailSend.nVezes[3] += 1;
                 break;
             case 4:
                 //pontuacao
@@ -162,7 +181,11 @@ public class EmailUtility : MonoBehaviour
                 //SaveAvisos(caso4);
                 //Correcao do caso para mostrar no email
                 results4 = correctMatrix(caso4);
-                EmailSend.resultado4R = results4;
+                if (EmailSend.nVezes[4] <= 0)
+                {
+                    EmailSend.resultado4R = results4;
+                }
+                EmailSend.nVezes[4] += 1;
                 break;
             case 5:
                 //pontuacao
@@ -182,7 +205,11 @@ public class EmailUtility : MonoBehaviour
                 //SaveAvisos(caso5);
                 //Correcao do caso para mostrar no email
                 results5 = correctMatrix(caso5);
-                EmailSend.resultado5R = results5;
+                if (EmailSend.nVezes[5] <= 0)
+                {
+                    EmailSend.resultado5R = results5;
+                }
+                EmailSend.nVezes[5] += 1;
                 break;
             case 6:
                 //pontuacao
@@ -202,7 +229,11 @@ public class EmailUtility : MonoBehaviour
                 //SaveAvisos(caso6);
                 //Correcao do caso para mostrar no email
                 results6 = correctMatrix(caso6);
-                EmailSend.resultado6R = results6;
+                if (EmailSend.nVezes[6] <= 0)
+                {
+                    EmailSend.resultado6R = results6;
+                }
+                EmailSend.nVezes[6] += 1;
                 break;
             case 7:
                 //pontuacao
@@ -222,7 +253,11 @@ public class EmailUtility : MonoBehaviour
                 //SaveAvisos(caso7);
                 //Correcao do caso para mostrar no email
                 results7 = correctMatrix(caso7);
-                EmailSend.resultado7R = results7;
+                if (EmailSend.nVezes[7] <= 0)
+                {
+                    EmailSend.resultado7R = results7;
+                }
+                EmailSend.nVezes[7] += 1;
                 break;
             case 8:
                 //pontuacao
@@ -242,7 +277,11 @@ public class EmailUtility : MonoBehaviour
                 //SaveAvisos(caso8);
                 //Correcao do caso para mostrar no email
                 results8 = correctMatrix(caso8);
-                EmailSend.resultado8R = results8;
+                if (EmailSend.nVezes[8] <= 0)
+                {
+                    EmailSend.resultado8R = results8;
+                }
+                EmailSend.nVezes[8] += 1;
                 break;
             case 9:
                 //pontuacao
@@ -262,7 +301,11 @@ public class EmailUtility : MonoBehaviour
                 //SaveAvisos(caso9);
                 //Correcao do caso para mostrar no email
                 results9 = correctMatrix(caso9);
-                EmailSend.resultado9R = results9;
+                if (EmailSend.nVezes[9] <= 0)
+                {
+                    EmailSend.resultado9R = results9;
+                }
+                EmailSend.nVezes[9] += 1;
                 break;
             case 10:
                 //pontuacao
@@ -282,7 +325,11 @@ public class EmailUtility : MonoBehaviour
                 //SaveAvisos(caso10);
                 //Correcao do caso para mostrar no email
                 results10 = correctMatrix(caso10);
-                EmailSend.resultado10R = results10;
+                if (EmailSend.nVezes[10] <= 0)
+                {
+                    EmailSend.resultado10R = results10;
+                }
+                EmailSend.nVezes[10] += 1;
                 break;
             case 11:
                 //pontuacao
@@ -302,7 +349,11 @@ public class EmailUtility : MonoBehaviour
                 //SaveAvisos(caso11);
                 //Correcao do caso para mostrar no email
                 results11 = correctMatrix(caso11);
-                EmailSend.resultado11R = results11;
+                if (EmailSend.nVezes[11] <= 0)
+                {
+                    EmailSend.resultado11R = results11;
+                }
+                EmailSend.nVezes[11] += 1;
                 break;
             case 12:
                 //pontuacao
@@ -322,7 +373,11 @@ public class EmailUtility : MonoBehaviour
                 //SaveAvisos(caso12);
                 //Correcao do caso para mostrar no email
                 results12 = correctMatrix(caso12);
-                EmailSend.resultado12R = results12;
+                if (EmailSend.nVezes[12] <= 0)
+                {
+                    EmailSend.resultado12R = results12;
+                }
+                EmailSend.nVezes[12] += 1;
                 break;
             default:
                 break;

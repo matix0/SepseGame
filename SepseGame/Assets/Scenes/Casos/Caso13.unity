@@ -34349,6 +34349,7 @@ GameObject:
   - component: {fileID: 1664021112}
   - component: {fileID: 1664021113}
   - component: {fileID: 1664021114}
+  - component: {fileID: 1664021115}
   m_Layer: 0
   m_Name: GeneralManager
   m_TagString: Untagged
@@ -34416,7 +34417,21 @@ MonoBehaviour:
   fbHospital: {fileID: 1621994267}
   prnchManager: {fileID: 847078685}
   condutasManager: {fileID: 600064700}
+  emailSender: {fileID: 1664021115}
   auxTime: 
+--- !u!114 &1664021115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664021111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72bba5f41fb7d34c9052ac215314c60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pack: {fileID: 0}
 --- !u!1 &1665603888
 GameObject:
   m_ObjectHideFlags: 0
