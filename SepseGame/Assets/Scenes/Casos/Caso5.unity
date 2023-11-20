@@ -3041,7 +3041,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 15.1
-  m_fontSizeMax: 72
+  m_fontSizeMax: 25
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -3414,7 +3414,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 15.1
-  m_fontSizeMax: 72
+  m_fontSizeMax: 25
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -28984,7 +28984,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 15.1
-  m_fontSizeMax: 72
+  m_fontSizeMax: 25
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -30304,7 +30304,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 15.1
-  m_fontSizeMax: 72
+  m_fontSizeMax: 25
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -34451,6 +34451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1664021112}
   - component: {fileID: 1664021113}
+  - component: {fileID: 1664021114}
   m_Layer: 0
   m_Name: GeneralManager
   m_TagString: Untagged
@@ -34486,6 +34487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Caso: 5
   sexo: 1
+  email: {fileID: 1664021114}
   hospitalFeedback: {fileID: 1034176269}
   CasoAtualDisplay: {fileID: 1633541343}
   CasoClinicoAvatarBG: {fileID: 1083199286}
@@ -34500,6 +34502,24 @@ MonoBehaviour:
   dialogManager: {fileID: 2020923993}
   feedbackManager: {fileID: 249361564}
   niveisConcluidos: {fileID: 11400000, guid: 71e9484ae60a5814faafb896e2597ea7, type: 2}
+--- !u!114 &1664021114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664021111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19b291d9118da4458a8670d4d93d70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generalManager: {fileID: 1664021113}
+  fbManager: {fileID: 249361564}
+  fbHospital: {fileID: 1621994267}
+  prnchManager: {fileID: 847078685}
+  condutasManager: {fileID: 600064700}
+  auxTime: 
 --- !u!1 &1665603888
 GameObject:
   m_ObjectHideFlags: 0
@@ -40015,7 +40035,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 15.1
-  m_fontSizeMax: 72
+  m_fontSizeMax: 25
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -41027,7 +41047,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 15.1
-  m_fontSizeMax: 72
+  m_fontSizeMax: 25
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512

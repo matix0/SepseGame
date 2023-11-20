@@ -54,6 +54,7 @@ public class EmailUtility : MonoBehaviour
         numCasoCurrent = generalManager.Caso - 1;
         SelecaoCaso(numCasoCurrent);
         Debug.Log(results0);
+        Debug.Log(results1);
     }
 
     /*string ConvertTime()
@@ -79,14 +80,8 @@ public class EmailUtility : MonoBehaviour
                 SaveErros(caso0);
                 //naomarcados
                 SaveNaoMarcados(caso0);
-                //acertocondutas
-                SaveCondutasCertas(caso0);
-                //erroscondutas
-                SaveCondutasErrada(caso0);
-                //avisos
-                //SaveAvisos(caso0);
                 //Correcao do caso para mostrar no email
-                results0 = CorrigirMatriz(caso0);
+                results0 = correctMatrix(caso0);
                 EmailSend.resultado0R = results0;
                 break;
             case 1:
@@ -100,13 +95,13 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso1);
                 //acertocondutas
-                SaveCondutasCertas(caso1);
+                //SaveCondutasCertas(caso1);
                 //erroscondutas
-                SaveCondutasErrada(caso1);
+                //SaveCondutasCertas(caso1);
                 //avisos
                 //SaveAvisos(caso1);
                 //Correcao do caso para mostrar no email
-                results1 = CorrigirMatriz(caso1);
+                results1 = correctMatrix(caso1);
                 EmailSend.resultado1R = results1;
                 break;
             case 2:
@@ -120,13 +115,13 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso2);
                 //acertocondutas
-                SaveCondutasCertas(caso2);
+                //SaveCondutasCertas(caso2);
                 //erroscondutas
-                SaveCondutasErrada(caso2);
+                //SaveCondutasCertas(caso2);
                 //avisos
                 //SaveAvisos(caso2);
                 //Correcao do caso para mostrar no email
-                results2 = CorrigirMatriz(caso2);
+                results2 = correctMatrix(caso2);
                 EmailSend.resultado2R = results2;
                 break;
             case 3:
@@ -140,13 +135,13 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso3);
                 //acertocondutas
-                SaveCondutasCertas(caso3);
+                //SaveCondutasCertas(caso3);
                 //erroscondutas
-                SaveCondutasErrada(caso3);
+                //SaveCondutasCertas(caso3);
                 //avisos
                 //SaveAvisos(caso3);
                 //Correcao do caso para mostrar no email
-                results3 = CorrigirMatriz(caso3);
+                results3 = correctMatrix(caso3);
                 EmailSend.resultado3R = results3;
                 break;
             case 4:
@@ -160,13 +155,13 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso4);
                 //acertocondutas
-                SaveCondutasCertas(caso4);
+                //SaveCondutasCertas(caso4);
                 //erroscondutas
-                SaveCondutasErrada(caso4);
+                //SaveCondutasCertas(caso4);
                 //avisos
                 //SaveAvisos(caso4);
                 //Correcao do caso para mostrar no email
-                results4 = CorrigirMatriz(caso4);
+                results4 = correctMatrix(caso4);
                 EmailSend.resultado4R = results4;
                 break;
             case 5:
@@ -180,13 +175,13 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso5);
                 //acertocondutas
-                SaveCondutasCertas(caso5);
+                //SaveCondutasCertas(caso5);
                 //erroscondutas
-                SaveCondutasErrada(caso5);
+                //SaveCondutasCertas(caso5);
                 //avisos
                 //SaveAvisos(caso5);
                 //Correcao do caso para mostrar no email
-                results5 = CorrigirMatriz(caso5);
+                results5 = correctMatrix(caso5);
                 EmailSend.resultado5R = results5;
                 break;
             case 6:
@@ -200,13 +195,13 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso6);
                 //acertocondutas
-                SaveCondutasCertas(caso6);
+                //SaveCondutasCertas(caso6);
                 //erroscondutas
-                SaveCondutasErrada(caso6);
+                //SaveCondutasCertas(caso6);
                 //avisos
                 //SaveAvisos(caso6);
                 //Correcao do caso para mostrar no email
-                results6 = CorrigirMatriz(caso6);
+                results6 = correctMatrix(caso6);
                 EmailSend.resultado6R = results6;
                 break;
             case 7:
@@ -220,13 +215,13 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso7);
                 //acertocondutas
-                SaveCondutasCertas(caso7);
+                //SaveCondutasCertas(caso7);
                 //erroscondutas
-                SaveCondutasErrada(caso7);
+                //SaveCondutasCertas(caso7);
                 //avisos
                 //SaveAvisos(caso7);
                 //Correcao do caso para mostrar no email
-                results7 = CorrigirMatriz(caso7);
+                results7 = correctMatrix(caso7);
                 EmailSend.resultado7R = results7;
                 break;
             case 8:
@@ -240,13 +235,13 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso8);
                 //acertocondutas
-                SaveCondutasCertas(caso8);
+                //SaveCondutasCertas(caso8);
                 //erroscondutas
-                SaveCondutasErrada(caso8);
+                //SaveCondutasCertas(caso8);
                 //avisos
                 //SaveAvisos(caso8);
                 //Correcao do caso para mostrar no email
-                results8 = CorrigirMatriz(caso8);
+                results8 = correctMatrix(caso8);
                 EmailSend.resultado8R = results8;
                 break;
             case 9:
@@ -260,13 +255,13 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso9);
                 //acertocondutas
-                SaveCondutasCertas(caso9);
+                //SaveCondutasCertas(caso9);
                 //erroscondutas
-                SaveCondutasErrada(caso9);
+                //SaveCondutasCertas(caso9);
                 //avisos
                 //SaveAvisos(caso9);
                 //Correcao do caso para mostrar no email
-                results9 = CorrigirMatriz(caso9);
+                results9 = correctMatrix(caso9);
                 EmailSend.resultado9R = results9;
                 break;
             case 10:
@@ -280,13 +275,13 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso10);
                 //acertocondutas
-                SaveCondutasCertas(caso10);
+                //SaveCondutasCertas(caso10);
                 //erroscondutas
-                SaveCondutasErrada(caso10);
+                //SaveCondutasCertas(caso10);
                 //avisos
                 //SaveAvisos(caso10);
                 //Correcao do caso para mostrar no email
-                results10 = CorrigirMatriz(caso10);
+                results10 = correctMatrix(caso10);
                 EmailSend.resultado10R = results10;
                 break;
             case 11:
@@ -300,13 +295,13 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso11);
                 //acertocondutas
-                SaveCondutasCertas(caso11);
+                //SaveCondutasCertas(caso11);
                 //erroscondutas
-                SaveCondutasErrada(caso11);
+                //SaveCondutasCertas(caso11);
                 //avisos
                 //SaveAvisos(caso11);
                 //Correcao do caso para mostrar no email
-                results11 = CorrigirMatriz(caso11);
+                results11 = correctMatrix(caso11);
                 EmailSend.resultado11R = results11;
                 break;
             case 12:
@@ -320,13 +315,13 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso12);
                 //acertocondutas
-                SaveCondutasCertas(caso12);
+                //SaveCondutasCertas(caso12);
                 //erroscondutas
-                SaveCondutasErrada(caso12);
+                //SaveCondutasCertas(caso12);
                 //avisos
                 //SaveAvisos(caso12);
                 //Correcao do caso para mostrar no email
-                results12 = CorrigirMatriz(caso12);
+                results12 = correctMatrix(caso12);
                 EmailSend.resultado12R = results12;
                 break;
             default:
@@ -379,7 +374,7 @@ public class EmailUtility : MonoBehaviour
         }
     }
 
-    void SaveCondutasCertas(string[,] z)
+    /*void SaveCondutasCertas(string[,] z)
     {
         int contCC = 0;
         for (int i = 0; i < 6; i++)
@@ -392,9 +387,9 @@ public class EmailUtility : MonoBehaviour
                 contCC++;
             }
         }
-    }
+    }*/
 
-    void SaveCondutasErrada(string[,] b)
+    /*void SaveCondutasCertas(string[,] b)
     {
         int contCE = 0;
         for (int i = 0; i < 6; i++)
@@ -407,7 +402,7 @@ public class EmailUtility : MonoBehaviour
                 contCE++;
             }
         }
-    }
+    }*/
 
     /*void SaveAvisos(string[,] sx)
     {
@@ -473,7 +468,7 @@ public class EmailUtility : MonoBehaviour
         }
     }
 
-    string IndiceDaConduta(int contador)
+    string IndiceDaCondutaCerta(int contador)
     {
         switch (contador)
         {
@@ -494,7 +489,28 @@ public class EmailUtility : MonoBehaviour
         }
     }
 
-    string CorrigirMatriz(string[,] res)
+    string IndiceDaCondutaMarcada(int contador)
+    {
+        switch (contador)
+        {
+            case 0:
+                return condutasManager.condutas[condutasManager.selecaoCondutas[0]];
+            case 1:
+                return condutasManager.condutas[condutasManager.selecaoCondutas[1]];
+            case 2:
+                return condutasManager.condutas[condutasManager.selecaoCondutas[2]];
+            case 3:
+                return condutasManager.condutas[condutasManager.selecaoCondutas[3]];
+            case 4:
+                return condutasManager.condutas[condutasManager.selecaoCondutas[4]];
+            case 5:
+                return condutasManager.condutas[condutasManager.selecaoCondutas[5]];
+            default:
+                return null;
+        }
+    }
+
+    /*string CorrigirMatriz(string[,] res)
     {
         string[,] aux2;
         aux2 = res;
@@ -516,5 +532,49 @@ public class EmailUtility : MonoBehaviour
              .Select(z => string.Join($"; ", z)));
 
         return resultsAux;
+    }*/
+
+    string correctMatrix(string[,] matrix)
+    {
+        string resultString = "";
+        resultString += "ESTRELAS OBTIDAS: " + matrix[0, 0];
+        
+        resultString += "\n\nSINAIS MARCADOS CORRETAMENTE:";
+        for (int i=0; i < matrix.GetLength(1); i++)
+        {
+            if (matrix[1,i] != null)
+            {
+                resultString += "\n" + matrix[1, i];
+            }
+        }
+        resultString += "\n\nSINAIS MARCADOS INCORRETAMENTE:";
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            if (matrix[2, j] != null)
+            {
+                resultString += "\n" + matrix[2, j];
+            }
+        }
+        resultString += "\n\nSINAIS NÃO MARCADOS:";
+        for (int k = 0; k < matrix.GetLength(1); k++)
+        {
+            if (matrix[3, k] != null)
+            {
+                resultString += "\n" + matrix[3, k];
+            }
+        }
+
+        resultString += "\n\nCONDUTAS SELECIONADAS: ";
+        for (int x=0; x < 6; x++)
+        {
+            resultString += "\n" + IndiceDaCondutaMarcada(x);
+        }
+        resultString += "\n\nCONDUTAS CORRETAS (para referência): ";
+        for (int y = 0; y < 6; y++)
+        {
+            resultString += "\n" + IndiceDaCondutaCerta(y);
+        }
+
+        return resultString;
     }
 }

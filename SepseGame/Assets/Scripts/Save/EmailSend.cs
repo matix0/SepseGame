@@ -72,7 +72,7 @@ public class EmailSend : MonoBehaviour
         MailMessage message = new MailMessage(from, to);
         message.Body = $"\nNome: {Login.nome}" +
             $"\nCPF: {Login.cpf}\n\n" +
-            $"Legenda para leitura dos casos:\n {legendaEmail}" +
+            //$"Legenda para leitura dos casos:\n {legendaEmail}" +
             $"\r\nCaso 1 \n{resultado0R}\n\n" +
             $"\r\nCaso 2: \n{resultado1R}\n\n" +
             $"\r\nCaso 3 \n{resultado2R}\n\n" +
