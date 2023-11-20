@@ -23,10 +23,10 @@ public class MenuMain : MonoBehaviour
             Musica.volume = slider.GetComponent<Slider>().value;
         }
         
-        for (int i = 0; i < 14; i++)
+        /*for (int i = 0; i < 14; i++)
         {
             PlayerPrefs.SetInt("caso" + i.ToString(), 0);
-        }
+        }*/
         
     }
 

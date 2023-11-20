@@ -20,7 +20,7 @@ public class TutorialManager : MonoBehaviour
         pageCountText.text = $"{tutorialText.pageToDisplay} / 12";
         //Debug.Log($"Paginas: {tutorialText.textInfo.pageCount}, atual: {currentPage}" );
         btn_texto = btn_proximo.transform.Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>();
-        Debug.Log(btn_texto.text);
+        //Debug.Log(btn_texto.text);
     }
 
     public void NextPage()

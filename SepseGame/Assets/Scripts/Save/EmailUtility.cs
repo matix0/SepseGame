@@ -9,9 +9,13 @@ using System.Net.Mime;
 
 public class EmailUtility : MonoBehaviour
 {
-    public List<Caso> Casos;
-    public Caso caso;
-    public Estetica pack;
+    public Caso1 generalManager;
+    public FeedbackManager fbManager;
+    public FeedbackHospital fbHospital;
+    public PranchetaManager prnchManager;
+    public Pacote condutasManager;
+    public EmailSend emailSender;
+
     public string auxTime;
 
     int numCasoCurrent;
@@ -46,23 +50,24 @@ public class EmailUtility : MonoBehaviour
     public static string results11;
     public static string results12;
 
-    void Start()
+    public void SaveEmail()
     {
-        caso = Casos[pack.currentCase];
-
-        numCasoCurrent = pack.currentCase;
+        numCasoCurrent = generalManager.Caso - 1;
         SelecaoCaso(numCasoCurrent);
-        Debug.Log(results0);
+        if(emailSender != null)
+        {
+            emailSender.SendEmail();
+        }
     }
 
-    string ConvertTime()
+    /*string ConvertTime()
     {
         float minutes = Mathf.FloorToInt(caso.time / 60);
         float seconds = Mathf.FloorToInt(caso.time % 60);
 
         auxTime = string.Format("{0:00}:{1:00}", minutes, seconds);
         return auxTime;
-    }
+    }*/
 
     void SelecaoCaso(int numCasoCurrent)
     {
@@ -70,28 +75,26 @@ public class EmailUtility : MonoBehaviour
         {
             case 0:
                 //pontuacao
-                caso0[0, 0] = caso.pontuacao.ToString();
-                caso0[7, 0] = ConvertTime();
+                caso0[0, 0] = fbManager.estrelas.ToString();
+                //caso0[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso0);
                 //erros
                 SaveErros(caso0);
                 //naomarcados
                 SaveNaoMarcados(caso0);
-                //acertocondutas
-                SaveCondutasCertas(caso0);
-                //erroscondutas
-                SaveCondutasErrada(caso0);
-                //avisos
-                SaveAvisos(caso0);
                 //Correcao do caso para mostrar no email
-                results0 = CorrigirMatriz(caso0);
-                EmailSend.resultado0R = results0;
+                results0 = correctMatrix(caso0);
+                if(EmailSend.nVezes[0] <= 0)
+                {
+                    EmailSend.resultado0R = results0;
+                }
+                EmailSend.nVezes[0] += 1;
                 break;
             case 1:
                 //pontuacao
-                caso1[0, 0] = caso.pontuacao.ToString();
-                caso1[7, 0] = ConvertTime();
+                caso1[0, 0] = fbManager.estrelas.ToString();
+                //caso1[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso1);
                 //erros
@@ -99,19 +102,23 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso1);
                 //acertocondutas
-                SaveCondutasCertas(caso1);
+                //SaveCondutasCertas(caso1);
                 //erroscondutas
-                SaveCondutasErrada(caso1);
+                //SaveCondutasCertas(caso1);
                 //avisos
-                SaveAvisos(caso1);
+                //SaveAvisos(caso1);
                 //Correcao do caso para mostrar no email
-                results1 = CorrigirMatriz(caso1);
-                EmailSend.resultado1R = results1;
+                results1 = correctMatrix(caso1);
+                if (EmailSend.nVezes[1] <= 0)
+                {
+                    EmailSend.resultado1R = results1;
+                }
+                EmailSend.nVezes[1] += 1;
                 break;
             case 2:
                 //pontuacao
-                caso2[0, 0] = caso.pontuacao.ToString();
-                caso2[7, 0] = ConvertTime();
+                caso2[0, 0] = fbManager.estrelas.ToString();
+                //caso2[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso2);
                 //erros
@@ -119,19 +126,23 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso2);
                 //acertocondutas
-                SaveCondutasCertas(caso2);
+                //SaveCondutasCertas(caso2);
                 //erroscondutas
-                SaveCondutasErrada(caso2);
+                //SaveCondutasCertas(caso2);
                 //avisos
-                SaveAvisos(caso2);
+                //SaveAvisos(caso2);
                 //Correcao do caso para mostrar no email
-                results2 = CorrigirMatriz(caso2);
-                EmailSend.resultado2R = results2;
+                results2 = correctMatrix(caso2);
+                if (EmailSend.nVezes[2] <= 0)
+                {
+                    EmailSend.resultado2R = results2;
+                }
+                EmailSend.nVezes[2] += 1;
                 break;
             case 3:
                 //pontuacao
-                caso3[0, 0] = caso.pontuacao.ToString();
-                caso3[7, 0] = ConvertTime();
+                caso3[0, 0] = fbManager.estrelas.ToString();
+                //caso3[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso3);
                 //erros
@@ -139,19 +150,23 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso3);
                 //acertocondutas
-                SaveCondutasCertas(caso3);
+                //SaveCondutasCertas(caso3);
                 //erroscondutas
-                SaveCondutasErrada(caso3);
+                //SaveCondutasCertas(caso3);
                 //avisos
-                SaveAvisos(caso3);
+                //SaveAvisos(caso3);
                 //Correcao do caso para mostrar no email
-                results3 = CorrigirMatriz(caso3);
-                EmailSend.resultado3R = results3;
+                results3 = correctMatrix(caso3);
+                if (EmailSend.nVezes[3] <= 0)
+                {
+                    EmailSend.resultado3R = results3;
+                }
+                EmailSend.nVezes[3] += 1;
                 break;
             case 4:
                 //pontuacao
-                caso4[0, 0] = caso.pontuacao.ToString();
-                caso4[7, 0] = ConvertTime();
+                caso4[0, 0] = fbManager.estrelas.ToString();
+                //caso4[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso4);
                 //erros
@@ -159,19 +174,23 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso4);
                 //acertocondutas
-                SaveCondutasCertas(caso4);
+                //SaveCondutasCertas(caso4);
                 //erroscondutas
-                SaveCondutasErrada(caso4);
+                //SaveCondutasCertas(caso4);
                 //avisos
-                SaveAvisos(caso4);
+                //SaveAvisos(caso4);
                 //Correcao do caso para mostrar no email
-                results4 = CorrigirMatriz(caso4);
-                EmailSend.resultado4R = results4;
+                results4 = correctMatrix(caso4);
+                if (EmailSend.nVezes[4] <= 0)
+                {
+                    EmailSend.resultado4R = results4;
+                }
+                EmailSend.nVezes[4] += 1;
                 break;
             case 5:
                 //pontuacao
-                caso5[0, 0] = caso.pontuacao.ToString();
-                caso5[7, 0] = ConvertTime();
+                caso5[0, 0] = fbManager.estrelas.ToString();
+                //caso5[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso5);
                 //erros
@@ -179,19 +198,23 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso5);
                 //acertocondutas
-                SaveCondutasCertas(caso5);
+                //SaveCondutasCertas(caso5);
                 //erroscondutas
-                SaveCondutasErrada(caso5);
+                //SaveCondutasCertas(caso5);
                 //avisos
-                SaveAvisos(caso5);
+                //SaveAvisos(caso5);
                 //Correcao do caso para mostrar no email
-                results5 = CorrigirMatriz(caso5);
-                EmailSend.resultado5R = results5;
+                results5 = correctMatrix(caso5);
+                if (EmailSend.nVezes[5] <= 0)
+                {
+                    EmailSend.resultado5R = results5;
+                }
+                EmailSend.nVezes[5] += 1;
                 break;
             case 6:
                 //pontuacao
-                caso6[0, 0] = caso.pontuacao.ToString();
-                caso6[7, 0] = ConvertTime();
+                caso6[0, 0] = fbManager.estrelas.ToString();
+                //caso6[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso6);
                 //erros
@@ -199,19 +222,23 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso6);
                 //acertocondutas
-                SaveCondutasCertas(caso6);
+                //SaveCondutasCertas(caso6);
                 //erroscondutas
-                SaveCondutasErrada(caso6);
+                //SaveCondutasCertas(caso6);
                 //avisos
-                SaveAvisos(caso6);
+                //SaveAvisos(caso6);
                 //Correcao do caso para mostrar no email
-                results6 = CorrigirMatriz(caso6);
-                EmailSend.resultado6R = results6;
+                results6 = correctMatrix(caso6);
+                if (EmailSend.nVezes[6] <= 0)
+                {
+                    EmailSend.resultado6R = results6;
+                }
+                EmailSend.nVezes[6] += 1;
                 break;
             case 7:
                 //pontuacao
-                caso7[0, 0] = caso.pontuacao.ToString();
-                caso7[7, 0] = ConvertTime();
+                caso7[0, 0] = fbManager.estrelas.ToString();
+                //caso7[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso7);
                 //erros
@@ -219,19 +246,23 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso7);
                 //acertocondutas
-                SaveCondutasCertas(caso7);
+                //SaveCondutasCertas(caso7);
                 //erroscondutas
-                SaveCondutasErrada(caso7);
+                //SaveCondutasCertas(caso7);
                 //avisos
-                SaveAvisos(caso7);
+                //SaveAvisos(caso7);
                 //Correcao do caso para mostrar no email
-                results7 = CorrigirMatriz(caso7);
-                EmailSend.resultado7R = results7;
+                results7 = correctMatrix(caso7);
+                if (EmailSend.nVezes[7] <= 0)
+                {
+                    EmailSend.resultado7R = results7;
+                }
+                EmailSend.nVezes[7] += 1;
                 break;
             case 8:
                 //pontuacao
-                caso8[0, 0] = caso.pontuacao.ToString();
-                caso8[7, 0] = ConvertTime();
+                caso8[0, 0] = fbManager.estrelas.ToString();
+                //caso8[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso8);
                 //erros
@@ -239,19 +270,23 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso8);
                 //acertocondutas
-                SaveCondutasCertas(caso8);
+                //SaveCondutasCertas(caso8);
                 //erroscondutas
-                SaveCondutasErrada(caso8);
+                //SaveCondutasCertas(caso8);
                 //avisos
-                SaveAvisos(caso8);
+                //SaveAvisos(caso8);
                 //Correcao do caso para mostrar no email
-                results8 = CorrigirMatriz(caso8);
-                EmailSend.resultado8R = results8;
+                results8 = correctMatrix(caso8);
+                if (EmailSend.nVezes[8] <= 0)
+                {
+                    EmailSend.resultado8R = results8;
+                }
+                EmailSend.nVezes[8] += 1;
                 break;
             case 9:
                 //pontuacao
-                caso9[0, 0] = caso.pontuacao.ToString();
-                caso9[7, 0] = ConvertTime();
+                caso9[0, 0] = fbManager.estrelas.ToString();
+                // caso9[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso9);
                 //erros
@@ -259,19 +294,23 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso9);
                 //acertocondutas
-                SaveCondutasCertas(caso9);
+                //SaveCondutasCertas(caso9);
                 //erroscondutas
-                SaveCondutasErrada(caso9);
+                //SaveCondutasCertas(caso9);
                 //avisos
-                SaveAvisos(caso9);
+                //SaveAvisos(caso9);
                 //Correcao do caso para mostrar no email
-                results9 = CorrigirMatriz(caso9);
-                EmailSend.resultado9R = results9;
+                results9 = correctMatrix(caso9);
+                if (EmailSend.nVezes[9] <= 0)
+                {
+                    EmailSend.resultado9R = results9;
+                }
+                EmailSend.nVezes[9] += 1;
                 break;
             case 10:
                 //pontuacao
-                caso10[0, 0] = caso.pontuacao.ToString();
-                caso10[7, 0] = ConvertTime();
+                caso10[0, 0] = fbManager.estrelas.ToString();
+                //caso10[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso10);
                 //erros
@@ -279,19 +318,23 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso10);
                 //acertocondutas
-                SaveCondutasCertas(caso10);
+                //SaveCondutasCertas(caso10);
                 //erroscondutas
-                SaveCondutasErrada(caso10);
+                //SaveCondutasCertas(caso10);
                 //avisos
-                SaveAvisos(caso10);
+                //SaveAvisos(caso10);
                 //Correcao do caso para mostrar no email
-                results10 = CorrigirMatriz(caso10);
-                EmailSend.resultado10R = results10;
+                results10 = correctMatrix(caso10);
+                if (EmailSend.nVezes[10] <= 0)
+                {
+                    EmailSend.resultado10R = results10;
+                }
+                EmailSend.nVezes[10] += 1;
                 break;
             case 11:
                 //pontuacao
-                caso11[0, 0] = caso.pontuacao.ToString();
-                caso11[7, 0] = ConvertTime();
+                caso11[0, 0] = fbManager.estrelas.ToString();
+                //caso11[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso11);
                 //erros
@@ -299,19 +342,23 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso11);
                 //acertocondutas
-                SaveCondutasCertas(caso11);
+                //SaveCondutasCertas(caso11);
                 //erroscondutas
-                SaveCondutasErrada(caso11);
+                //SaveCondutasCertas(caso11);
                 //avisos
-                SaveAvisos(caso11);
+                //SaveAvisos(caso11);
                 //Correcao do caso para mostrar no email
-                results11 = CorrigirMatriz(caso11);
-                EmailSend.resultado11R = results11;
+                results11 = correctMatrix(caso11);
+                if (EmailSend.nVezes[11] <= 0)
+                {
+                    EmailSend.resultado11R = results11;
+                }
+                EmailSend.nVezes[11] += 1;
                 break;
             case 12:
                 //pontuacao
-                caso12[0, 0] = caso.pontuacao.ToString();
-                caso12[7, 0] = ConvertTime();
+                caso12[0, 0] = fbManager.estrelas.ToString();
+                //caso12[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso12);
                 //erros
@@ -319,14 +366,18 @@ public class EmailUtility : MonoBehaviour
                 //naomarcados
                 SaveNaoMarcados(caso12);
                 //acertocondutas
-                SaveCondutasCertas(caso12);
+                //SaveCondutasCertas(caso12);
                 //erroscondutas
-                SaveCondutasErrada(caso12);
+                //SaveCondutasCertas(caso12);
                 //avisos
-                SaveAvisos(caso12);
+                //SaveAvisos(caso12);
                 //Correcao do caso para mostrar no email
-                results12 = CorrigirMatriz(caso12);
-                EmailSend.resultado12R = results12;
+                results12 = correctMatrix(caso12);
+                if (EmailSend.nVezes[12] <= 0)
+                {
+                    EmailSend.resultado12R = results12;
+                }
+                EmailSend.nVezes[12] += 1;
                 break;
             default:
                 break;
@@ -338,7 +389,7 @@ public class EmailUtility : MonoBehaviour
         int contA = 0;
         for (int i = 0; i < 14; i++)
         {
-            if (caso.indexesCorretos.Contains(i) && caso.selecionados.Contains(i))
+            if (fbHospital.corretas.Contains(i) && prnchManager.selecionados.Contains(i))
             {
                 txtAux = IndiceDoSinalVital(i);
                 x[1, contA] = txtAux;
@@ -353,7 +404,7 @@ public class EmailUtility : MonoBehaviour
         int contE = 0;
         for (int i = 0; i < 14; i++)
         {
-            if (!caso.indexesCorretos.Contains(i) && caso.selecionados.Contains(i))
+            if (!fbHospital.corretas.Contains(i) && prnchManager.selecionados.Contains(i))
             {
                 txtAux = null;
                 txtAux = IndiceDoSinalVital(i);
@@ -368,7 +419,7 @@ public class EmailUtility : MonoBehaviour
         int contNM = 0;
         for (int i = 0; i < 14; i++)
         {
-            if (caso.indexesCorretos.Contains(i) && !caso.selecionados.Contains(i))
+            if (fbHospital.corretas.Contains(i) && !prnchManager.selecionados.Contains(i))
             {
                 txtAux = null;
                 txtAux = IndiceDoSinalVital(i);
@@ -378,12 +429,12 @@ public class EmailUtility : MonoBehaviour
         }
     }
 
-    void SaveCondutasCertas(string[,] z)
+    /*void SaveCondutasCertas(string[,] z)
     {
         int contCC = 0;
         for (int i = 0; i < 6; i++)
         {
-            if (caso.condutas[i] == caso.condutas[caso.condSelected[i]])
+            if (condutasManager.condutas[i] == condutasManager.condutas[condutasManager.selecaoCondutas[i]])
             {
                 txtAux = null;
                 txtAux = IndiceDaConduta(i);
@@ -391,14 +442,14 @@ public class EmailUtility : MonoBehaviour
                 contCC++;
             }
         }
-    }
+    }*/
 
-    void SaveCondutasErrada(string[,] b)
+    /*void SaveCondutasCertas(string[,] b)
     {
         int contCE = 0;
         for (int i = 0; i < 6; i++)
         {
-            if (caso.condutas[i] != caso.condutas[caso.condSelected[i]])
+            if (condutasManager.condutas[i] != condutasManager.condutas[condutasManager.selecaoCondutas[i]])
             {
                 txtAux = null;
                 txtAux = IndiceDaConduta(i);
@@ -406,94 +457,115 @@ public class EmailUtility : MonoBehaviour
                 contCE++;
             }
         }
-    }
+    }*/
 
-    void SaveAvisos(string[,] sx)
+    /*void SaveAvisos(string[,] sx)
     {
         int slot = 0;
         if (!caso.abriuProtocolo)
         {
-            sx[6, slot] = "O Protocolo de Sepse não foi aberto! -10 pontos";
+            sx[6, slot] = "O Protocolo de Sepse não foi aberto!";
             slot++;
         }
         if (!caso.chamouEquipe)
         {
-            sx[6, slot] = "A Equipe Médica não foi acionada! -20 pontos";
+            sx[6, slot] = "A Equipe Médica não foi acionada!";
             slot++;
         }
         if (!caso.apertouBotaoCorreto)
         {
             if (caso.buttonCorreto == 1)
             {
-                sx[6, slot] = "O Protocolo de Sepse deveria ter sido descontinuado! -10 pontos";
+                sx[6, slot] = "O Protocolo de Sepse deveria ter sido descontinuado!";
                 slot++;
             }
             else
             {
-                sx[6, slot] = "O Protocolo de Sepse deveria ter sido continuado! -10 pontos";
+                sx[6, slot] = "O Protocolo de Sepse deveria ter sido continuado!";
                 slot++;
             }
         }
-    }
+    }*/
     string IndiceDoSinalVital(int contador)
     {
         switch (contador)
         {
             case 0:
-                return caso.FrequenciaCardiaca;
+                return prnchManager.SinaisVitais[0];
             case 1:
-                return caso.PressaoArterial;
+                return prnchManager.SinaisVitais[1];
             case 2:
-                return caso.Saturacao;
+                return prnchManager.SinaisVitais[2];
             case 3:
-                return caso.FrequenciaRespiratoria;
+                return prnchManager.SinaisVitais[3];
             case 4:
-                return caso.Temperatura;
+                return prnchManager.SinaisVitais[4];
             case 5:
-                return caso.Neurologico;
+                return prnchManager.SinaisVitais[5];
             case 6:
-                return caso.Respiratorio;
+                return prnchManager.SinaisVitais[6];
             case 7:
-                return caso.Cardiocirculatorio;
+                return prnchManager.SinaisVitais[7];
             case 8:
-                return caso.Gastrintestinal;
+                return prnchManager.SinaisVitais[8];
             case 9:
-                return caso.Renal;
+                return prnchManager.SinaisVitais[9];
             case 10:
-                return caso.lab1;
+                return prnchManager.Lab[0];
             case 11:
-                return caso.lab2;
+                return prnchManager.Lab[1];
             case 12:
-                return caso.lab3;
+                return prnchManager.Lab[2];
             case 13:
-                return caso.lab4;
+                return prnchManager.Lab[3];
             default:
                 return null;
         }
     }
 
-    string IndiceDaConduta(int contador)
+    string IndiceDaCondutaCerta(int contador)
     {
         switch (contador)
         {
             case 0:
-                return caso.condutas[0];
+                return condutasManager.condutas[0];
             case 1:
-                return caso.condutas[1];
+                return condutasManager.condutas[1];
             case 2:
-                return caso.condutas[2];
+                return condutasManager.condutas[2];
             case 3:
-                return caso.condutas[3];
+                return condutasManager.condutas[3];
             case 4:
-                return caso.condutas[4];
+                return condutasManager.condutas[4];
             case 5:
-                return caso.condutas[5];
+                return condutasManager.condutas[5];
             default:
                 return null;
         }
     }
 
-    string CorrigirMatriz(string[,] res)
+    string IndiceDaCondutaMarcada(int contador)
+    {
+        switch (contador)
+        {
+            case 0:
+                return condutasManager.condutas[condutasManager.selecaoCondutas[0]];
+            case 1:
+                return condutasManager.condutas[condutasManager.selecaoCondutas[1]];
+            case 2:
+                return condutasManager.condutas[condutasManager.selecaoCondutas[2]];
+            case 3:
+                return condutasManager.condutas[condutasManager.selecaoCondutas[3]];
+            case 4:
+                return condutasManager.condutas[condutasManager.selecaoCondutas[4]];
+            case 5:
+                return condutasManager.condutas[condutasManager.selecaoCondutas[5]];
+            default:
+                return null;
+        }
+    }
+
+    /*string CorrigirMatriz(string[,] res)
     {
         string[,] aux2;
         aux2 = res;
@@ -515,5 +587,49 @@ public class EmailUtility : MonoBehaviour
              .Select(z => string.Join($"; ", z)));
 
         return resultsAux;
+    }*/
+
+    string correctMatrix(string[,] matrix)
+    {
+        string resultString = "";
+        resultString += "ESTRELAS OBTIDAS: " + matrix[0, 0];
+        
+        resultString += "\n\nSINAIS MARCADOS CORRETAMENTE:";
+        for (int i=0; i < matrix.GetLength(1); i++)
+        {
+            if (matrix[1,i] != null)
+            {
+                resultString += "\n" + matrix[1, i];
+            }
+        }
+        resultString += "\n\nSINAIS MARCADOS INCORRETAMENTE:";
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            if (matrix[2, j] != null)
+            {
+                resultString += "\n" + matrix[2, j];
+            }
+        }
+        resultString += "\n\nSINAIS NÃO MARCADOS:";
+        for (int k = 0; k < matrix.GetLength(1); k++)
+        {
+            if (matrix[3, k] != null)
+            {
+                resultString += "\n" + matrix[3, k];
+            }
+        }
+
+        resultString += "\n\nCONDUTAS SELECIONADAS: ";
+        for (int x=0; x < 6; x++)
+        {
+            resultString += "\n" + IndiceDaCondutaMarcada(x);
+        }
+        resultString += "\n\nCONDUTAS CORRETAS (para referência): ";
+        for (int y = 0; y < 6; y++)
+        {
+            resultString += "\n" + IndiceDaCondutaCerta(y);
+        }
+
+        return resultString;
     }
 }

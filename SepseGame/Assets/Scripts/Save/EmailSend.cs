@@ -10,6 +10,8 @@ using System.Net.Mime;
 
 public class EmailSend : MonoBehaviour
 {
+    public static List<int> nVezes;
+
     public static string titleName;
     public static string legendaEmail;
     public static string resultado0R;
@@ -27,64 +29,49 @@ public class EmailSend : MonoBehaviour
     public static string resultado12R;
     public Estetica pack;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        legendaEmail = "Para entendender o relatório, cada linha significa algo, dessa forma, segue as instruções abaixo, lembrando que as linhas são separadas por (;;;;;;;;):\n" +
-            "1. Primeira linha sempre será a PONTUAÇÂO\n" +
-            "2. Segunda linha sempre será os ACERTOS\n" +
-            "3. Terceira linha sempre será os ERROS\n" +
-            "4. Quarta linha sempre será os NÂO MARCADOS\n" +
-            "5. Quinta linha sempre será os ACERTOS DE CONDUTA\n" +
-            "6. Sexta linha sempre será os ERROS DE CONDUTA\n" +
-            "7. Sétima linha sempre será os AVISOS\n" +
-            "8. Oitava linha sempre será o TEMPO FINAL DO CASO\n\n";
-
-        titleName = "Relatorio de desempenho - " + Login.nome;
-        
-        if (pack.currentCase == 13)
-        {
-            SendEmail();
-        }
-    }
-
     // Update is called once per frame
-    void SendEmail()
+    public void SendEmail()
     {
+        titleName = "Relatorio de desempenho - " + Login.nome;
+        float final_time = GameObject.Find("Timer").GetComponent<TimerObj>().time_elapsed;
+        float minutes = Mathf.FloorToInt(final_time / 60);
+        float seconds = Mathf.FloorToInt(final_time % 60);
+
         // Linhas referentes a "conexao" com o smtp de envio
-        SmtpClient client = new SmtpClient("smtp.mailgun.org", 587);
+        SmtpClient client = new SmtpClient("smtp-mail.outlook.com", 587);
 
         //credenciamento para permitir o envio
         client.Credentials = new System.Net.NetworkCredential(
-            "",
-            "");
+            "sepsegamerelatorio@outlook.com",
+            "sepserelatorio1");
         client.EnableSsl = true;
 
         // Definir quem envia o email e o nome do email que sera enviado
         MailAddress from = new MailAddress(
-            "sepserelatorio2@gmail.com",
+            "sepsegamerelatorio@outlook.com",
             titleName,
             System.Text.Encoding.UTF8);
 
         // Definir quem vai receber o email
-        MailAddress to = new MailAddress("sepserelatorio2@gmail.com");
+        MailAddress to = new MailAddress("sepsegamerelatorio@outlook.com");
         MailMessage message = new MailMessage(from, to);
         message.Body = $"\nNome: {Login.nome}" +
-            $"\nCPF: {Login.cpf}\n\n" +
-            $"Legenda para leitura dos casos:\n {legendaEmail}" +
-            $"\r\nCaso 1 \n{resultado0R}\n\n" +
-            $"\r\nCaso 2: \n{resultado1R}\n\n" +
-            $"\r\nCaso 3 \n{resultado2R}\n\n" +
-            $"\r\nCaso 4 \n{resultado3R}\n\n" +
-            $"\r\nCaso 5 \n{resultado4R}\n\n" +
-            $"\r\nCaso 6 \n{resultado5R}\n\n" +
-            $"\r\nCaso 7 \n{resultado6R}\n\n" +
-            $"\r\nCaso 8 \n{resultado7R}\n\n" +
-            $"\r\nCaso 9 \n{resultado8R}\n\n" +
-            $"\r\nCaso 10 \n{resultado9R}\n\n" +
-            $"\r\nCaso 11 \n{resultado10R}\n\n" +
-            $"\r\nCaso 12 \n{resultado11R}\n\n" +
-            $"\r\nCaso 13 \n{resultado12R}\n\n";
+            $"\nCPF: {Login.cpf}" +
+            $"\nTEMPO DE JOGO: {minutes} minutos e {seconds} segundos.\n\n" +
+            //$"Legenda para leitura dos casos:\n {legendaEmail}" +
+            $"\r\nCaso 1 (jogou {nVezes[0]} vez(es)): \n{resultado0R}\n\n" +
+            $"\r\nCaso 2 (jogou {nVezes[1]} vez(es)): \n{resultado1R}\n\n" +
+            $"\r\nCaso 3 (jogou {nVezes[2]} vez(es)): \n{resultado2R}\n\n" +
+            $"\r\nCaso 4 (jogou {nVezes[3]} vez(es)): \n{resultado3R}\n\n" +
+            $"\r\nCaso 5 (jogou {nVezes[4]} vez(es)): \n{resultado4R}\n\n" +
+            $"\r\nCaso 6 (jogou {nVezes[5]} vez(es)): \n{resultado5R}\n\n" +
+            $"\r\nCaso 7 (jogou {nVezes[6]} vez(es)): \n{resultado6R}\n\n" +
+            $"\r\nCaso 8 (jogou {nVezes[7]} vez(es)): \n{resultado7R}\n\n" +
+            $"\r\nCaso 9 (jogou {nVezes[8]} vez(es)): \n{resultado8R}\n\n" +
+            $"\r\nCaso 10 (jogou {nVezes[9]} vez(es)): \n{resultado9R}\n\n" +
+            $"\r\nCaso 11 (jogou {nVezes[10]} vez(es)): \n{resultado10R}\n\n" +
+            $"\r\nCaso 12 (jogou {nVezes[11]} vez(es)): \n{resultado11R}\n\n" +
+            $"\r\nCaso 13 (jogou {nVezes[12]} vez(es)): \n{resultado12R}\n\n";
 
         message.BodyEncoding = System.Text.Encoding.UTF8;
         message.Subject = titleName;
