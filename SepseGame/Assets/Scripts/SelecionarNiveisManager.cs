@@ -24,13 +24,16 @@ public class SelecionarNiveisManager : MonoBehaviour
         atualizaEstrelasCasos();
         liberaCasos();
         abrirParabens();
-        
+        if (GameObject.Find("ParabensManager").GetComponent<ParabensBools>().ultimoNivelJogado > 6)
+        {
+            irCasosAvancados();
+        }
     }
     public void liberaCasos()
     {
         for (int i = 0; i < 13; i++)
         {
-            if (niveisConcluidos.casos[i])
+            if (PlayerPrefs.GetInt("caso" + (i + 1).ToString()) > 0)
             {
                 GameObject pai,proxNivel;
                 Transform auxLiberado,auxConcluido,auxBloqueado;
@@ -141,6 +144,7 @@ public class SelecionarNiveisManager : MonoBehaviour
         getNivel();
         getCaso();
         //Debug.Log(caso);
+        GameObject.Find("ParabensManager").GetComponent<ParabensBools>().ultimoNivelJogado = numeroNivel;
         SceneManager.LoadScene(caso);
     }
 
@@ -165,31 +169,31 @@ public class SelecionarNiveisManager : MonoBehaviour
         TextMeshProUGUI auxPopup = popupParabens.transform.Find("Text_Info").gameObject.GetComponent<TextMeshProUGUI>();
 
         auxSoma = auxCountBasico + auxCountAvancado;
-        Debug.Log(auxSoma);
+        //Debug.Log(auxSoma);
 
-        if ((niveisConcluidos.casos[5] == true) && (parabens.basicoConcluido == false))
+        if ((niveisConcluidos.casos[5] == true) && (GameObject.Find("ParabensManager").GetComponent<ParabensBools>().casosBasicos == false))
         {
             irCasosBasicos();
             auxPopup.text = "Incrível!\n\n Você agora está preparado (a) para enfrentar casos clinicos mais complexos.\n\n Vamos lá!";
-            parabens.basicoConcluido = true;
+            GameObject.Find("ParabensManager").GetComponent<ParabensBools>().casosBasicos = true;
             popupParabens.SetActive(true);
             
         }
-        if (niveisConcluidos.casos[12]  && (parabens.avancadoConcluido == false))
+        if (niveisConcluidos.casos[12]  && (GameObject.Find("ParabensManager").GetComponent<ParabensBools>().casosAvancados == false))
         {
             popupParabens.transform.position = new Vector3(1325, 0, 1);
             irCasosAvancados();
             auxPopup.text = "Uau!\n Você resolveu todos os casos clinicos com sucesso, mas o troféu ainda não é seu.\n Jogue novamente para ganhar mais estrelas e conquistar esse troféu merecido!";
-            parabens.avancadoConcluido = true;
+            GameObject.Find("ParabensManager").GetComponent<ParabensBools>().casosAvancados = true;
             popupParabens.SetActive(true);
             
         }
-        if ((auxSoma == 39) && (parabens.jogoConcluido == false))
+        if ((auxSoma == 39) && (GameObject.Find("ParabensManager").GetComponent<ParabensBools>().jogoConcluido == false))
         {
             popupParabens.transform.position = new Vector3(1325, 0, 1);
             irCasosAvancados();
             auxPopup.text = "Fantástico!\n Você alcançou a vitória e conquistou o seu merecido troféu.\n Parabéns, pela sua conquista!";
-            parabens.jogoConcluido = true;
+            GameObject.Find("ParabensManager").GetComponent<ParabensBools>().jogoConcluido = true;
             habilitaTrofeu();
             popupParabens.SetActive(true);
         }   

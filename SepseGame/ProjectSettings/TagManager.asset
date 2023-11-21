@@ -15,6 +15,7 @@ TagManager:
   - hospital
   - trofeu
   - timer
+  - parabens
   layers:
   - Default
   - TransparentFX

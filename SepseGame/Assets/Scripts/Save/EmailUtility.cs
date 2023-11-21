@@ -54,9 +54,9 @@ public class EmailUtility : MonoBehaviour
     {
         numCasoCurrent = generalManager.Caso - 1;
         SelecaoCaso(numCasoCurrent);
-        if(emailSender != null)
+        if(emailSender != null && GameObject.Find("ParabensManager").GetComponent<ParabensBools>().emailEnviado == false)
         {
-            Debug.Log("chegou na parte de enviar o email");
+            GameObject.Find("ParabensManager").GetComponent<ParabensBools>().emailEnviado = true;
             emailSender.SendEmail();
         }
     }

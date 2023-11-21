@@ -46,13 +46,13 @@ public class PacienteManager : MonoBehaviour
         }*/
     }
 
-    void Update()
+    /*void Update()
     {
         if(Input.GetKeyDown(KeyCode.Return))
         {
             Generate();
         }
-    }
+    }*/
 
     public void Generate()
     {
