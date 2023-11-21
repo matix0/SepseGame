@@ -14,6 +14,7 @@ TagManager:
   - check8
   - hospital
   - trofeu
+  - timer
   layers:
   - Default
   - TransparentFX

@@ -10,7 +10,19 @@ using System.Net.Mime;
 
 public class EmailSend : MonoBehaviour
 {
-    public static List<int> nVezes;
+    public static int nVezes0;
+    public static int nVezes1;
+    public static int nVezes2;
+    public static int nVezes3;
+    public static int nVezes4;
+    public static int nVezes5;
+    public static int nVezes6;
+    public static int nVezes7;
+    public static int nVezes8;
+    public static int nVezes9;
+    public static int nVezes10;
+    public static int nVezes11;
+    public static int nVezes12;
 
     public static string titleName;
     public static string legendaEmail;
@@ -59,19 +71,19 @@ public class EmailSend : MonoBehaviour
             $"\nCPF: {Login.cpf}" +
             $"\nTEMPO DE JOGO: {minutes} minutos e {seconds} segundos.\n\n" +
             //$"Legenda para leitura dos casos:\n {legendaEmail}" +
-            $"\r\nCaso 1 (jogou {nVezes[0]} vez(es)): \n{resultado0R}\n\n" +
-            $"\r\nCaso 2 (jogou {nVezes[1]} vez(es)): \n{resultado1R}\n\n" +
-            $"\r\nCaso 3 (jogou {nVezes[2]} vez(es)): \n{resultado2R}\n\n" +
-            $"\r\nCaso 4 (jogou {nVezes[3]} vez(es)): \n{resultado3R}\n\n" +
-            $"\r\nCaso 5 (jogou {nVezes[4]} vez(es)): \n{resultado4R}\n\n" +
-            $"\r\nCaso 6 (jogou {nVezes[5]} vez(es)): \n{resultado5R}\n\n" +
-            $"\r\nCaso 7 (jogou {nVezes[6]} vez(es)): \n{resultado6R}\n\n" +
-            $"\r\nCaso 8 (jogou {nVezes[7]} vez(es)): \n{resultado7R}\n\n" +
-            $"\r\nCaso 9 (jogou {nVezes[8]} vez(es)): \n{resultado8R}\n\n" +
-            $"\r\nCaso 10 (jogou {nVezes[9]} vez(es)): \n{resultado9R}\n\n" +
-            $"\r\nCaso 11 (jogou {nVezes[10]} vez(es)): \n{resultado10R}\n\n" +
-            $"\r\nCaso 12 (jogou {nVezes[11]} vez(es)): \n{resultado11R}\n\n" +
-            $"\r\nCaso 13 (jogou {nVezes[12]} vez(es)): \n{resultado12R}\n\n";
+            $"\r\nCaso 1 (jogou {nVezes0} vez(es)): \n{resultado0R}\n\n" +
+            $"\r\nCaso 2 (jogou {nVezes1} vez(es)): \n{resultado1R}\n\n" +
+            $"\r\nCaso 3 (jogou {nVezes2} vez(es)): \n{resultado2R}\n\n" +
+            $"\r\nCaso 4 (jogou {nVezes3} vez(es)): \n{resultado3R}\n\n" +
+            $"\r\nCaso 5 (jogou {nVezes4} vez(es)): \n{resultado4R}\n\n" +
+            $"\r\nCaso 6 (jogou {nVezes5} vez(es)): \n{resultado5R}\n\n" +
+            $"\r\nCaso 7 (jogou {nVezes6} vez(es)): \n{resultado6R}\n\n" +
+            $"\r\nCaso 8 (jogou {nVezes7} vez(es)): \n{resultado7R}\n\n" +
+            $"\r\nCaso 9 (jogou {nVezes8} vez(es)): \n{resultado8R}\n\n" +
+            $"\r\nCaso 10 (jogou {nVezes9} vez(es)): \n{resultado9R}\n\n" +
+            $"\r\nCaso 11 (jogou {nVezes10} vez(es)): \n{resultado10R}\n\n" +
+            $"\r\nCaso 12 (jogou {nVezes11} vez(es)): \n{resultado11R}\n\n" +
+            $"\r\nCaso 13 (jogou {nVezes12} vez(es)): \n{resultado12R}\n\n";
 
         message.BodyEncoding = System.Text.Encoding.UTF8;
         message.Subject = titleName;

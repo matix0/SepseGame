@@ -500,7 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77e8326ae00acf5439b21855207f52b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nm: {fileID: 130360383317633404}
+  nm: {fileID: 0}
   en: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
   E1: {fileID: 123974060}
   E2: {fileID: 1496754421}
@@ -1109,7 +1109,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: -5681965066623056499, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12929,7 +12929,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -6652442310835306155, guid: f130d1a2a8880f0428071e8fa5247f76, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13264,7 +13264,7 @@ MonoBehaviour:
   - {fileID: -5681965066623056499, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   - {fileID: -3670956557638918253, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   EsteticaNurse: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
-  scm: {fileID: 0}
+  scm: {fileID: 1387671588}
   gender: 0
   corDaPele: 0
   hasBigas: 0

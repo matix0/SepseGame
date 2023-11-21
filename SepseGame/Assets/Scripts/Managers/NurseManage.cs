@@ -43,14 +43,14 @@ public class NurseManage : MonoBehaviour
 
     private void Start()
     {
+        Upp();
+    }
+
+    public void Upp()
+    {
         //scm = GameObject.Find("Handle").GetComponent<SlideColorManager>();
         //DontDestroyOnLoad(this.gameObject);
         ////Debug.Log(EsteticaNurse.set);
-
-        Blusa = GameObject.Find("Blusa");
-        Calca = GameObject.Find("Calca");
-        BlusaF = GameObject.Find("BlusaF");
-        CalcaF = GameObject.Find("CalcaF");
 
         cs = SceneManager.GetActiveScene().name;
         //Debug.Log("testes");
@@ -78,7 +78,12 @@ public class NurseManage : MonoBehaviour
         }
         else
         {
-            Debug.Log("Gender = " + EsteticaNurse.gender);
+            Blusa = GameObject.Find("Blusa");
+            Calca = GameObject.Find("Calca");
+            BlusaF = GameObject.Find("BlusaF");
+            CalcaF = GameObject.Find("CalcaF");
+
+            //Debug.Log("Gender = " + EsteticaNurse.gender);
             if (EsteticaNurse.gender == 0)
             {
                 PersonagemMasculino.SetActive(true);
@@ -278,7 +283,7 @@ public class NurseManage : MonoBehaviour
 
         }
         Color corzinha = EsteticaNurse.corRoupa;
-        if (cs != "Hospital")
+        if (cs == "CustomizeNurse")
         {
             scm.MudarBolinha(corzinha);
         }
@@ -371,7 +376,7 @@ public class NurseManage : MonoBehaviour
 
         Color corzinha = EsteticaNurse.corRoupa;
 
-        if (cs != "Hospital")
+        if (cs == "CustomizeNurse")
         {
             scm.MudarBolinha(corzinha);
         }

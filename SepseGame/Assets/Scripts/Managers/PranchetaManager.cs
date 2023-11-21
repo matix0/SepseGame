@@ -347,8 +347,8 @@ public class PranchetaManager : MonoBehaviour
     {
         apertouBotao = 0;
         //CondutasObject.SetActive(true);
-        feedbackHospital.calcularResultado();
         HospitalFeedbackObj.SetActive(true);
+        feedbackHospital.calcularResultado();
         HospitalObject.SetActive(false);
     }
 

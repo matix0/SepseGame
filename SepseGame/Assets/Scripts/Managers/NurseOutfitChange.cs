@@ -14,7 +14,8 @@ public class NurseOutfitChange : MonoBehaviour
     bool seeBtn;
     private void Start()
     {
-        
+        nm = GameObject.Find("Nurse").GetComponent<NurseManage>();
+        nm.Upp();
     }
 
     public void Randomize()
