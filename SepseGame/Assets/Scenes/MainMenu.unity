@@ -1499,7 +1499,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <b><size=120%>SEPSE GAME:<size=65%></b> PARA A ENFERMAGEM
+  m_text: <b><size=120%>SEPSE GAME<size=65%></b> PARA A ENFERMAGEM
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23ac351966beac5479e3f793fc6c9c07, type: 2}
   m_sharedMaterial: {fileID: -1082776670089757478, guid: 23ac351966beac5479e3f793fc6c9c07, type: 2}
@@ -3005,7 +3005,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <b><size=120%>SEPSE GAME:<size=65%></b> PARA A ENFERMAGEM
+  m_text: <b><size=120%>SEPSE GAME<size=65%></b> PARA A ENFERMAGEM
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23ac351966beac5479e3f793fc6c9c07, type: 2}
   m_sharedMaterial: {fileID: -1082776670089757478, guid: 23ac351966beac5479e3f793fc6c9c07, type: 2}

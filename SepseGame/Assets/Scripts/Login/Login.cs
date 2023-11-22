@@ -54,6 +54,8 @@ public class Login : MonoBehaviour
         }
         if (permited)
         {
+            ReceberNome();
+            ReceberCpf();
             Application.LoadLevel("TextoInicial");
         } 
     }

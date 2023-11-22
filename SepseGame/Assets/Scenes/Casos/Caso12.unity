@@ -17573,7 +17573,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97153aeedb8f78746ae62ea369e187be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Caso: {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
   SinaisVitais:
   - 105 bpm
   - 110x80 mmHg
@@ -34681,6 +34680,7 @@ MonoBehaviour:
   fbHospital: {fileID: 1621994267}
   prnchManager: {fileID: 847078685}
   condutasManager: {fileID: 600064700}
+  emailSender: {fileID: 0}
   auxTime: 
 --- !u!1 &1665603888
 GameObject:
@@ -39988,7 +39988,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c112ce66e3cf64a9b809ed7adf9523d9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 56b5e618e2d964f6ebb76484c1fc8bb1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
