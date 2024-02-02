@@ -66,6 +66,17 @@ public class FeedbackHospital : MonoBehaviour
             }
         }
 
+        if (pranchetaManager.chamouEquipe == true)
+        {
+            ST[next_sv_pos].GetComponent<TextMeshProUGUI>().text = "Chamou a equipe médica!";
+            SL[next_sv_pos].GetComponent<TextMeshProUGUI>().text = "- CERTO!";
+        }
+        else
+        {
+            ST[next_sv_pos].GetComponent<TextMeshProUGUI>().text = "Não chamou a equipe médica!";
+            SL[next_sv_pos].GetComponent<TextMeshProUGUI>().text = "- ERRADO!";
+        }
+
         if (emptySinais) //adiciona o marcador de página vazia
         {
             ST[0].GetComponent<TextMeshProUGUI>().text = "- página vazia.";
