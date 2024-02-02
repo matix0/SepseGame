@@ -33749,7 +33749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2047104724965100235, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+      value: ModalConfirmarSaida
       objectReference: {fileID: 0}
     - target: {fileID: 2047104724965100235, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -34099,6 +34099,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -637.345
       objectReference: {fileID: 0}
+    - target: {fileID: 7810548940441582167, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1734301048}
+    - target: {fileID: 7810548940441582167, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ModalConfirmarSaida
+      objectReference: {fileID: 0}
+    - target: {fileID: 7810548940441582167, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuPause, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7810548940441582167, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166506680112467457, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1734301048}
+    - target: {fileID: 9166506680112467457, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166506680112467457, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuPause, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166506680112467457, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
 --- !u!1 &1661594586 stripped
@@ -34124,6 +34156,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661594588}
   m_CullTransparentMesh: 1
+--- !u!1 &1661594590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2412849826759411603, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+  m_PrefabInstance: {fileID: 1661594585}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1664021111
 GameObject:
   m_ObjectHideFlags: 0
@@ -35386,6 +35423,7 @@ MonoBehaviour:
   Escolhas: {fileID: 1057706640}
   PauseIcon: {fileID: 631054866}
   Tutorial: {fileID: 1089891789}
+  ModalSaida: {fileID: 1661594590}
   buttonsEscolhas:
   - {fileID: 0}
   - {fileID: 0}

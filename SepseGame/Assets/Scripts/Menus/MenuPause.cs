@@ -11,6 +11,7 @@ public class MenuPause : MonoBehaviour
     public GameObject Escolhas;
     public GameObject PauseIcon;
     public GameObject Tutorial;
+    public GameObject ModalSaida;
     public Button[] buttonsEscolhas;
     //public AudioSource MusicManager;
     public GameObject slider;
@@ -72,5 +73,15 @@ public class MenuPause : MonoBehaviour
     public void AbrirTutorial()
     {
         Tutorial.SetActive(true);
+    }
+
+    public void ModalConfirmarSaida() {
+        Debug.Log(ModalSaida.activeSelf);
+        if (!ModalSaida.activeSelf)
+        {
+            ModalSaida.SetActive(true);
+        }
+        else ModalSaida.SetActive(false);
+        
     }
 }

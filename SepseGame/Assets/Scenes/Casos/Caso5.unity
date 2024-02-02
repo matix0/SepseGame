@@ -31417,24 +31417,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31c84089630b7db408f146960fe25fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CasoClinicoPanel: {fileID: 1167704679}
-  Caso: {fileID: 0}
-  pack: {fileID: 11400000, guid: f0d4e489b31b05947b364615576b5215, type: 2}
-  CasoClinicoText: {fileID: 1419823151}
-  ArrayCasos:
-  - {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
-  - {fileID: 11400000, guid: 7886000bd22f26e47bb8544df39a6ba6, type: 2}
-  - {fileID: 11400000, guid: 95b94bb6d5f8fd344a64adfa77eb48bf, type: 2}
-  - {fileID: 11400000, guid: c5895efc851d9134c89ac4f9de30264d, type: 2}
-  - {fileID: 11400000, guid: db95b5c6db7f8884d8507a30a12e1c42, type: 2}
-  - {fileID: 11400000, guid: 0897e249e810a8b4fbe0b04879681089, type: 2}
-  - {fileID: 11400000, guid: f2a6d46bf5549434abb8ed5725f15d04, type: 2}
-  - {fileID: 11400000, guid: 4e0e70d036c412d49a728c89a022fd8d, type: 2}
-  - {fileID: 11400000, guid: dd320aa9e3547764098f76eda5894f48, type: 2}
-  - {fileID: 11400000, guid: 86e07f68bbb15bc4da20b27d69314087, type: 2}
-  - {fileID: 11400000, guid: 62cb05028d173cb4fa3acb016504c32a, type: 2}
-  - {fileID: 11400000, guid: 15d368d6a7020bf46bb5b803d55a44b6, type: 2}
-  - {fileID: 11400000, guid: 401ab15f4e846504f85665e7ec10603e, type: 2}
 --- !u!114 &1542917489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31812,7 +31794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2047104724965100235, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+      value: ModalConfirmarSaida
       objectReference: {fileID: 0}
     - target: {fileID: 2047104724965100235, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -32162,6 +32144,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -637.345
       objectReference: {fileID: 0}
+    - target: {fileID: 7810548940441582167, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2137518076}
+    - target: {fileID: 7810548940441582167, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ModalConfirmarSaida
+      objectReference: {fileID: 0}
+    - target: {fileID: 7810548940441582167, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuPause, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7810548940441582167, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166506680112467457, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2137518076}
+    - target: {fileID: 9166506680112467457, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166506680112467457, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuPause, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166506680112467457, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
 --- !u!1 &1558401682 stripped
@@ -32187,6 +32201,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558401684}
   m_CullTransparentMesh: 1
+--- !u!1 &1558401686 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2412849826759411603, guid: 1e8cda0c2cd3c47489513eb1b0a562e9, type: 3}
+  m_PrefabInstance: {fileID: 1558401681}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1567858331
 GameObject:
   m_ObjectHideFlags: 0
@@ -43340,6 +43359,7 @@ MonoBehaviour:
   Escolhas: {fileID: 1057706640}
   PauseIcon: {fileID: 631054866}
   Tutorial: {fileID: 863517334}
+  ModalSaida: {fileID: 1558401686}
   buttonsEscolhas:
   - {fileID: 0}
   - {fileID: 0}

@@ -5578,6 +5578,7 @@ MonoBehaviour:
   tutorialText: {fileID: 0}
   pageCountText: {fileID: 0}
   btn_proximo: {fileID: 0}
+  btn_voltar: {fileID: 0}
   tutorial: {fileID: 0}
 --- !u!4 &977239465
 Transform:
