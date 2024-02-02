@@ -10,7 +10,7 @@ public class TutorialManager : MonoBehaviour
     public Sprite[] tutorialSprites = new Sprite[10];
     public Image atualSprite;
     public TextMeshProUGUI tutorialText, pageCountText;
-    public GameObject btn_proximo,tutorial;
+    public GameObject btn_proximo,btn_voltar,tutorial;
     int currentPage = 1;
     TextMeshProUGUI btn_texto;
     [System.Obsolete]
@@ -23,6 +23,14 @@ public class TutorialManager : MonoBehaviour
         //Debug.Log(btn_texto.text);
     }
 
+    private void Update()
+    {
+        if (currentPage == 1)
+        {
+            btn_voltar.SetActive(false);
+        }
+        else btn_voltar.SetActive(true);
+    }
     public void NextPage()
     {
         int totalpages = tutorialText.textInfo.pageCount;

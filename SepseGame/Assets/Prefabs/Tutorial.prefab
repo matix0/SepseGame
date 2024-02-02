@@ -1153,6 +1153,7 @@ MonoBehaviour:
   tutorialText: {fileID: 7449120747964287365}
   pageCountText: {fileID: 7449120747843390655}
   btn_proximo: {fileID: 7449120746975414939}
+  btn_voltar: {fileID: 7449120747071315611}
   tutorial: {fileID: 0}
 --- !u!223 &7449120747606504468
 Canvas:
