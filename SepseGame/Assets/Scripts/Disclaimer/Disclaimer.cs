@@ -5,23 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Disclaimer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    [System.Obsolete]
-    void Start()
+    public void LoadMainMenu()
     {
-        StartCoroutine(TimeCoroutine());
-    }
-
-    [System.Obsolete]
-    IEnumerator TimeCoroutine()
-    {
-        yield return new WaitForSeconds(18);
-        LoadMainMenu();
-    }
-
-    [System.Obsolete]
-    void LoadMainMenu()
-    {
-        Application.LoadLevel("Login");
+        SceneManager.LoadScene("Login");
     }
 }
