@@ -342,7 +342,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "No jogo, suas decis\xF5es impulsionar\xE3o seu progresso. Utilize os cliques
+    do mouse para ativar as tomadas de decis\xF5es e a\xE7\xF5es. Condutas corretas
+    resultam em estrelas acumuladas. No total s\xE3o 13 casos cl\xEDnicos para serem
+    solucionados. Estes est\xE3o divididos em 06 casos de baixa complexidade e 07
+    de m\xE9dia complexidade. No final de cada caso voc\xEA receber\xE1 um feedback
+    sobre sua performance em uma tela, indicando o n\xFAmero de estrelas conquistadas.
+    Para o trof\xE9u final, \xE9 necess\xE1rio que voc\xEA acumule 39 estrelas."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -369,7 +375,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.2
+  m_fontSize: 42
   m_fontSizeBase: 47.2
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -426,7 +432,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87616065}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e13805b3ebeed2048ba870d2a8a16298, type: 3}
   m_Name: 
@@ -1387,7 +1393,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 241608593}
   m_OnClick:
     m_PersistentCalls:
@@ -1951,6 +1957,7 @@ MonoBehaviour:
   Escolhas: {fileID: 1458453868}
   PauseIcon: {fileID: 871800873}
   Tutorial: {fileID: 0}
+  ModalSaida: {fileID: 0}
   buttonsEscolhas: []
   slider: {fileID: 0}
   Musica: {fileID: 1244910206}
@@ -5258,6 +5265,8 @@ PlayableDirector:
     value: {fileID: 1816619661}
   - key: {fileID: -2210679102357580457, guid: ff4f2ec6735d1fb418545f2777394895, type: 2}
     value: {fileID: 1815581341}
+  - key: {fileID: -7113090513415737840, guid: ff4f2ec6735d1fb418545f2777394895, type: 2}
+    value: {fileID: 1536897800}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1279974961
@@ -6130,7 +6139,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "Voc\xEA ser\xE1 o (a) enfermeiro (a) que est\xE1 de plant\xE3o na unidade
+    de emerg\xEAncia e dever\xE1 avaliar cada paciente admitido. O desafio de hoje
+    \xE9 reconhecer os casos confirmados ou suspeitos de sepse e com base na presen\xE7a
+    de disfun\xE7\xE3o org\xE2nica ou crit\xE9rios de s\xEDndrome de resposta inflamat\xF3ria
+    sist\xEAmica (SRIS) dever\xE1 tomar decis\xF5es acerca da abertura ou n\xE3o
+    do protocolo de sepse, chamar ou n\xE3o a equipe m\xE9dica, iniciar ou n\xE3o
+    o pacote de primeira hora para o tratamento de casos suspeitos, priorizar as
+    condutas de enfermagem necess\xE1rias para cada caso cl\xEDnico."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -6157,7 +6173,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.2
+  m_fontSize: 42
   m_fontSizeBase: 47.2
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6214,7 +6230,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536897800}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ea9ff15de7fbf0449580019f51d4665, type: 3}
   m_Name: 
@@ -12265,19 +12281,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: cbe432fe554128847bfed0a59f62f50a, type: 2}
     m_Events:
     - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1815581340}
-          m_TargetAssemblyTypeName: InicialAnimManager, Assembly-CSharp
-          m_MethodName: changeContinuarStatus
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1815581340}

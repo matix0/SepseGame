@@ -11,7 +11,7 @@ public class Text1Handler : MonoBehaviour
         "tomar decisões acerca da abertura ou não do protocolo de sepse, chamar ou não a equipe médica, iniciar ou não o pacote de primeira hora para o tratamento de casos" +
         " suspeitos, priorizar as condutas de enfermagem necessárias para cada caso clínico.";
 
-    float Delay = 0.04f;
+    float Delay = 0f;
     public GameObject T1;
 
     private void OnEnable()

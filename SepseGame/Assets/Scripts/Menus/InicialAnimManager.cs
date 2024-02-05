@@ -26,13 +26,15 @@ public class InicialAnimManager : MonoBehaviour
     {
         if (control == 0)
         {
-            txt1.SetActive(false);
             anim2.GetComponent<PlayableDirector>().Play();
+            Destroy(txt1);
             control = 1;
         }
         else
         {
-            anim2.GetComponent<PlayableDirector>().Resume();
+            anim2.GetComponent<PlayableDirector>().Stop();
+            anim2.GetComponent<PlayableDirector>().initialTime = 22;
+            anim2.GetComponent<PlayableDirector>().Play();
         }
     }
 
