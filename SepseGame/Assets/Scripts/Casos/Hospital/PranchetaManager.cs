@@ -46,6 +46,8 @@ public class PranchetaManager : MonoBehaviour
 
     public int apertouBotao; //0 = primeiro botao e 1 = segundo botao
 
+    bool notificacao_delay = false;
+
     public void updateFC()
     {
         if (!texts[0].text.Contains(SinaisVitais[0]))
@@ -283,13 +285,27 @@ public class PranchetaManager : MonoBehaviour
     }
     public void EnterNotificacao()
     {
+        StopAllCoroutines();
+        notificacao_delay = false;
         notificationText.GetComponent<TextMeshProUGUI>().text = setText;
         //texts[11].text = texts[setText].text;
         NotificacaoButton.SetActive(true);
-
+        StartCoroutine(NotificacaoDelay());
     }
+
+    IEnumerator NotificacaoDelay()
+    {
+        while (notificacao_delay == false)
+        {
+            notificacao_delay = true;
+            yield return new WaitForSeconds(5.0f);
+        }
+        OutNotificacao();
+    }
+
     public void OutNotificacao()
     {
+        StopAllCoroutines();
         NotificacaoButton.SetActive(false);
     }
 
