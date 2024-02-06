@@ -35114,6 +35114,7 @@ MonoBehaviour:
   condutasManager: {fileID: 600064700}
   emailSender: {fileID: 1664021115}
   auxTime: 
+  niveisConcluidos: {fileID: 11400000, guid: 71e9484ae60a5814faafb896e2597ea7, type: 2}
 --- !u!114 &1664021115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44075,8 +44076,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 916018646}
   m_HandleRect: {fileID: 916018645}
   m_Direction: 2
-  m_Value: 1.0000012
-  m_Size: 0.3515328
+  m_Value: 1.0000013
+  m_Size: 0.35308054
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

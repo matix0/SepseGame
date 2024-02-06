@@ -16,6 +16,13 @@ public class Login : MonoBehaviour
     public GameObject PlaceHolderCpf;
     public bool permited = false;
 
+    public NiveisConcluidos niveisConcluidos;
+
+    private void Start()
+    {
+        ResetarProgresso();
+    }
+
     public void ReceberNome()
     {
         nome = inputFieldNome.GetComponent<TextMeshProUGUI>().text;
@@ -57,6 +64,19 @@ public class Login : MonoBehaviour
             ReceberNome();
             ReceberCpf();
             Application.LoadLevel("TextoInicial");
-        } 
+        }
+    }
+    public void ResetarProgresso()
+    {
+        for (int i = 0; i < 14; i++)
+        {
+            PlayerPrefs.SetInt("caso" + i.ToString(), 0);
+        }
+        for (int i = 0; i < 13; i++)
+        {
+            niveisConcluidos.casos[i] = false;
+        }
+        Debug.Log("Progresso apagado!!");
+        niveisConcluidos.emailEnviado = false;
     }
 }

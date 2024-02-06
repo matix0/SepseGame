@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class SelecionarNiveisManager : MonoBehaviour
 {
@@ -209,6 +210,10 @@ public class SelecionarNiveisManager : MonoBehaviour
     {
         GameObject popupFeedback = GameObject.Find("Popup Parabens");
         popupFeedback.SetActive(false);
+        if(GameObject.Find("ParabensManager").GetComponent<ParabensBools>().casosAvancados == true)
+        {
+            SceneManager.LoadScene("Login");
+        }
     }
 
     public void habilitaTrofeu() {

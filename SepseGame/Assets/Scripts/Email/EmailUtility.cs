@@ -50,13 +50,15 @@ public class EmailUtility : MonoBehaviour
     public static string results11;
     public static string results12;
 
+    public NiveisConcluidos niveisConcluidos;
+
     public void SaveEmail()
     {
         numCasoCurrent = generalManager.Caso - 1;
         SelecaoCaso(numCasoCurrent);
-        if(emailSender != null && GameObject.Find("ParabensManager").GetComponent<ParabensBools>().emailEnviado == false)
+        if(emailSender != null && niveisConcluidos.emailEnviado == false)
         {
-            GameObject.Find("ParabensManager").GetComponent<ParabensBools>().emailEnviado = true;
+            niveisConcluidos.emailEnviado = true;
             emailSender.SendEmail();
         }
     }

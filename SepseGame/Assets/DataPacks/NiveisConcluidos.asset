@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: NiveisConcluidos
   m_EditorClassIdentifier: 
   casos: 00000000000000000000000000
+  emailEnviado: 0

@@ -112,18 +112,4 @@ public class FeedbackManager : MonoBehaviour
         cell.transform.parent = ResultGrid.transform;
         cell.GetComponent<TextMeshProUGUI>().text = "As Condutas não foram ordenadas corretamente.";
     }
-
-    private void Update()
-    {
-        /*//detecta se a animação foi finalizada antes de tirar a screenshot da tela
-        AnimatorClipInfo[] currentClip = starsAnimator.GetCurrentAnimatorClipInfo(0);
-        if (currentClip[0].clip.name.Contains("slide_up"))
-        {
-            if(starsAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime > starsAnimator.GetCurrentAnimatorStateInfo(0).length)
-            {
-                ScreenCapture.CaptureScreenshot("FeedbackCaso" + generalManager.Caso.ToString() + ".png");
-                screenshotTaken = true;
-            }
-        }*/
-    }
 }

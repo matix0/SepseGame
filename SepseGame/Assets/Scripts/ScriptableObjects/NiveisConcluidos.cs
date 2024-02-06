@@ -7,4 +7,6 @@ using UnityEngine;
 public class NiveisConcluidos : ScriptableObject
 {
     public List<bool> casos;
+
+    public bool emailEnviado = false;
 }

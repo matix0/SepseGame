@@ -18,6 +18,8 @@ public class MenuMain : MonoBehaviour
     public GameObject ModalProgresso;
     public GameObject ModalProgressoApagado;
 
+    public NiveisConcluidos niveisConcluidos;
+
     private void Start()
     {
         if (gameObject.activeSelf)
@@ -99,5 +101,6 @@ public class MenuMain : MonoBehaviour
             NiveisConcluidos.casos[i] = false;
         }
         Debug.Log("Progresso apagado!!");
+        niveisConcluidos.emailEnviado = false;
     }
 }
