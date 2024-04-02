@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://c6wlbuf47odpq"]
+
+[ext_resource type="Script" path="res://Scenes/World/world.gd" id="1_4usyt"]
+[ext_resource type="Texture2D" uid="uid://2quo4y5bcsjp" path="res://Sprites/Forest/World/BGplaceholder.png" id="2_0aga0"]
+[ext_resource type="PackedScene" uid="uid://ba12u37k6dgw4" path="res://Scenes/Player/Player.tscn" id="2_0akcs"]
+[ext_resource type="PackedScene" uid="uid://chxm7u022syxj" path="res://Scenes/Enemies/Forest/Mushroom/Enemy.tscn" id="5_gs4we"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_aywe3"]
+vertices = PackedVector2Array(1142, 10, 1142, 638, 455, 112, 454, 98, 453, 130, 10, 638, 443, 136, 436, 137, 418, 137, 403, 133, 10, 10, 401, 117, 401, 104, 406, 90, 448, 87, 414, 81, 439, 76, 424, 76)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 2, 1), PackedInt32Array(4, 1, 5, 6), PackedInt32Array(7, 6, 5), PackedInt32Array(8, 7, 5), PackedInt32Array(9, 8, 5), PackedInt32Array(9, 5, 10, 11), PackedInt32Array(12, 11, 10), PackedInt32Array(13, 12, 10), PackedInt32Array(0, 3, 14), PackedInt32Array(15, 13, 10), PackedInt32Array(0, 14, 16), PackedInt32Array(10, 0, 16, 17), PackedInt32Array(15, 10, 17)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(0, 0, 1152, 0, 1152, 648, 0, 648), PackedVector2Array(440, 93, 434, 86, 426, 86, 420, 89, 415, 95, 411, 106, 411, 116, 412, 125, 419, 127, 427, 127, 435, 127, 440, 126, 444, 124, 445, 112, 444, 101)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_4usyt")
+
+[node name="BGplaceholder" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+texture = ExtResource("2_0aga0")
+
+[node name="Player" parent="." instance=ExtResource("2_0akcs")]
+position = Vector2(412, 234)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_aywe3")
+
+[node name="Enemy" parent="." instance=ExtResource("5_gs4we")]
+position = Vector2(582, 94)
+
+[node name="Enemy2" parent="." instance=ExtResource("5_gs4we")]
+position = Vector2(666, 283)
+
+[node name="Enemy3" parent="." instance=ExtResource("5_gs4we")]
+position = Vector2(308, 399)
+
+[node name="Enemy4" parent="." instance=ExtResource("5_gs4we")]
+position = Vector2(205, 151)
+
+[node name="Enemy5" parent="." instance=ExtResource("5_gs4we")]
+position = Vector2(559, 434)
+
+[node name="Enemy6" parent="." instance=ExtResource("5_gs4we")]
+position = Vector2(119, 331)
